@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # BaTiO3
-# Synced at: 2026-05-24T06:11:37Z
+# Synced at: 2026-05-24T06:20:24Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -22,14 +22,212 @@ databases:
     structure_type: perovskite
     last_updated: '2026-05-24'
   jarvis:
-    material_id: JVASP-1002
+    material_id: JVASP-85718
     formula: BaTiO3
-    spacegroup: P4mm
-    band_gap: 2.6
-    formation_energy: -3.1
-    bulk_modulus: 162
-    shear_modulus: 120
-    structure_type: perovskite
+    spacegroup: Amm2
+    band_gap: 0.294
+    formation_energy_per_atom: -2.50585
+    bulk_modulus: 38.89
+    shear_modulus: 11.87
+    poissons_ratio: 0.6
+    density: 3.654
+    raw:
+      jid: JVASP-85718
+      spg_number: '38'
+      spg_symbol: Amm2
+      formula: BaTiO3
+      formation_energy_peratom: -2.50585
+      func: OptB88vdW
+      optb88vdw_bandgap: 0.294
+      atoms:
+        lattice_mat:
+        - - 3.724637510969455
+          - 0.0
+          - 0.0
+        - - 0.0
+          - 4.319477066940526
+          - 3.2932984383412167
+        - - 0.0
+          - -4.319477066940526
+          - 3.2932984383412167
+        coords:
+        - - 0.0
+          - -1.6213344449197703e-18
+          - 4.251359638819448
+        - - 1.86232
+          - 2.5058543737838203e-17
+          - 0.6977439819503698
+        - - 1.86232
+          - -1.8272175998897983e-17
+          - 2.5085872737574175
+        - - 1.86232
+          - -2.9300505180448404
+          - 2.923620552736395
+        - - 1.86232
+          - 2.9300505180448404
+          - 2.9236205527363945
+        elements:
+        - Ba
+        - Ti
+        - O
+        - O
+        - O
+        abc:
+        - 3.72464
+        - 5.431734
+        - 5.431734
+        angles:
+        - 105.354
+        - 90.0
+        - 90.0
+        cartesian: true
+        props:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      slme: 9.0
+      magmom_oszicar: 0.0
+      spillage: na
+      elastic_tensor:
+      - - 76.9
+        - 40.9
+        - -8.5
+        - -0.0
+        - -0.0
+        - -0.0
+      - - 40.9
+        - 142.2
+        - 12.9
+        - -0.0
+        - -0.0
+        - -0.0
+      - - -8.5
+        - 12.9
+        - 40.3
+        - -0.0
+        - -0.0
+        - 0.0
+      - - -0.0
+        - -0.0
+        - -0.0
+        - 6.5
+        - 0.0
+        - 0.0
+      - - -0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - -2.6
+        - -0.0
+      - - -0.0
+        - -0.0
+        - 0.0
+        - 0.0
+        - -0.0
+        - -15.9
+      effective_masses_300K:
+        p: na
+        n: na
+      kpoint_length_unit: 30
+      maxdiff_mesh: na
+      maxdiff_bz: na
+      encut: 900
+      optb88vdw_total_energy: -5.38478
+      epsx: 4.8468
+      epsy: 4.1414
+      epsz: 4.8087
+      mepsx: 2.5138
+      mepsy: 3.1564
+      mepsz: 3.8033
+      modes: na
+      magmom_outcar: 0.0
+      max_efg: na
+      avg_elec_mass: na
+      avg_hole_mass: na
+      icsd: '154346'
+      dfpt_piezo_max_eij: na
+      dfpt_piezo_max_dij: na
+      dfpt_piezo_max_dielectric: na
+      dfpt_piezo_max_dielectric_electronic: na
+      dfpt_piezo_max_dielectric_ionic: na
+      max_ir_mode: na
+      min_ir_mode: na
+      n-Seebeck: na
+      p-Seebeck: na
+      n-powerfact: na
+      p-powerfact: na
+      ncond: na
+      pcond: na
+      nkappa: na
+      pkappa: na
+      ehull: 0.8648
+      Tc_supercon: na
+      dimensionality: intercalated ion
+      efg:
+      - - Ba
+        - a
+        - '-75.676'
+        - '-0.0'
+        - '-0.0'
+        - '-0.0'
+        - '-80.012'
+        - '0.0'
+        - '-0.0'
+        - '0.0'
+        - '155.688'
+      - - Ti
+        - b
+        - '220.295'
+        - '0.0'
+        - '-0.0'
+        - '0.0'
+        - '-164.656'
+        - '0.0'
+        - '-0.0'
+        - '0.0'
+        - '-55.639'
+      - - O
+        - b
+        - '63.858'
+        - '0.0'
+        - '-0.0'
+        - '0.0'
+        - '-19.834'
+        - '0.0'
+        - '-0.0'
+        - '0.0'
+        - '-44.024'
+      - - O
+        - e
+        - '70.885'
+        - '-0.0'
+        - '-0.0'
+        - '-0.0'
+        - '-25.798'
+        - '4.5'
+        - '-0.0'
+        - '4.5'
+        - '-45.087'
+      xml_data_link: <a href=https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-85718.xml target='_blank' >JVASP-85718</a>
+      typ: bulk
+      exfoliation_energy: na
+      spg: '38'
+      crys: orthorhombic
+      density: 3.654
+      poisson: 0.6
+      raw_files:
+      - OPT-LOPTICS,JVASP-85718.zip,https://ndownloader.figshare.com/files/25256258
+      - TBMBJ,JVASP-85718.zip,https://ndownloader.figshare.com/files/23704301
+      - DFT-SCF,JVASP-85718.zip,https://ndownloader.figshare.com/files/23566055
+      nat: 5
+      bulk_modulus_kv: 38.89
+      shear_modulus_gv: 11.87
+      mbj_bandgap: 2.692
+      hse_gap: na
+      reference: mp-644497
+      search: -Ba-O-Ti
     last_updated: '2026-05-24'
   oqmd:
     material_id: '11024'
@@ -40,42 +238,53 @@ databases:
     last_updated: '2026-05-24'
 cross_db_discrepancies:
   band_gap:
-    max_diff: 0.1
-    relative_diff_pct: 3.7
+    max_diff: 2.406
+    relative_diff_pct: 89.11
     values:
       materials_project: 2.7
-      jarvis: 2.6
+      jarvis: 0.294
       oqmd: 2.65
     sources:
     - materials_project
     - jarvis
     - oqmd
   formation_energy:
-    max_diff: 0.1
-    relative_diff_pct: 3.13
+    max_diff: 0.05
+    relative_diff_pct: 1.56
     values:
       materials_project: -3.2
-      jarvis: -3.1
       oqmd: -3.15
     sources:
     - materials_project
-    - jarvis
     - oqmd
+  formation_energy_per_atom:
+    max_diff: 1.43585
+    relative_diff_pct: 57.3
+    values:
+      materials_project: -1.07
+      jarvis: -2.50585
+    sources:
+    - materials_project
+    - jarvis
 coverage:
   common_properties:
   - band_gap
-  - formation_energy
   - formula
   - last_updated
   - material_id
   - spacegroup
   properties_unique_to_source:
     materials_project:
-    - structure_type
     - formation_energy_per_atom
-    jarvis:
-    - shear_modulus
-    - bulk_modulus
     - structure_type
-    oqmd: []
+    - formation_energy
+    jarvis:
+    - poissons_ratio
+    - bulk_modulus
+    - raw
+    - density
+    - formation_energy_per_atom
+    - shear_modulus
+    oqmd:
+    - formation_energy
 last_updated: '2026-05-24'
