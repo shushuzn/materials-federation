@@ -1,19 +1,204 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # LiFePO4
-# Synced at: 2026-05-24T04:43:05Z
+# Synced at: 2026-05-24T04:53:28Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
 # Disclaimer: Data sourced from third-party databases. All data remains the
 #   intellectual property of respective database providers under their
 #   applicable licenses. This aggregation is for research purposes only.
-# Sources: 
+# Sources: jarvis
 # ─────────────────────────────────────────────────────────────────────────────
 
 formula: LiFePO4
-databases: {}
+databases:
+  jarvis:
+    material_id: JVASP-48301
+    formula: LiFePO4
+    spacegroup: Fdd2
+    band_gap: 0.011
+    formation_energy_per_atom: -2.00873
+    density: 3.588
+    raw:
+      jid: JVASP-48301
+      spg_number: '43'
+      spg_symbol: Fdd2
+      formula: LiFePO4
+      formation_energy_peratom: -2.00873
+      func: OptB88vdW
+      optb88vdw_bandgap: 0.011
+      atoms:
+        lattice_mat:
+        - - -2.8331157886020453
+          - 4.628458631458101
+          - 0.0
+        - - 2.8331157886020453
+          - 0.0
+          - 5.567487387526007
+        - - 2.8331157886020453
+          - 4.628458631458101
+          - 0.0
+        coords:
+        - - 0.7082799999999999
+          - 4.043829921065503
+          - 1.3918725
+        - - 2.12484
+          - 1.7295999210654998
+          - 4.1756175
+        - - 0.7082800000000001
+          - 7.4811260303821525
+          - 1.3918725
+        - - 2.12484
+          - 5.166896030382152
+          - 4.1756175
+        - - 0.70828
+          - 1.1990227837350147
+          - 1.3918725
+        - - 2.1248400000000003
+          - 8.141712783735015
+          - 4.1756175
+        - - -1.310304920168335
+          - 4.833625536809522
+          - 0.504890220723363
+        - - -0.23933580976705177
+          - 2.111207595599144
+          - 0.5786076212576211
+        - - 0.23933297664705847
+          - 4.425442224059132
+          - 3.3623526212576205
+        - - 1.3103077532883483
+          - 7.147860165269543
+          - 3.2886352207233633
+        - - 1.6558958097670526
+          - 2.1112075955991436
+          - 2.2051373787423802
+        - - 2.726864920168336
+          - 4.833625536809522
+          - 2.2788547792766396
+        - - 2.939372246711652
+          - 7.147860165269543
+          - 5.0625997792766375
+        - - 4.010347023352942
+          - 4.425442224059132
+          - 4.98888237874238
+        elements:
+        - Li
+        - Li
+        - Fe
+        - Fe
+        - P
+        - P
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        abc:
+        - 5.426713
+        - 6.24688
+        - 5.426713
+        angles:
+        - 76.3039
+        - 62.9423
+        - 103.6961
+        cartesian: true
+        props:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      slme: na
+      magmom_oszicar: 8.0
+      spillage: na
+      elastic_tensor: na
+      effective_masses_300K:
+        p:
+        - 0.0
+        - 0.0
+        - 0.0
+        n:
+        - 0.0
+        - 0.0
+        - 0.0
+      kpoint_length_unit: 25
+      maxdiff_mesh: na
+      maxdiff_bz: na
+      encut: 1300
+      optb88vdw_total_energy: -5.19259
+      epsx: 27.8079
+      epsy: 40.503
+      epsz: 50.8624
+      mepsx: na
+      mepsy: na
+      mepsz: na
+      modes: na
+      magmom_outcar: 7.6739999999999995
+      max_efg: na
+      avg_elec_mass: 0.0
+      avg_hole_mass: 0.0
+      icsd: ''
+      dfpt_piezo_max_eij: na
+      dfpt_piezo_max_dij: na
+      dfpt_piezo_max_dielectric: na
+      dfpt_piezo_max_dielectric_electronic: na
+      dfpt_piezo_max_dielectric_ionic: na
+      max_ir_mode: na
+      min_ir_mode: na
+      n-Seebeck: -9.67
+      p-Seebeck: -9.47
+      n-powerfact: 6.363333333333333
+      p-powerfact: 6.283333333333332
+      ncond: 37542.956666666665
+      pcond: 37417.863333333335
+      nkappa: 47807951333333.336
+      pkappa: 47955915666666.68
+      ehull: 0.0673
+      Tc_supercon: na
+      dimensionality: intercalated ion
+      efg: []
+      xml_data_link: <a href=https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-48301.xml target='_blank' >JVASP-48301</a>
+      typ: bulk
+      exfoliation_energy: na
+      spg: '43'
+      crys: orthorhombic
+      density: 3.588
+      poisson: na
+      raw_files:
+      - OPT-LOPTICS,JVASP-48301.zip,https://ndownloader.figshare.com/files/24826916
+      - OPT-Bandst,JVASP-48301.zip,https://ndownloader.figshare.com/files/23943365
+      - DFT-SCF,JVASP-48301.zip,https://ndownloader.figshare.com/files/23431214
+      nat: 14
+      bulk_modulus_kv: na
+      shear_modulus_gv: na
+      mbj_bandgap: na
+      hse_gap: na
+      reference: mp-763758
+      search: -Fe-Li-O-P
+    last_updated: '2026-05-24'
 cross_db_discrepancies: {}
 coverage:
-  common_properties: []
-  properties_unique_to_source: {}
+  common_properties:
+  - band_gap
+  - density
+  - formation_energy_per_atom
+  - formula
+  - last_updated
+  - material_id
+  - raw
+  - spacegroup
+  properties_unique_to_source:
+    jarvis: []
 last_updated: '2026-05-24'

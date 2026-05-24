@@ -1,19 +1,249 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # TiO2
-# Synced at: 2026-05-24T04:42:42Z
+# Synced at: 2026-05-24T04:53:11Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
 # Disclaimer: Data sourced from third-party databases. All data remains the
 #   intellectual property of respective database providers under their
 #   applicable licenses. This aggregation is for research purposes only.
-# Sources: 
+# Sources: jarvis
 # ─────────────────────────────────────────────────────────────────────────────
 
 formula: TiO2
-databases: {}
+databases:
+  jarvis:
+    material_id: JVASP-42549
+    formula: TiO2
+    spacegroup: Pnma
+    band_gap: 2.665
+    formation_energy_per_atom: -3.16279
+    density: 3.842
+    raw:
+      jid: JVASP-42549
+      spg_number: '62'
+      spg_symbol: Pnma
+      formula: TiO2
+      formation_energy_peratom: -3.16279
+      func: OptB88vdW
+      optb88vdw_bandgap: 2.665
+      atoms:
+        lattice_mat:
+        - - 3.023060547465333
+          - -0.0009615083870622
+          - -0.0043861850678055
+        - - 0.0037650713704904
+          - 9.744306383372164
+          - 7.9474909189e-05
+        - - 0.0133608531380062
+          - 0.0002243420300961
+          - 9.3733684015981
+        coords:
+        - - 0.7581049772994731
+          - -0.24594413299789525
+          - 1.4249265109388134
+        - - 2.2737186002173333
+          - 1.9600901829447757
+          - 3.758224006445685
+        - - 0.7693266873230794
+          - 2.9048486794525488
+          - 8.447072537239613
+        - - 2.2783521888637956
+          - 5.110781113936758
+          - 6.109466618009289
+        - - 0.7625818249277988
+          - 4.626261182862852
+          - 3.2373297765375066
+        - - 2.2715534153178942
+          - 6.832200070720966
+          - 0.8996578306625048
+        - - 0.767176643178102
+          - 7.776945905293624
+          - 5.588552040744292
+        - - 2.2790659237360815
+          - 0.2387049517916218
+          - 7.92171396595304
+        - - 0.7621877627904817
+          - 7.808714812589274
+          - 2.0698455778366
+        - - 2.2776162074724664
+          - 8.3760698517257
+          - 4.720074553427338
+        - - 0.7586370907775591
+          - 6.233125584991615
+          - 0.03550774949134612
+        - - 2.2798977965762592
+          - 6.800448367707041
+          - 6.754302776583711
+        - - 2.2731274164508264
+          - 5.450545191693424
+          - 2.3562283030414757
+        - - 0.7653755606493635
+          - 5.884982799072076
+          - 4.888151336707131
+        - - 2.2755509998813985
+          - 3.852065263230319
+          - 4.458634465845025
+        - - 0.7632928836106265
+          - 1.3609431960504565
+          - 4.626685462315483
+        - - 0.7610496065553495
+          - 2.9366072557745544
+          - 2.592493443753247
+        - - 2.2689021467891983
+          - 3.5036925174512055
+          - -0.06212156493814404
+        - - 0.7697611380169483
+          - 9.158681927858382
+          - 7.045127422035794
+        - - 2.2787647121257186
+          - 1.9283630306044135
+          - 7.276882662011474
+        - - 2.271167276570613
+          - 0.5783908088712281
+          - 2.3016076335142883
+        - - 0.7695551564119865
+          - 1.0128890856175996
+          - 9.147381189886035
+        - - 0.7677971830462236
+          - 4.286523790506933
+          - 6.990547027156329
+        - - 2.2713682446214456
+          - 8.724171274140554
+          - 0.19935496931217045
+        elements:
+        - Ti
+        - Ti
+        - Ti
+        - Ti
+        - Ti
+        - Ti
+        - Ti
+        - Ti
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        abc:
+        - 3.023063
+        - 9.744311
+        - 9.37338
+        angles:
+        - 89.9982
+        - 90.0015
+        - 89.996
+        cartesian: true
+        props:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      slme: 3.16
+      magmom_oszicar: 0.0
+      spillage: na
+      elastic_tensor: na
+      effective_masses_300K:
+        p: na
+        n: na
+      kpoint_length_unit: 25
+      maxdiff_mesh: na
+      maxdiff_bz: na
+      encut: 1300
+      optb88vdw_total_energy: -7.00006
+      epsx: 7.5944
+      epsy: 6.6525
+      epsz: 5.2009
+      mepsx: 6.4569
+      mepsy: 5.6815
+      mepsz: 4.4732
+      modes: na
+      magmom_outcar: 0.0
+      max_efg: na
+      avg_elec_mass: na
+      avg_hole_mass: na
+      icsd: ''
+      dfpt_piezo_max_eij: na
+      dfpt_piezo_max_dij: na
+      dfpt_piezo_max_dielectric: na
+      dfpt_piezo_max_dielectric_electronic: na
+      dfpt_piezo_max_dielectric_ionic: na
+      max_ir_mode: na
+      min_ir_mode: na
+      n-Seebeck: na
+      p-Seebeck: na
+      n-powerfact: na
+      p-powerfact: na
+      ncond: na
+      pcond: na
+      nkappa: na
+      pkappa: na
+      ehull: 0.1004
+      Tc_supercon: na
+      dimensionality: 3D-bulk
+      efg: []
+      xml_data_link: <a href=https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-42549.xml target='_blank' >JVASP-42549</a>
+      typ: bulk
+      exfoliation_energy: na
+      spg: '62'
+      crys: orthorhombic
+      density: 3.842
+      poisson: na
+      raw_files:
+      - OPT-LOPTICS,JVASP-42549.zip,https://ndownloader.figshare.com/files/24809867
+      - OPT-Bandst,JVASP-42549.zip,https://ndownloader.figshare.com/files/23938646
+      - TBMBJ,JVASP-42549.zip,https://ndownloader.figshare.com/files/23671880
+      - DFT-SCF,JVASP-42549.zip,https://ndownloader.figshare.com/files/23366768
+      nat: 24
+      bulk_modulus_kv: na
+      shear_modulus_gv: na
+      mbj_bandgap: 3.146
+      hse_gap: na
+      reference: mp-849533
+      search: -O-Ti
+    last_updated: '2026-05-24'
 cross_db_discrepancies: {}
 coverage:
-  common_properties: []
-  properties_unique_to_source: {}
+  common_properties:
+  - band_gap
+  - density
+  - formation_energy_per_atom
+  - formula
+  - last_updated
+  - material_id
+  - raw
+  - spacegroup
+  properties_unique_to_source:
+    jarvis: []
 last_updated: '2026-05-24'

@@ -1,19 +1,279 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # Fe2O3
-# Synced at: 2026-05-24T04:42:47Z
+# Synced at: 2026-05-24T04:53:14Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
 # Disclaimer: Data sourced from third-party databases. All data remains the
 #   intellectual property of respective database providers under their
 #   applicable licenses. This aggregation is for research purposes only.
-# Sources: 
+# Sources: jarvis
 # ─────────────────────────────────────────────────────────────────────────────
 
 formula: Fe2O3
-databases: {}
+databases:
+  jarvis:
+    material_id: JVASP-87336
+    formula: Fe2O3
+    spacegroup: R-3c
+    band_gap: 0.0
+    formation_energy_per_atom: -1.40985
+    density: 6.084
+    raw:
+      jid: JVASP-87336
+      spg_number: '167'
+      spg_symbol: R-3c
+      formula: Fe2O3
+      formation_energy_peratom: -1.40985
+      func: OptB88vdW
+      optb88vdw_bandgap: 0.0
+      atoms:
+        lattice_mat:
+        - - 4.764309567972039
+          - 0.0
+          - 0.0
+        - - -2.3821547839860195
+          - 4.126013130530459
+          - -0.0
+        - - 0.0
+          - 0.0
+          - 13.302264674783942
+        coords:
+        - - 0.0
+          - 0.0
+          - 4.603611604217749
+        - - 9.511800227438508e-07
+          - 2.7506747086699868
+          - 6.820659371637702
+        - - 9.511800227438508e-07
+          - 2.7506747086699868
+          - 10.915696163202213
+        - - 9.511800227438508e-07
+          - 2.7506747086699868
+          - 0.169529371637706
+        - - 2.382159048819977
+          - 1.3753352913300132
+          - 2.3865638367977913
+        - - 2.382159048819977
+          - 1.3753352913300132
+          - 6.481600628362294
+        - - 9.511800227438508e-07
+          - 2.7506747086699868
+          - 4.2645661632022085
+        - - 2.382159048819977
+          - 1.3753352913300132
+          - 9.037693836797787
+        - - 0.0
+          - 0.0
+          - 11.254741604217745
+        - - 0.0
+          - 0.0
+          - 2.0475183957822516
+        - - 0.0
+          - 0.0
+          - 8.698648395782255
+        - - 2.382159048819977
+          - 1.3753352913300132
+          - 13.1327306283623
+        - - 3.1283685102652155
+          - 0.08286097191437555
+          - 1.1085172325800425
+        - - 0.7462104126252438
+          - 1.458200389254379
+          - 5.542612767419958
+        - - -0.7462085102652163
+          - 4.043149028085626
+          - 12.193742767419957
+        - - -1.492421104214542
+          - 2.7506747086699868
+          - 5.542612767419958
+        - - 1.492423006574555
+          - 2.7506747086699868
+          - 12.193742767419957
+        - - 3.128371642769321
+          - 2.6678096107456226
+          - 1.1085172325800425
+        - - 1.6359464548706846
+          - 0.08286097191437555
+          - 7.7596472325800425
+        - - 1.635949587374755
+          - 2.6678096107456226
+          - 7.7596472325800425
+        - - -0.746209461445238
+          - 1.2924743194156372
+          - 3.325565
+        - - 3.874581104214543
+          - 1.3753352913300132
+          - 7.7596472325800425
+        - - 0.7462125939493265
+          - 1.2924743194156372
+          - 9.976695
+        - - 1.635947406050673
+          - 2.8335356805843612
+          - 3.325565
+        - - -1.6359405385547614
+          - 2.8335356805843612
+          - 9.976695
+        - - -0.7462116427693211
+          - 1.458200389254379
+          - 12.193742767419957
+        - - 3.2718879446054343
+          - 0.0
+          - 9.976695
+        - - 1.4924220553945649
+          - 0.0
+          - 3.325565
+        - - 0.889736993425446
+          - 1.3753352913300132
+          - 1.1085172325800425
+        - - 0.7462135451293157
+          - 4.043149028085626
+          - 5.542612767419958
+        elements:
+        - Fe
+        - Fe
+        - Fe
+        - Fe
+        - Fe
+        - Fe
+        - Fe
+        - Fe
+        - Fe
+        - Fe
+        - Fe
+        - Fe
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        abc:
+        - 4.76431
+        - 4.764304
+        - 13.30226
+        angles:
+        - 90.0
+        - 90.0
+        - 120.0
+        cartesian: true
+        props:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      slme: na
+      magmom_oszicar: na
+      spillage: na
+      elastic_tensor: na
+      effective_masses_300K:
+        p: na
+        n: na
+      kpoint_length_unit: 30
+      maxdiff_mesh: na
+      maxdiff_bz: na
+      encut: 1100
+      optb88vdw_total_energy: -5.16266
+      epsx: 139.4098
+      epsy: 139.4098
+      epsz: 140.2535
+      mepsx: 267.5954
+      mepsy: 267.5954
+      mepsz: 258.5299
+      modes: na
+      magmom_outcar: 11.886
+      max_efg: na
+      avg_elec_mass: na
+      avg_hole_mass: na
+      icsd: ''
+      dfpt_piezo_max_eij: na
+      dfpt_piezo_max_dij: na
+      dfpt_piezo_max_dielectric: na
+      dfpt_piezo_max_dielectric_electronic: na
+      dfpt_piezo_max_dielectric_ionic: na
+      max_ir_mode: na
+      min_ir_mode: na
+      n-Seebeck: na
+      p-Seebeck: na
+      n-powerfact: na
+      p-powerfact: na
+      ncond: na
+      pcond: na
+      nkappa: na
+      pkappa: na
+      ehull: 0.0398
+      Tc_supercon: na
+      dimensionality: 3D-bulk
+      efg: []
+      xml_data_link: <a href=https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-87336.xml target='_blank' >JVASP-87336</a>
+      typ: bulk
+      exfoliation_energy: na
+      spg: '167'
+      crys: trigonal
+      density: 6.084
+      poisson: na
+      raw_files:
+      - OPT-LOPTICS,JVASP-87336.zip,https://ndownloader.figshare.com/files/25258586
+      - OPT-Bandst,JVASP-87336.zip,https://ndownloader.figshare.com/files/24012062
+      - TBMBJ,JVASP-87336.zip,https://ndownloader.figshare.com/files/23704985
+      - DFT-SCF,JVASP-87336.zip,https://ndownloader.figshare.com/files/23569235
+      nat: 10
+      bulk_modulus_kv: na
+      shear_modulus_gv: na
+      mbj_bandgap: 0.0
+      hse_gap: na
+      reference: mp-haematite
+      search: -Fe-O
+    last_updated: '2026-05-24'
 cross_db_discrepancies: {}
 coverage:
-  common_properties: []
-  properties_unique_to_source: {}
+  common_properties:
+  - band_gap
+  - density
+  - formation_energy_per_atom
+  - formula
+  - last_updated
+  - material_id
+  - raw
+  - spacegroup
+  properties_unique_to_source:
+    jarvis: []
 last_updated: '2026-05-24'

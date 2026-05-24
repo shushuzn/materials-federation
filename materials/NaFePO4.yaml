@@ -1,19 +1,205 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # NaFePO4
-# Synced at: 2026-05-24T04:43:14Z
+# Synced at: 2026-05-24T04:53:35Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
 # Disclaimer: Data sourced from third-party databases. All data remains the
 #   intellectual property of respective database providers under their
 #   applicable licenses. This aggregation is for research purposes only.
-# Sources: 
+# Sources: jarvis
 # ─────────────────────────────────────────────────────────────────────────────
 
 formula: NaFePO4
-databases: {}
+databases:
+  jarvis:
+    material_id: JVASP-48383
+    formula: NaFePO4
+    spacegroup: Cmcm
+    band_gap: 0.0
+    formation_energy_per_atom: -1.99266
+    density: 3.695
+    raw:
+      jid: JVASP-48383
+      spg_number: '63'
+      spg_symbol: Cmcm
+      formula: NaFePO4
+      formation_energy_peratom: -1.99266
+      func: OptB88vdW
+      optb88vdw_bandgap: 0.0
+      atoms:
+        lattice_mat:
+        - - 2.719421627743509
+          - 4.217623259375101
+          - -0.0
+        - - -2.719421627743509
+          - 4.217623259375101
+          - -0.0
+        - - 0.0
+          - 0.0
+          - 6.809379462012386
+        coords:
+        - - -4.719856140517495e-17
+          - 2.651319397714345
+          - 5.107035
+        - - -1.0375957347613221e-16
+          - 5.783920602285655
+          - 1.702345
+        - - 0.0
+          - 0.0
+          - 0.0
+        - - 0.0
+          - 0.0
+          - 3.40469
+        - - 5.443844992745609e-17
+          - 2.840393616307971
+          - 1.702345
+        - - -1.0315947714010645e-16
+          - 5.5948463836920315
+          - 5.107035
+        - - -1.2743919384130966
+          - 3.7499217007089154
+          - 1.702345
+        - - -1.274391938413097
+          - 4.685318299291085
+          - 5.107035
+        - - 1.3269994451110994e-17
+          - 1.9411633108571271
+          - 0.45150683205651326
+        - - 1.3269994451110994e-17
+          - 1.9411633108571271
+          - 2.953183167943488
+        - - 3.5451032761539364e-17
+          - 6.494076689142871
+          - 3.8561968320565123
+        - - 3.5451032761539364e-17
+          - 6.494076689142871
+          - 6.357873167943487
+        - - 1.2743919384130966
+          - 3.7499217007089154
+          - 1.702345
+        - - 1.274391938413097
+          - 4.685318299291085
+          - 5.107035
+        elements:
+        - Na
+        - Na
+        - Fe
+        - Fe
+        - P
+        - P
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        abc:
+        - 5.018323
+        - 5.018323
+        - 6.80938
+        angles:
+        - 90.0
+        - 90.0
+        - 65.6259
+        cartesian: true
+        props:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      slme: na
+      magmom_oszicar: 8.0
+      spillage: na
+      elastic_tensor: na
+      effective_masses_300K:
+        p:
+        - 0.0
+        - 0.0
+        - 0.0
+        n:
+        - 0.0
+        - 0.0
+        - 0.0
+      kpoint_length_unit: 25
+      maxdiff_mesh: na
+      maxdiff_bz: na
+      encut: 1300
+      optb88vdw_total_energy: -4.91008
+      epsx: 11.3496
+      epsy: 17.1384
+      epsz: 17.5463
+      mepsx: na
+      mepsy: na
+      mepsz: na
+      modes: na
+      magmom_outcar: 7.714
+      max_efg: na
+      avg_elec_mass: 0.0
+      avg_hole_mass: 0.0
+      icsd: ''
+      dfpt_piezo_max_eij: na
+      dfpt_piezo_max_dij: na
+      dfpt_piezo_max_dielectric: na
+      dfpt_piezo_max_dielectric_electronic: na
+      dfpt_piezo_max_dielectric_ionic: na
+      max_ir_mode: na
+      min_ir_mode: na
+      n-Seebeck: -15.696666666666667
+      p-Seebeck: -14.643333333333333
+      n-powerfact: 88.19333333333333
+      p-powerfact: 113.05999999999999
+      ncond: 55344.46333333334
+      pcond: 55622.176666666666
+      nkappa: 142422443000000.0
+      pkappa: 143271062666666.66
+      ehull: 0.0165
+      Tc_supercon: na
+      dimensionality: intercalated ion
+      efg: []
+      xml_data_link: <a href=https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-48383.xml target='_blank' >JVASP-48383</a>
+      typ: bulk
+      exfoliation_energy: na
+      spg: '63'
+      crys: orthorhombic
+      density: 3.695
+      poisson: na
+      raw_files:
+      - OPT-LOPTICS,JVASP-48383.zip,https://ndownloader.figshare.com/files/24827309
+      - OPT-Bandst,JVASP-48383.zip,https://ndownloader.figshare.com/files/23943698
+      - TBMBJ,JVASP-48383.zip,https://ndownloader.figshare.com/files/23668655
+      - DFT-SCF,JVASP-48383.zip,https://ndownloader.figshare.com/files/23431526
+      nat: 14
+      bulk_modulus_kv: na
+      shear_modulus_gv: na
+      mbj_bandgap: 0.0
+      hse_gap: na
+      reference: mp-763946
+      search: -Fe-Na-O-P
+    last_updated: '2026-05-24'
 cross_db_discrepancies: {}
 coverage:
-  common_properties: []
-  properties_unique_to_source: {}
+  common_properties:
+  - band_gap
+  - density
+  - formation_energy_per_atom
+  - formula
+  - last_updated
+  - material_id
+  - raw
+  - spacegroup
+  properties_unique_to_source:
+    jarvis: []
 last_updated: '2026-05-24'

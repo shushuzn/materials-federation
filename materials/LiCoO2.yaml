@@ -1,19 +1,243 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # LiCoO2
-# Synced at: 2026-05-24T04:43:10Z
+# Synced at: 2026-05-24T04:53:31Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
 # Disclaimer: Data sourced from third-party databases. All data remains the
 #   intellectual property of respective database providers under their
 #   applicable licenses. This aggregation is for research purposes only.
-# Sources: 
+# Sources: jarvis
 # ─────────────────────────────────────────────────────────────────────────────
 
 formula: LiCoO2
-databases: {}
+databases:
+  jarvis:
+    material_id: JVASP-2017
+    formula: LiCoO2
+    spacegroup: R-3m
+    band_gap: 1.005
+    formation_energy_per_atom: -1.67424
+    bulk_modulus: 159.77
+    shear_modulus: 94.66
+    poissons_ratio: 0.26
+    density: 5.009
+    raw:
+      jid: JVASP-2017
+      spg_number: '166'
+      spg_symbol: R-3m
+      formula: LiCoO2
+      formation_energy_peratom: -1.67424
+      func: OptB88vdW
+      optb88vdw_bandgap: 1.005
+      atoms:
+        lattice_mat:
+        - - 2.719107444543845
+          - -0.0026368620468886
+          - 4.091454210468751
+        - - 1.2336111436928858
+          - 2.4231705252007414
+          - 4.09145421041583
+        - - -0.0043067956393876
+          - -0.0026368651011636
+          - 4.912588639904387
+        coords:
+        - - 1.9742050000000002
+          - 1.208945
+          - 6.547745
+        - - 0.0
+          - 0.0
+          - 0.0
+        - - 1.0266700367557504
+          - 0.6287024942117247
+          - 3.4051041304288234
+        - - 2.92173996324425
+          - 1.7891875057882751
+          - 9.690385869571177
+        elements:
+        - Li
+        - Co
+        - O
+        - O
+        abc:
+        - 4.912589
+        - 4.912587
+        - 4.912593
+        angles:
+        - 33.6576
+        - 33.6576
+        - 33.6576
+        cartesian: true
+        props:
+        - ''
+        - ''
+        - ''
+        - ''
+      slme: na
+      magmom_oszicar: 0.0
+      spillage: na
+      elastic_tensor:
+      - - 356.5
+        - 107.5
+        - 71.3
+        - 0.0
+        - 5.0
+        - 0.0
+      - - 107.5
+        - 356.5
+        - 71.3
+        - 0.0
+        - -5.0
+        - 0.0
+      - - 71.3
+        - 71.3
+        - 224.7
+        - 0.0
+        - 0.0
+        - 0.0
+      - - 0.0
+        - 0.0
+        - 0.0
+        - 124.5
+        - 0.0
+        - 5.0
+      - - 5.0
+        - -5.0
+        - 0.0
+        - 0.0
+        - 59.8
+        - 0.0
+      - - 0.0
+        - 0.0
+        - 0.0
+        - 5.0
+        - 0.0
+        - 59.8
+      effective_masses_300K:
+        p:
+        - 4.32
+        - 4.25
+        - 5.36
+        n:
+        - 1.55
+        - 1.53
+        - 1.91
+      kpoint_length_unit: 20
+      maxdiff_mesh: na
+      maxdiff_bz: na
+      encut: 1150
+      optb88vdw_total_energy: -4.60248
+      epsx: 10.9276
+      epsy: 11.1483
+      epsz: 7.3967
+      mepsx: na
+      mepsy: na
+      mepsz: na
+      modes:
+      - -0.04
+      - -0.04
+      - 0.03
+      - 233.51
+      - 233.51
+      - 384.85
+      - 453.11
+      - 453.11
+      - 522.18
+      - 522.18
+      - 525.01
+      - 579.63
+      magmom_outcar: 0.0
+      max_efg: 22.495
+      avg_elec_mass: na
+      avg_hole_mass: na
+      icsd: 246411,246412,246413,246414,155284,29225,182442,182443,182444,51759,51381,51382,182346,164801,164802,160714,98270,164320,161384,156395,172909,51182,180989
+      dfpt_piezo_max_eij: 0.0
+      dfpt_piezo_max_dij: 0.0
+      dfpt_piezo_max_dielectric: 18.379257459999998
+      dfpt_piezo_max_dielectric_electronic: 9.6708458
+      dfpt_piezo_max_dielectric_ionic: 8.70841166
+      max_ir_mode: 1.95
+      min_ir_mode: 0.18
+      n-Seebeck: -419.7633333333333
+      p-Seebeck: 460.3433333333333
+      n-powerfact: 2289.786666666667
+      p-powerfact: 995.8633333333333
+      ncond: 12995.686666666666
+      pcond: 4689.006666666667
+      nkappa: 149722653333333.28
+      pkappa: 62375503666666.664
+      ehull: 0.0227
+      Tc_supercon: na
+      dimensionality: intercalated ion
+      efg:
+      - - Li
+        - b
+        - '-0.152'
+        - '0.03'
+        - '0.161'
+        - '0.03'
+        - '-0.182'
+        - '0.099'
+        - '0.161'
+        - '0.099'
+        - '0.334'
+      - - O
+        - c
+        - '10.225'
+        - '-2.004'
+        - '-10.851'
+        - '-2.004'
+        - '12.27'
+        - '-6.645'
+        - '-10.851'
+        - '-6.645'
+        - '-22.495'
+      - - Co
+        - a
+        - '-2.694'
+        - '0.527'
+        - '2.86'
+        - '0.527'
+        - '-3.233'
+        - '1.751'
+        - '2.86'
+        - '1.751'
+        - '5.927'
+      xml_data_link: <a href=https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-2017.xml target='_blank' >JVASP-2017</a>
+      typ: bulk
+      exfoliation_energy: na
+      spg: '166'
+      crys: trigonal
+      density: 5.009
+      poisson: 0.26
+      raw_files:
+      - FD-ELAST,JVASP-2017.zip,https://ndownloader.figshare.com/files/22976552
+      - DFPT,JVASP-2017.zip,https://ndownloader.figshare.com/files/22942544
+      - OPT-LOPTICS,JVASP-2017.zip,https://ndownloader.figshare.com/files/24037016
+      - OPT-Bandst,JVASP-2017.zip,https://ndownloader.figshare.com/files/23712086
+      - DFT-SCF,JVASP-2017.zip,https://ndownloader.figshare.com/files/23152790
+      nat: 4
+      bulk_modulus_kv: 159.77
+      shear_modulus_gv: 94.66
+      mbj_bandgap: na
+      hse_gap: na
+      reference: mp-24850
+      search: -Co-Li-O
+    last_updated: '2026-05-24'
 cross_db_discrepancies: {}
 coverage:
-  common_properties: []
-  properties_unique_to_source: {}
+  common_properties:
+  - band_gap
+  - bulk_modulus
+  - density
+  - formation_energy_per_atom
+  - formula
+  - last_updated
+  - material_id
+  - poissons_ratio
+  - raw
+  - shear_modulus
+  - spacegroup
+  properties_unique_to_source:
+    jarvis: []
 last_updated: '2026-05-24'

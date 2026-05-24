@@ -1,19 +1,293 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # SrTiO3
-# Synced at: 2026-05-24T04:43:29Z
+# Synced at: 2026-05-24T04:53:43Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
 # Disclaimer: Data sourced from third-party databases. All data remains the
 #   intellectual property of respective database providers under their
 #   applicable licenses. This aggregation is for research purposes only.
-# Sources: 
+# Sources: jarvis
 # ─────────────────────────────────────────────────────────────────────────────
 
 formula: SrTiO3
-databases: {}
+databases:
+  jarvis:
+    material_id: JVASP-1237
+    formula: SrTiO3
+    spacegroup: I4/mcm
+    band_gap: 1.906
+    formation_energy_per_atom: -3.41872
+    bulk_modulus: 178.36
+    shear_modulus: 96.91
+    poissons_ratio: 0.27
+    density: 5.022
+    raw:
+      jid: JVASP-1237
+      spg_number: '140'
+      spg_symbol: I4/mcm
+      formula: SrTiO3
+      formation_energy_peratom: -3.41872
+      func: OptB88vdW
+      optb88vdw_bandgap: 1.906
+      atoms:
+        lattice_mat:
+        - - 4.803531147895835
+          - 7.422956e-10
+          - -2.7727819082664227
+        - - -1.600555774930433
+          - 4.529032154821126
+          - -2.7727819094286557
+        - - 0.0086851998935507
+          - 0.0122815156917304
+          - 5.562225150786338
+        coords:
+        - - 3.2068525
+          - 1.1383975
+          - 0.00833499999999976
+        - - 0.004807500000000088
+          - 3.4029125
+          - 0.00833499999999976
+        - - 1.6014850000000003
+          - 2.264515
+          - -2.77278
+        - - 0.0
+          - 0.0
+          - 0.0
+        - - 3.276056023119465
+          - 1.2362558102131793
+          - -2.9001204833224716
+        - - 2.255172934573736
+          - 3.500770810212375
+          - -4.159170000000518
+        - - 0.9477970654262626
+          - 1.0282591897876256
+          - -1.386389999999482
+        - - -0.07308602311946391
+          - 3.2927741897868192
+          - -2.645439516677528
+        - - 0.8050875000000002
+          - 1.1383975
+          - 1.3947249999999998
+        - - 2.4065725000000002
+          - 3.4029125
+          - -1.3780549999999998
+        elements:
+        - Sr
+        - Sr
+        - Ti
+        - Ti
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        abc:
+        - 5.546369
+        - 5.546369
+        - 5.56225
+        angles:
+        - 119.9057
+        - 119.9056
+        - 90.0001
+        cartesian: true
+        props:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      slme: na
+      magmom_oszicar: 0.0
+      spillage: na
+      elastic_tensor:
+      - - 314.0
+        - 90.1
+        - 117.0
+        - 0.0
+        - 0.0
+        - 0.0
+      - - 90.1
+        - 314.0
+        - 117.0
+        - 0.0
+        - 0.0
+        - 0.0
+      - - 117.0
+        - 117.0
+        - 329.0
+        - 0.0
+        - 0.0
+        - 0.0
+      - - 0.0
+        - 0.0
+        - 0.0
+        - 116.2
+        - 0.0
+        - 0.0
+      - - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 78.7
+        - 0.0
+      - - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 78.7
+      effective_masses_300K:
+        p:
+        - 2.48
+        - 2.23
+        - 1.98
+        n:
+        - 0.7
+        - 0.68
+        - 0.67
+      kpoint_length_unit: 30
+      maxdiff_mesh: na
+      maxdiff_bz: na
+      encut: 1250
+      optb88vdw_total_energy: -6.21253
+      epsx: 6.4069
+      epsy: 6.4088
+      epsz: 6.4107
+      mepsx: na
+      mepsy: na
+      mepsz: na
+      modes:
+      - -72.67
+      - -69.48
+      - 0.23
+      - 0.23
+      - 0.36
+      - 34.71
+      - 117.1
+      - 139.9
+      - 144.13
+      - 162.24
+      - 169.52
+      - 250.02
+      - 259.39
+      - 420.08
+      - 423.3
+      - 432.98
+      - 433.85
+      - 458.29
+      - 465.98
+      - 520.26
+      - 523.51
+      - 812.33
+      magmom_outcar: 0.0
+      max_efg: 9.715
+      avg_elec_mass: 0.6833333333333332
+      avg_hole_mass: 2.23
+      icsd: 182248,170091,56718,182247
+      dfpt_piezo_max_eij: na
+      dfpt_piezo_max_dij: na
+      dfpt_piezo_max_dielectric: na
+      dfpt_piezo_max_dielectric_electronic: na
+      dfpt_piezo_max_dielectric_ionic: na
+      max_ir_mode: na
+      min_ir_mode: na
+      n-Seebeck: -317.48333333333335
+      p-Seebeck: 421.14333333333326
+      n-powerfact: 3843.5099999999998
+      p-powerfact: 2317.5433333333335
+      ncond: 38139.50666666666
+      pcond: 13336.406666666668
+      nkappa: 270052229999999.97
+      pkappa: 152038186666666.62
+      ehull: 0.0
+      Tc_supercon: na
+      dimensionality: intercalated ion
+      efg:
+      - - O
+        - h
+        - '6.868'
+        - '-9.715'
+        - '0.325'
+        - '-9.715'
+        - '0.001'
+        - '0.46'
+        - '0.325'
+        - '0.46'
+        - '-6.869'
+      - - O
+        - a
+        - '-3.35'
+        - '4.736'
+        - '5.802'
+        - '4.736'
+        - '-0.003'
+        - '8.205'
+        - '5.802'
+        - '8.205'
+        - '3.353'
+      - - Ti
+        - c
+        - '-0.492'
+        - '0.698'
+        - '0.855'
+        - '0.698'
+        - '-0.001'
+        - '1.208'
+        - '0.855'
+        - '1.208'
+        - '0.494'
+      - - Sr
+        - b
+        - '3.733'
+        - '-5.275'
+        - '-6.462'
+        - '-5.275'
+        - '0.002'
+        - '-9.14'
+        - '-6.462'
+        - '-9.14'
+        - '-3.735'
+      xml_data_link: <a href=https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-1237.xml target='_blank' >JVASP-1237</a>
+      typ: bulk
+      exfoliation_energy: na
+      spg: '140'
+      crys: tetragonal
+      density: 5.022
+      poisson: 0.27
+      raw_files:
+      - FD-ELAST,JVASP-1237.zip,https://ndownloader.figshare.com/files/22975727
+      - OPT-LOPTICS,JVASP-1237.zip,https://ndownloader.figshare.com/files/24036404
+      - OPT-Bandst,JVASP-1237.zip,https://ndownloader.figshare.com/files/23713760
+      - DFT-SCF,JVASP-1237.zip,https://ndownloader.figshare.com/files/23127590
+      nat: 10
+      bulk_modulus_kv: 178.36
+      shear_modulus_gv: 96.91
+      mbj_bandgap: na
+      hse_gap: na
+      reference: mp-4651
+      search: -O-Sr-Ti
+    last_updated: '2026-05-24'
 cross_db_discrepancies: {}
 coverage:
-  common_properties: []
-  properties_unique_to_source: {}
+  common_properties:
+  - band_gap
+  - bulk_modulus
+  - density
+  - formation_energy_per_atom
+  - formula
+  - last_updated
+  - material_id
+  - poissons_ratio
+  - raw
+  - shear_modulus
+  - spacegroup
+  properties_unique_to_source:
+    jarvis: []
 last_updated: '2026-05-24'

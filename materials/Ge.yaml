@@ -1,19 +1,194 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # Ge
-# Synced at: 2026-05-24T04:42:13Z
+# Synced at: 2026-05-24T04:52:55Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
 # Disclaimer: Data sourced from third-party databases. All data remains the
 #   intellectual property of respective database providers under their
 #   applicable licenses. This aggregation is for research purposes only.
-# Sources: 
+# Sources: jarvis
 # ─────────────────────────────────────────────────────────────────────────────
 
 formula: Ge
-databases: {}
+databases:
+  jarvis:
+    material_id: JVASP-14658
+    formula: Ge
+    spacegroup: Fd-3m
+    band_gap: 0.0
+    formation_energy_per_atom: 0.0
+    bulk_modulus: 58.07
+    shear_modulus: 43.96
+    poissons_ratio: 0.2
+    density: 5.054
+    raw:
+      jid: JVASP-14658
+      spg_number: '227'
+      spg_symbol: Fd-3m
+      formula: Ge
+      formation_energy_peratom: 0.0
+      func: OptB88vdW
+      optb88vdw_bandgap: 0.0
+      atoms:
+        lattice_mat:
+        - - 3.5261970751931746
+          - 1.194464e-10
+          - 2.0358513376187646
+        - - 1.1753986921101238
+          - 3.324530406922876
+          - 2.0358513376187646
+        - - -4.615055e-10
+          - -3.263337e-10
+          - 4.0717016768362315
+        coords:
+        - - 4.1139
+          - 2.9089637500000003
+          - 7.125475
+        - - 0.5877
+          - 0.41556625
+          - 1.017925
+        elements:
+        - Ge
+        - Ge
+        abc:
+        - 4.071704
+        - 4.071701
+        - 4.0717
+        angles:
+        - 60.0
+        - 60.0
+        - 60.0
+        cartesian: true
+        props:
+        - ''
+        - ''
+      slme: na
+      magmom_oszicar: 0.0
+      spillage: na
+      elastic_tensor:
+      - - 100.6
+        - 36.8
+        - 36.8
+        - 0.0
+        - -0.0
+        - 0.0
+      - - 36.8
+        - 100.6
+        - 36.8
+        - 0.0
+        - 0.0
+        - -0.0
+      - - 36.8
+        - 36.8
+        - 100.6
+        - -0.0
+        - 0.0
+        - 0.0
+      - - 0.0
+        - 0.0
+        - -0.0
+        - 52.0
+        - 0.0
+        - 0.0
+      - - -0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 52.0
+        - -0.0
+      - - 0.0
+        - -0.0
+        - 0.0
+        - -0.0
+        - -0.0
+        - 52.0
+      effective_masses_300K:
+        p:
+        - 0.0
+        - 0.0
+        - 0.0
+        n:
+        - 0.0
+        - 0.0
+        - 0.0
+      kpoint_length_unit: 70
+      maxdiff_mesh: na
+      maxdiff_bz: na
+      encut: 500
+      optb88vdw_total_energy: -1.06666
+      epsx: 27.4858
+      epsy: 27.4858
+      epsz: 27.4858
+      mepsx: na
+      mepsy: na
+      mepsz: na
+      modes:
+      - 0.0
+      - 0.0
+      - 0.0
+      - 71.4
+      - 221.87
+      - 248.16
+      - 271.55
+      magmom_outcar: 0.0
+      max_efg: na
+      avg_elec_mass: 0.0
+      avg_hole_mass: 0.0
+      icsd: 44610,600774,44841,53642,76267,636527,636528,76146,636535,53788,181071,41980,54237,43422
+      dfpt_piezo_max_eij: na
+      dfpt_piezo_max_dij: na
+      dfpt_piezo_max_dielectric: na
+      dfpt_piezo_max_dielectric_electronic: na
+      dfpt_piezo_max_dielectric_ionic: na
+      max_ir_mode: na
+      min_ir_mode: na
+      n-Seebeck: -92.37
+      p-Seebeck: 48.65
+      n-powerfact: 2428.6333333333337
+      p-powerfact: 444.08
+      ncond: 284659.3466666667
+      pcond: 187647.94666666668
+      nkappa: 687539213333333.4
+      pkappa: 618065106666666.6
+      ehull: 0.0
+      Tc_supercon: na
+      dimensionality: 3D-bulk
+      efg: []
+      xml_data_link: <a href=https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-14658.xml target='_blank' >JVASP-14658</a>
+      typ: bulk
+      exfoliation_energy: na
+      spg: '227'
+      crys: cubic
+      density: 5.054
+      poisson: 0.2
+      raw_files:
+      - FD-ELAST,JVASP-14658.zip,https://ndownloader.figshare.com/files/22989080
+      - OPT-LOPTICS,JVASP-14658.zip,https://ndownloader.figshare.com/files/24247886
+      - OPT-Bandst,JVASP-14658.zip,https://ndownloader.figshare.com/files/23790626
+      - DFT-SCF,JVASP-14658.zip,https://ndownloader.figshare.com/files/23217941
+      nat: 2
+      bulk_modulus_kv: 58.07
+      shear_modulus_gv: 43.96
+      mbj_bandgap: na
+      hse_gap: na
+      reference: mp-32
+      search: -Ge
+    last_updated: '2026-05-24'
 cross_db_discrepancies: {}
 coverage:
-  common_properties: []
-  properties_unique_to_source: {}
+  common_properties:
+  - band_gap
+  - bulk_modulus
+  - density
+  - formation_energy_per_atom
+  - formula
+  - last_updated
+  - material_id
+  - poissons_ratio
+  - raw
+  - shear_modulus
+  - spacegroup
+  properties_unique_to_source:
+    jarvis: []
 last_updated: '2026-05-24'

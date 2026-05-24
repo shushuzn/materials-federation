@@ -1,19 +1,215 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # GaN
-# Synced at: 2026-05-24T04:42:23Z
+# Synced at: 2026-05-24T04:53:00Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
 # Disclaimer: Data sourced from third-party databases. All data remains the
 #   intellectual property of respective database providers under their
 #   applicable licenses. This aggregation is for research purposes only.
-# Sources: 
+# Sources: jarvis
 # ─────────────────────────────────────────────────────────────────────────────
 
 formula: GaN
-databases: {}
+databases:
+  jarvis:
+    material_id: JVASP-8169
+    formula: GaN
+    spacegroup: F-43m
+    band_gap: 1.786
+    formation_energy_per_atom: -0.56774
+    bulk_modulus: 178.67
+    shear_modulus: 114.16
+    poissons_ratio: 0.25
+    density: 5.941
+    raw:
+      jid: JVASP-8169
+      spg_number: '216'
+      spg_symbol: F-43m
+      formula: GaN
+      formation_energy_peratom: -0.56774
+      func: OptB88vdW
+      optb88vdw_bandgap: 1.786
+      atoms:
+        lattice_mat:
+        - - 2.7805059713099647
+          - 0.0
+          - 1.6053257450263214
+        - - 0.9268353237699882
+          - 2.621486121264764
+          - 1.6053257450263214
+        - - -0.0
+          - 0.0
+          - 3.210651490052643
+        coords:
+        - - 0.0
+          - 0.0
+          - 0.0
+        - - 0.9268375
+          - 0.6553725
+          - 1.6053275
+        elements:
+        - Ga
+        - N
+        abc:
+        - 3.210657
+        - 3.210658
+        - 3.21065
+        angles:
+        - 60.0
+        - 60.0
+        - 59.9999
+        cartesian: true
+        props:
+        - ''
+        - ''
+      slme: 5.87
+      magmom_oszicar: 0.0
+      spillage: na
+      elastic_tensor:
+      - - 261.4
+        - 137.3
+        - 137.3
+        - 0.0
+        - 0.0
+        - 0.0
+      - - 137.3
+        - 261.4
+        - 137.3
+        - 0.0
+        - -0.0
+        - -0.0
+      - - 137.3
+        - 137.3
+        - 261.4
+        - 0.0
+        - -0.0
+        - 0.0
+      - - 0.0
+        - 0.0
+        - 0.0
+        - 148.9
+        - 0.0
+        - 0.0
+      - - 0.0
+        - -0.0
+        - -0.0
+        - -0.0
+        - 148.9
+        - 0.0
+      - - 0.0
+        - -0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 148.9
+      effective_masses_300K:
+        p:
+        - 1.18
+        - 1.18
+        - 1.18
+        n:
+        - 0.21
+        - 0.21
+        - 0.21
+      kpoint_length_unit: 25
+      maxdiff_mesh: na
+      maxdiff_bz: na
+      encut: 900
+      optb88vdw_total_energy: -3.70586
+      epsx: 6.0401
+      epsy: 6.0401
+      epsz: 6.0401
+      mepsx: 4.5928
+      mepsy: 4.5928
+      mepsz: 4.5928
+      modes:
+      - 0.04
+      - 0.04
+      - 0.04
+      - 528.13
+      magmom_outcar: 0.0
+      max_efg: 0.0
+      avg_elec_mass: 0.21
+      avg_hole_mass: 1.18
+      icsd: 41546,156260,67781,157511
+      dfpt_piezo_max_eij: 1.02953
+      dfpt_piezo_max_dij: 6.914237743451982
+      dfpt_piezo_max_dielectric: 10.7998088
+      dfpt_piezo_max_dielectric_electronic: 6.13108648
+      dfpt_piezo_max_dielectric_ionic: 4.66872232
+      max_ir_mode: 2.46
+      min_ir_mode: 2.46
+      n-Seebeck: -59.54
+      p-Seebeck: 335.27
+      n-powerfact: 397.28
+      p-powerfact: 2896.346666666667
+      ncond: 112074.80666666666
+      pcond: 25766.77
+      nkappa: 176534750000000.1
+      pkappa: 205883706666666.72
+      ehull: 0.0033
+      Tc_supercon: na
+      dimensionality: 3D-bulk
+      efg:
+      - - Ga
+        - a
+        - '0.0'
+        - '0.0'
+        - '0.0'
+        - '0.0'
+        - '-0.0'
+        - '-0.0'
+        - '0.0'
+        - '-0.0'
+        - '-0.0'
+      - - N
+        - c
+        - '-0.0'
+        - '0.0'
+        - '0.0'
+        - '0.0'
+        - '0.0'
+        - '0.0'
+        - '0.0'
+        - '0.0'
+        - '0.0'
+      xml_data_link: <a href=https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-8169.xml target='_blank' >JVASP-8169</a>
+      typ: bulk
+      exfoliation_energy: na
+      spg: '216'
+      crys: cubic
+      density: 5.941
+      poisson: 0.25
+      raw_files:
+      - FD-ELAST,JVASP-8169.zip,https://ndownloader.figshare.com/files/22978904
+      - DFPT,JVASP-8169.zip,https://ndownloader.figshare.com/files/22945757
+      - OPT-LOPTICS,JVASP-8169.zip,https://ndownloader.figshare.com/files/24218978
+      - OPT-Bandst,JVASP-8169.zip,https://ndownloader.figshare.com/files/23720255
+      - TBMBJ,JVASP-8169.zip,https://ndownloader.figshare.com/files/23603462
+      - DFT-SCF,JVASP-8169.zip,https://ndownloader.figshare.com/files/23159240
+      nat: 2
+      bulk_modulus_kv: 178.67
+      shear_modulus_gv: 114.16
+      mbj_bandgap: 2.903
+      hse_gap: na
+      reference: mp-830
+      search: -Ga-N
+    last_updated: '2026-05-24'
 cross_db_discrepancies: {}
 coverage:
-  common_properties: []
-  properties_unique_to_source: {}
+  common_properties:
+  - band_gap
+  - bulk_modulus
+  - density
+  - formation_energy_per_atom
+  - formula
+  - last_updated
+  - material_id
+  - poissons_ratio
+  - raw
+  - shear_modulus
+  - spacegroup
+  properties_unique_to_source:
+    jarvis: []
 last_updated: '2026-05-24'
