@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """
-Materials Federation Sync — jarvis-tools + OPTIMADE 标准
+Materials Federation Sync — jarvis-tools + HuggingFace MP + OPTIMADE
 主要数据源:
   - JARVIS: jarvis-tools (figshare 本地数据集, 75k+ 材料)
+  - MP: HuggingFace colabfit/Materials_Project (parquet, 含 electronic_band_gap)
   - MP/OQMD/AFLOW/NOMAD: OPTIMADE / REST API
-无重型依赖(pymatgen/mp-api)，只需 requests + pyyaml + jarvis-tools
+无重型依赖(pymatgen/mp-api)，只需 requests + pyyaml + jarvis-tools + pyarrow
 """
 
 import os
@@ -80,17 +81,16 @@ class DbEntry:
 
 
 # ── JARVIS 数据源 (jarvis-tools figshare) ────────────────────────────────
-# 全局缓存，避免每次运行都下载数据集
 _JARVIS_CACHE = {}  # formula -> jarvis entry dict
 
 
 def _ensure_jarvis_cache():
     """懒加载 JARVIS 3D DFT 数据集到内存缓存"""
     if _JARVIS_CACHE:
-        return  # 已有缓存
+        return
     try:
         from jarvis.db.figshare import data
-        log.info("[JARVIS] Loading 3D DFT dataset from figshare (first run may take ~1 min)...")
+        log.info("[JARVIS] Loading 3D DFT dataset from figshare (first run ~1 min)...")
         dft3d = data("dft_3d")
         for entry in dft3d:
             formula = entry.get("formula", "")
@@ -104,13 +104,9 @@ def _ensure_jarvis_cache():
 def jarvis_fetch_by_formula(formula: str) -> Optional[DbEntry]:
     """用 formula 在本地 JARVIS 数据集中查找第一条记录"""
     _ensure_jarvis_cache()
-    cache_size = len(_JARVIS_CACHE)
     entry = _JARVIS_CACHE.get(formula)
     if not entry:
-        log.warning(f"[JARVIS] No entry for formula={formula!r} in cache of {cache_size} formulas. Sample keys: {list(_JARVIS_CACHE.keys())[:3]}")
         return None
-
-    # 字段映射: JARVIS -> DbEntry
     return DbEntry(
         source="jarvis",
         material_id=entry.get("jid", ""),
@@ -125,6 +121,128 @@ def jarvis_fetch_by_formula(formula: str) -> Optional[DbEntry]:
         raw=entry,
         last_updated=time.strftime("%Y-%m-%d"),
     )
+
+
+# ── HuggingFace MP 数据源 (colabfit/Materials_Project parquet) ─────────────
+# 全局缓存: formula -> DbEntry
+_MP_HF_CACHE = {}  # formula -> DbEntry
+_MP_HF_SHARD_INDEX = {}  # formula -> shard index (for fast lookup next time)
+_MP_HF_SHARD_COUNT = 64  # total number of co/*.parquet shards
+
+
+def _mp_hf_shard_url(shard_idx: int) -> str:
+    return f"https://huggingface.co/datasets/colabfit/Materials_Project/resolve/main/co/co_{shard_idx}.parquet"
+
+
+def _mp_hf_download_shard(shard_idx: int, cache_dir: Path) -> Optional[Path]:
+    """下载单个 parquet 分片到缓存目录"""
+    url = _mp_hf_shard_url(shard_idx)
+    dest = cache_dir / f"co_{shard_idx}.parquet"
+    if dest.exists():
+        return dest
+    try:
+        log.debug(f"[MP-HF] Downloading shard {shard_idx}/{_MP_HF_SHARD_COUNT}...")
+        r = requests.get(url, headers=HEADERS, timeout=60)
+        r.raise_for_status()
+        dest.write_bytes(r.content)
+        return dest
+    except Exception as e:
+        log.debug(f"[MP-HF] Failed to download shard {shard_idx}: {e}")
+        return None
+
+
+def _mp_hf_search_in_shard(shard_path: Path, formula: str) -> Optional[DbEntry]:
+    """在单个分片中搜索 formula"""
+    try:
+        import pyarrow.parquet as pq
+        # 只读取需要的列（避免加载全量数据）
+        table = pq.read_table(
+            str(shard_path),
+            columns=["chemical_formula_reduced", "electronic_band_gap",
+                     "chemical_formula_hill", "formation_energy"]
+        )
+        df = table.to_pandas()
+        rows = df[df["chemical_formula_reduced"] == formula]
+        if rows.empty:
+            return None
+        # 取第一条（可按 band_gap 非空优先）
+        row = rows.sort_values("electronic_band_gap", ascending=False, na_position="last").iloc[0]
+        return DbEntry(
+            source="materials_project",
+            material_id=str(row.get("property_id", formula)),
+            formula=str(row["chemical_formula_reduced"]),
+            band_gap=_float(row["electronic_band_gap"]) if row["electronic_band_gap"] is not None and not (isinstance(row["electronic_band_gap"], float) and str(row["electronic_band_gap"]) == "nan") else None,
+            formation_energy=_float(row["formation_energy"]) if row["formation_energy"] is not None and not (isinstance(row["formation_energy"], float) and str(row["formation_energy"]) == "nan") else None,
+            raw=row.to_dict(),
+            last_updated=time.strftime("%Y-%m-%d"),
+        )
+    except Exception as e:
+        log.debug(f"[MP-HF] Error reading shard {shard_path}: {e}")
+        return None
+
+
+def _mp_hf_load_full_index(cache_dir: Path) -> dict:
+    """加载已缓存的分片索引"""
+    index_file = cache_dir / "shard_index.json"
+    if index_file.exists():
+        try:
+            with open(index_file) as f:
+                return json.load(f)
+        except:
+            pass
+    return {}
+
+
+def _mp_hf_save_index(cache_dir: Path, index: dict):
+    """保存分片索引"""
+    cache_dir.mkdir(parents=True, exist_ok=True)
+    with open(cache_dir / "shard_index.json", "w") as f:
+        json.dump(index, f)
+
+
+def mp_hf_fetch(formula: str) -> Optional[DbEntry]:
+    """
+    从 HuggingFace colabfit/Materials_Project parquet 分片查找 MP 数据。
+    使用分片索引加速：已知某 formula 在某个分片后，下次直接查该分片。
+    """
+    global _MP_HF_CACHE, _MP_HF_SHARD_INDEX
+
+    if formula in _MP_HF_CACHE:
+        return _MP_HF_CACHE[formula]
+
+    # 确定要扫描的分片列表（优先索引命中的）
+    cache_dir = Path("/tmp/mp_parquet_cache")
+    shard_index = _mp_hf_load_full_index(cache_dir)
+
+    # 优先检查已知分片
+    priority_shards = []
+    if formula in shard_index:
+        priority_shards = [shard_index[formula]]
+    else:
+        # 从后往前扫（后部分片数据量小，先扫）
+        priority_shards = list(range(_MP_HF_SHARD_COUNT - 1, -1, -1))
+
+    scanned = 0
+    for idx in priority_shards:
+        shard_path = _mp_hf_download_shard(idx, cache_dir)
+        if not shard_path:
+            continue
+
+        result = _mp_hf_search_in_shard(shard_path, formula)
+        if result:
+            _MP_HF_CACHE[formula] = result
+            shard_index[formula] = idx
+            _mp_hf_save_index(cache_dir, shard_index)
+            log.info(f"  [mp-hf] found {formula} in shard {idx}")
+            return result
+
+        scanned += 1
+        # 最多扫描 8 个分片（控制下载量）
+        if scanned >= 8:
+            log.debug(f"[MP-HF] Scanned {scanned} shards for {formula}, stopping")
+            break
+
+    return None
 
 
 # ── OPTIMADE Fetchers ─────────────────────────────────
@@ -191,7 +309,8 @@ def optimade_to_dbentry(data_items: list, db_source: str) -> Optional[DbEntry]:
 # ── 各库专用 Fetcher ──────────────────────────────────
 
 def mp_fetch(material_id: str = None, formula: str = None, api_key: str = None) -> Optional[DbEntry]:
-    """Materials Project — OPTIMADE endpoint"""
+    """Materials Project — OPTIMADE endpoint + REST fallback"""
+    # OPTIMADE
     data = optimade_fetch(
         "https://optimade.materialsproject.org",
         "materials_project",
@@ -203,20 +322,16 @@ def mp_fetch(material_id: str = None, formula: str = None, api_key: str = None) 
 
     api_key = api_key or os.environ.get("MP_API_KEY", "")
     if not api_key:
-        log.debug("[MP] No API key, skipping")
+        log.debug("[MP] No API key, skipping REST")
         return None
 
-    # Try REST API (supports formula lookup via /MaterialsSnapshot)
+    # REST API
     query = material_id or formula
     url = f"https://materialsproject.org/rest/v2/materials/{query}/vasp"
-    log.warning(f"[MP] REST query: {url}")
     try:
         headers = {"X-API-Key": api_key, **HEADERS}
-        if material_id:
-            headers["User-Agent"] = HEADERS["User-Agent"]
         r = requests.get(url, headers=headers, timeout=30)
         if r.status_code == 404:
-            log.debug(f"[MP] REST 404 for {material_id or formula}")
             return None
         r.raise_for_status()
         d = r.json()
@@ -311,7 +426,13 @@ def nomad_fetch(nomad_id: str = None, formula: str = None) -> Optional[DbEntry]:
 
 def _float(v) -> Optional[float]:
     try:
-        return float(v)
+        if v is None:
+            return None
+        f = float(v)
+        # filter out NaN
+        if f != f:  # NaN check
+            return None
+        return f
     except (TypeError, ValueError):
         return None
 
@@ -415,8 +536,7 @@ def sync_one(item: dict) -> dict:
     databases = existing.get("databases", {})
     updated = False
 
-    # 先串行跑 JARVIS（快，本地数据集），再并行查其他库
-    # JARVIS 必须先跑，因为它不依赖网络
+    # ── JARVIS (强制同步，jarvis-tools 本地数据集) ──────────────
     _ensure_jarvis_cache()
     if formula in _JARVIS_CACHE:
         entry = _JARVIS_CACHE[formula]
@@ -439,16 +559,16 @@ def sync_one(item: dict) -> dict:
         log.info(f"  [jarvis] {result.material_id} ← {result.formula}")
 
     futures = {}
-    with ThreadPoolExecutor(max_workers=4) as executor:
-        # MP — OPTIMADE优先（formula查询），备选REST（material_id或formula）
+    with ThreadPoolExecutor(max_workers=5) as executor:
+        # MP — OPTIMADE/REST (可能 IP-blocked)
         if "materials_project" not in databases:
             f = executor.submit(mp_fetch, material_id=item.get("mp_id"), formula=item["formula"])
             futures["materials_project"] = f
 
-        # JARVIS — 用 jarvis-tools 本地数据集，按 formula 查
-        if "jarvis" not in databases:
-            f = executor.submit(jarvis_fetch_by_formula, formula)
-            futures["jarvis"] = f
+        # MP HuggingFace parquet (补充 MP band_gap)
+        if "materials_project" not in databases:
+            f = executor.submit(mp_hf_fetch, formula)
+            futures["mp_hf"] = f
 
         # OQMD
         if "oqmd_id" in item and "oqmd" not in databases:
@@ -469,17 +589,20 @@ def sync_one(item: dict) -> dict:
             futures["nomad"] = f
 
     for src, fut in futures.items():
-        rate_limit(0.5)
-        result = fut.result()
+        rate_limit(0.3)
+        try:
+            result = fut.result()
+        except Exception as e:
+            log.debug(f"[{src}] exception: {e}")
+            continue
         if result:
-            # formula 验证（防止查错材料）
             fetched_formula = result.formula
             if fetched_formula and fetched_formula != formula:
                 log.warning(f"[{src}] fetched '{fetched_formula}' != expected '{formula}', skipping")
                 continue
-            databases[src] = result.to_dict()
+            databases[result.source] = result.to_dict()
             updated = True
-            log.info(f"  [{src}] {result.material_id or formula} ← {result.formula}")
+            log.info(f"  [{result.source}] {result.material_id or formula} ← {result.formula}")
 
     # 计算差异和覆盖率
     discrepancies = compute_discrepancies(databases)

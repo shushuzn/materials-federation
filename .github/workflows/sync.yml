@@ -22,7 +22,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install requests pyyaml tqdm jarvis-tools
+        run: pip install requests pyyaml tqdm jarvis-tools pyarrow
 
       - name: Run sync
         env:
