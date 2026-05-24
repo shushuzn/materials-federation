@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # BaTiO3
-# Synced at: 2026-05-25T10:30:00Z
+# Synced at: 2026-05-24T04:43:24Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -20,7 +20,7 @@ databases:
     formation_energy: -3.2
     formation_energy_per_atom: -1.07
     structure_type: perovskite
-    last_updated: "2026-05-24"
+    last_updated: '2026-05-24'
   jarvis:
     material_id: JVASP-1002
     formula: BaTiO3
@@ -30,14 +30,14 @@ databases:
     bulk_modulus: 162
     shear_modulus: 120
     structure_type: perovskite
-    last_updated: "2026-05-24"
+    last_updated: '2026-05-24'
   oqmd:
-    material_id: "11024"
+    material_id: '11024'
     formula: BaTiO3
     spacegroup: P4mm
     band_gap: 2.65
     formation_energy: -3.15
-    last_updated: "2026-05-24"
+    last_updated: '2026-05-24'
 cross_db_discrepancies:
   band_gap:
     max_diff: 0.1
@@ -46,7 +46,10 @@ cross_db_discrepancies:
       materials_project: 2.7
       jarvis: 2.6
       oqmd: 2.65
-    sources: ["materials_project", "jarvis", "oqmd"]
+    sources:
+    - materials_project
+    - jarvis
+    - oqmd
   formation_energy:
     max_diff: 0.1
     relative_diff_pct: 3.13
@@ -54,20 +57,25 @@ cross_db_discrepancies:
       materials_project: -3.2
       jarvis: -3.1
       oqmd: -3.15
-    sources: ["materials_project", "jarvis", "oqmd"]
+    sources:
+    - materials_project
+    - jarvis
+    - oqmd
 coverage:
   common_properties:
-    - formula
-    - spacegroup
-    - band_gap
-    - formation_energy
+  - band_gap
+  - formation_energy
+  - formula
+  - last_updated
+  - material_id
+  - spacegroup
   properties_unique_to_source:
     materials_project:
-      - formation_energy_per_atom
-      - structure_type
+    - formation_energy_per_atom
+    - structure_type
     jarvis:
-      - bulk_modulus
-      - shear_modulus
-    oqmd:
-      - material_id
-last_updated: "2026-05-25"
+    - shear_modulus
+    - bulk_modulus
+    - structure_type
+    oqmd: []
+last_updated: '2026-05-24'
