@@ -1,31 +1,391 @@
 [
-  {"formula": "Si",           "mp_id": "mp-81",       "oqmd_id": 1000},
-  {"formula": "Ge",           "mp_id": "mp-82",       "oqmd_id": 1001},
-  {"formula": "GaAs",         "mp_id": "mp-2534",     "oqmd_id": 1002},
-  {"formula": "GaN",          "mp_id": "mp-804",      "oqmd_id": 1003},
-  {"formula": "SiC",          "mp_id": "mp-75",       "oqmd_id": 1004},
-  {"formula": "AlN",          "mp_id": "mp-661",      "oqmd_id": 1005},
-  {"formula": "ZnO",          "mp_id": "mp-2133",     "oqmd_id": 1006},
-  {"formula": "TiO2",         "mp_id": "mp-2657",     "oqmd_id": 1007},
-  {"formula": "Fe2O3",        "mp_id": "mp-22570",    "oqmd_id": 1008},
-  {"formula": "MoS2",         "mp_id": "mp-1016",     "oqmd_id": 1009},
-  {"formula": "WS2",          "mp_id": "mp-1017",     "oqmd_id": 1010},
-  {"formula": "BN",           "mp_id": "mp-697899",   "oqmd_id": 1011},
-  {"formula": "LiFePO4",      "mp_id": "mp-19017",    "oqmd_id": 1012},
-  {"formula": "LiCoO2",       "mp_id": "mp-22526",    "oqmd_id": 1013},
-  {"formula": "NaFePO4",      "mp_id": "mp-18969",    "oqmd_id": 1014},
-  {"formula": "Li4Ti5O12",   "mp_id": "mp-25444",    "oqmd_id": 1015},
-  {"formula": "MgB2",         "mp_id": "mp-23",       "oqmd_id": 1016},
-  {"formula": "BaTiO3",       "mp_id": "mp-2998",     "oqmd_id": 12345},
-  {"formula": "SrTiO3",       "mp_id": "mp-2057",     "oqmd_id": 1017},
-  {"formula": "PbTiO3",       "mp_id": "mp-2036",     "oqmd_id": 1018},
-  {"formula": "BiFeO3",       "mp_id": "mp-2035",     "oqmd_id": 1019},
-  {"formula": "MAPbI3",       "mp_id": "mp-3379653",  "oqmd_id": 1020},
-  {"formula": "CsPbI3",       "mp_id": "mp-4335729",  "oqmd_id": 1021},
-  {"formula": "CuZnSnS",      "mp_id": "mp-5686",     "oqmd_id": 1022},
-  {"formula": "CuInP2Se6",    "mp_id": "mp-36540",    "oqmd_id": 1023},
-  {"formula": "Bi2Se3",       "mp_id": "mp-541833",   "oqmd_id": 1024},
-  {"formula": "CoCrFeMnNi",    "mp_id": "mp-19757",    "oqmd_id": 1025},
-  {"formula": "NdFeB",        "mp_id": "mp-1080",     "oqmd_id": 1026},
-  {"formula": "V2C",           "mp_id": "mp-10179",    "oqmd_id": 1027}
+  {
+    "formula": "Si",
+    "jarvis_id": "JVASP-14847"
+  },
+  {
+    "formula": "Ge",
+    "jarvis_id": "JVASP-14658"
+  },
+  {
+    "formula": "C",
+    "jarvis_id": "JVASP-14740"
+  },
+  {
+    "formula": "B",
+    "jarvis_id": "JVASP-60798"
+  },
+  {
+    "formula": "SiC",
+    "jarvis_id": "JVASP-22644"
+  },
+  {
+    "formula": "GeC",
+    "jarvis_id": "JVASP-36018"
+  },
+  {
+    "formula": "GaAs",
+    "jarvis_id": "JVASP-1174"
+  },
+  {
+    "formula": "GaN",
+    "jarvis_id": "JVASP-8169"
+  },
+  {
+    "formula": "GaP",
+    "jarvis_id": "JVASP-28372"
+  },
+  {
+    "formula": "InP",
+    "jarvis_id": "JVASP-1183"
+  },
+  {
+    "formula": "InAs",
+    "jarvis_id": "JVASP-1186"
+  },
+  {
+    "formula": "InSb",
+    "jarvis_id": "JVASP-1189"
+  },
+  {
+    "formula": "AlN",
+    "jarvis_id": "JVASP-4849"
+  },
+  {
+    "formula": "AlP",
+    "jarvis_id": "JVASP-1327"
+  },
+  {
+    "formula": "AlAs",
+    "jarvis_id": "JVASP-1372"
+  },
+  {
+    "formula": "BN",
+    "jarvis_id": "JVASP-62756"
+  },
+  {
+    "formula": "BP",
+    "jarvis_id": "JVASP-1312"
+  },
+  {
+    "formula": "BSb",
+    "jarvis_id": "JVASP-36873"
+  },
+  {
+    "formula": "ZnO",
+    "jarvis_id": "JVASP-1195"
+  },
+  {
+    "formula": "ZnS",
+    "jarvis_id": "JVASP-22623"
+  },
+  {
+    "formula": "ZnSe",
+    "jarvis_id": "JVASP-96"
+  },
+  {
+    "formula": "ZnTe",
+    "jarvis_id": "JVASP-1198"
+  },
+  {
+    "formula": "CdS",
+    "jarvis_id": "JVASP-28393"
+  },
+  {
+    "formula": "CdSe",
+    "jarvis_id": "JVASP-1192"
+  },
+  {
+    "formula": "CdTe",
+    "jarvis_id": "JVASP-22685"
+  },
+  {
+    "formula": "HgTe",
+    "jarvis_id": "JVASP-15033"
+  },
+  {
+    "formula": "BaTiO3",
+    "jarvis_id": "JVASP-85718"
+  },
+  {
+    "formula": "SrTiO3",
+    "jarvis_id": "JVASP-1237"
+  },
+  {
+    "formula": "CaTiO3",
+    "jarvis_id": "JVASP-8101"
+  },
+  {
+    "formula": "KNbO3",
+    "jarvis_id": "JVASP-2544"
+  },
+  {
+    "formula": "NaNbO3",
+    "jarvis_id": "JVASP-99058"
+  },
+  {
+    "formula": "TiO2",
+    "jarvis_id": "JVASP-42549"
+  },
+  {
+    "formula": "Fe2O3",
+    "jarvis_id": "JVASP-87336"
+  },
+  {
+    "formula": "Fe3O4",
+    "jarvis_id": "JVASP-87334"
+  },
+  {
+    "formula": "Al2O3",
+    "jarvis_id": "JVASP-49837"
+  },
+  {
+    "formula": "SiO2",
+    "jarvis_id": "JVASP-97862"
+  },
+  {
+    "formula": "Cu2O",
+    "jarvis_id": "JVASP-1216"
+  },
+  {
+    "formula": "NiO",
+    "jarvis_id": "JVASP-87131"
+  },
+  {
+    "formula": "Co3O4",
+    "jarvis_id": "JVASP-23170"
+  },
+  {
+    "formula": "V2O5",
+    "jarvis_id": "JVASP-60637"
+  },
+  {
+    "formula": "MoO3",
+    "jarvis_id": "JVASP-16916"
+  },
+  {
+    "formula": "WO3",
+    "jarvis_id": "JVASP-344"
+  },
+  {
+    "formula": "SnO2",
+    "jarvis_id": "JVASP-97419"
+  },
+  {
+    "formula": "CeO2",
+    "jarvis_id": "JVASP-78520"
+  },
+  {
+    "formula": "ZrO2",
+    "jarvis_id": "JVASP-49796"
+  },
+  {
+    "formula": "HfO2",
+    "jarvis_id": "JVASP-18984"
+  },
+  {
+    "formula": "Nb2O5",
+    "jarvis_id": "JVASP-7655"
+  },
+  {
+    "formula": "MoS2",
+    "jarvis_id": "JVASP-228"
+  },
+  {
+    "formula": "WS2",
+    "jarvis_id": "JVASP-28399"
+  },
+  {
+    "formula": "MoSe2",
+    "jarvis_id": "JVASP-28377"
+  },
+  {
+    "formula": "WSe2",
+    "jarvis_id": "JVASP-75"
+  },
+  {
+    "formula": "Bi2Se3",
+    "jarvis_id": "JVASP-5215"
+  },
+  {
+    "formula": "Bi2Te3",
+    "jarvis_id": "JVASP-86105"
+  },
+  {
+    "formula": "Sb2Te3",
+    "jarvis_id": "JVASP-1070"
+  },
+  {
+    "formula": "Ti3SiC2",
+    "jarvis_id": "JVASP-21075"
+  },
+  {
+    "formula": "Ti3AlC2",
+    "jarvis_id": "JVASP-20914"
+  },
+  {
+    "formula": "Ti2AlC",
+    "jarvis_id": "JVASP-16891"
+  },
+  {
+    "formula": "V2C",
+    "jarvis_id": "JVASP-94343"
+  },
+  {
+    "formula": "Nb2C",
+    "jarvis_id": "JVASP-86874"
+  },
+  {
+    "formula": "Mo2C",
+    "jarvis_id": "JVASP-55020"
+  },
+  {
+    "formula": "Cr2N",
+    "jarvis_id": "JVASP-16104"
+  },
+  {
+    "formula": "NiTiSn"
+  },
+  {
+    "formula": "Co2MnSi"
+  },
+  {
+    "formula": "Fe2VaAl"
+  },
+  {
+    "formula": "Ni2MnGa"
+  },
+  {
+    "formula": "LiFePO4",
+    "jarvis_id": "JVASP-48301"
+  },
+  {
+    "formula": "LiCoO2",
+    "jarvis_id": "JVASP-2017"
+  },
+  {
+    "formula": "LiNiO2",
+    "jarvis_id": "JVASP-18433"
+  },
+  {
+    "formula": "LiMn2O4",
+    "jarvis_id": "JVASP-8377"
+  },
+  {
+    "formula": "NaFePO4",
+    "jarvis_id": "JVASP-48383"
+  },
+  {
+    "formula": "MgB2",
+    "jarvis_id": "JVASP-19821"
+  },
+  {
+    "formula": "Nb3Sn",
+    "jarvis_id": "JVASP-19668"
+  },
+  {
+    "formula": "V3Si",
+    "jarvis_id": "JVASP-14960"
+  },
+  {
+    "formula": "NbN",
+    "jarvis_id": "JVASP-15025"
+  },
+  {
+    "formula": "La2CuO4",
+    "jarvis_id": "JVASP-7907"
+  },
+  {
+    "formula": "BaFe2As2",
+    "jarvis_id": "JVASP-97023"
+  },
+  {
+    "formula": "Cd3As2",
+    "jarvis_id": "JVASP-10703"
+  },
+  {
+    "formula": "Na3Bi",
+    "jarvis_id": "JVASP-18469"
+  },
+  {
+    "formula": "PbTe"
+  },
+  {
+    "formula": "SnSe",
+    "jarvis_id": "JVASP-302"
+  },
+  {
+    "formula": "Mg2Si",
+    "jarvis_id": "JVASP-93761"
+  },
+  {
+    "formula": "FeNbSb"
+  },
+  {
+    "formula": "FeGaB"
+  },
+  {
+    "formula": "CoFeB"
+  },
+  {
+    "formula": "NdFeB"
+  },
+  {
+    "formula": "SmCo5",
+    "jarvis_id": "JVASP-93962"
+  },
+  {
+    "formula": "FeCo",
+    "jarvis_id": "JVASP-78768"
+  },
+  {
+    "formula": "FeNi",
+    "jarvis_id": "JVASP-20436"
+  },
+  {
+    "formula": "AlNi",
+    "jarvis_id": "JVASP-11956"
+  },
+  {
+    "formula": "AlFe",
+    "jarvis_id": "JVASP-15000"
+  },
+  {
+    "formula": "CuZn"
+  },
+  {
+    "formula": "CoCrFeMnNi"
+  },
+  {
+    "formula": "FeCrNi"
+  },
+  {
+    "formula": "CeYAG"
+  },
+  {
+    "formula": "Lu2SiO5"
+  },
+  {
+    "formula": "CdWO4",
+    "jarvis_id": "JVASP-96044"
+  },
+  {
+    "formula": "CuZnSnS"
+  },
+  {
+    "formula": "CuInP2Se6"
+  },
+  {
+    "formula": "Ag2Se",
+    "jarvis_id": "JVASP-22648"
+  },
+  {
+    "formula": "Li10GeP2S12"
+  },
+  {
+    "formula": "Li7La3Zr2O12"
+  },
+  {
+    "formula": "Li3PS4"
+  }
 ]
