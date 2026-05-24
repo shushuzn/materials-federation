@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 """
-Materials Federation Sync — OPTIMADE 标准 + 各库直接 REST API
-无重型依赖，只需 requests + pyyaml
+Materials Federation Sync — jarvis-tools + OPTIMADE 标准
+主要数据源:
+  - JARVIS: jarvis-tools (figshare 本地数据集, 75k+ 材料)
+  - MP/OQMD/AFLOW/NOMAD: OPTIMADE / REST API
+无重型依赖(pymatgen/mp-api)，只需 requests + pyyaml + jarvis-tools
 """
 
 import os
@@ -76,6 +79,52 @@ class DbEntry:
         return {k: v for k, v in d.items() if v is not None and v != ""}
 
 
+# ── JARVIS 数据源 (jarvis-tools figshare) ────────────────────────────────
+# 全局缓存，避免每次运行都下载数据集
+_JARVIS_CACHE = {}  # formula -> jarvis entry dict
+
+
+def _ensure_jarvis_cache():
+    """懒加载 JARVIS 3D DFT 数据集到内存缓存"""
+    if _JARVIS_CACHE:
+        return  # 已有缓存
+    try:
+        from jarvis.db.figshare import data
+        log.info("[JARVIS] Loading 3D DFT dataset from figshare (first run may take ~1 min)...")
+        dft3d = data("dft_3d")
+        for entry in dft3d:
+            formula = entry.get("formula", "")
+            if formula and formula not in _JARVIS_CACHE:
+                _JARVIS_CACHE[formula] = entry
+        log.info(f"[JARVIS] Cached {len(_JARVIS_CACHE)} unique formulas")
+    except Exception as e:
+        log.error(f"[JARVIS] Failed to load dataset: {e}")
+
+
+def jarvis_fetch_by_formula(formula: str) -> Optional[DbEntry]:
+    """用 formula 在本地 JARVIS 数据集中查找第一条记录"""
+    _ensure_jarvis_cache()
+    entry = _JARVIS_CACHE.get(formula)
+    if not entry:
+        return None
+
+    # 字段映射: JARVIS -> DbEntry
+    return DbEntry(
+        source="jarvis",
+        material_id=entry.get("jid", ""),
+        formula=entry.get("formula", ""),
+        spacegroup=str(entry.get("spg_symbol", "")),
+        band_gap=_float(entry.get("optb88vdw_bandgap")),
+        formation_energy_per_atom=_float(entry.get("formation_energy_peratom")),
+        density=_float(entry.get("density")),
+        poissons_ratio=_float(entry.get("poisson")),
+        bulk_modulus=_float(entry.get("bulk_modulus_kv")),
+        shear_modulus=_float(entry.get("shear_modulus_gv")),
+        raw=entry,
+        last_updated=time.strftime("%Y-%m-%d"),
+    )
+
+
 # ── OPTIMADE Fetchers ─────────────────────────────────
 
 def optimade_fetch(provider_url: str, db_source: str, material_id: str = None,
@@ -94,10 +143,10 @@ def optimade_fetch(provider_url: str, db_source: str, material_id: str = None,
         url = f"{provider_url}/v1/structures?filter={filter_str}&page_limit={page_limit}"
         r = requests.get(url, headers=HEADERS, timeout=30)
         if r.status_code >= 400:
+            log.debug(f"[{db_source.upper()}] OPTIMADE {r.status_code} for {filter_str}")
             return []
         r.raise_for_status()
         d = r.json()
-
         data = d.get("data", [])
         return data
     except Exception as e:
@@ -110,17 +159,14 @@ def optimade_to_dbentry(data_items: list, db_source: str) -> Optional[DbEntry]:
     if not data_items:
         return None
 
-    # Pick first entry
     item = data_items[0]
     attrs = item.get("attributes", {})
     raw = attrs.copy()
 
-    # Extract band_gap (may be a dict with "value" key)
     band_gap = _float(attrs.get("band_gap"))
     if isinstance(attrs.get("band_gap"), dict):
         band_gap = _float(attrs.get("band_gap", {}).get("value"))
 
-    # Extract formation_energy
     formation_energy = _float(attrs.get("formation_energy"))
     if isinstance(attrs.get("formation_energy"), dict):
         formation_energy = _float(attrs.get("formation_energy", {}).get("value"))
@@ -153,14 +199,11 @@ def mp_fetch(material_id: str = None, formula: str = None, api_key: str = None) 
     if data:
         return optimade_to_dbentry(data, "materials_project")
 
-    # Fallback: direct REST (requires API key)
     api_key = api_key or os.environ.get("MP_API_KEY", "")
     if not api_key:
-        log.warning("[MP] No data and no API key, skipping")
+        log.debug("[MP] No API key, skipping REST fallback")
         return None
-
     if not material_id:
-        log.warning("[MP] No material_id for REST fallback, skipping")
         return None
 
     url = f"https://materialsproject.org/rest/v2/materials/{material_id}/vasp"
@@ -188,27 +231,9 @@ def mp_fetch(material_id: str = None, formula: str = None, api_key: str = None) 
     return None
 
 
-def jarvis_fetch(jarvis_id: str = None, formula: str = None) -> Optional[DbEntry]:
-    """JARVIS-DFT — OPTIMADE endpoint"""
-    data = optimade_fetch(
-        "https://jarvis.nist.gov/optimade/jarvisdft",
-        "jarvis",
-        material_id=jarvis_id,
-        formula=formula
-    )
-    if data:
-        entry = optimade_to_dbentry(data, "jarvis")
-        if entry:
-            return entry
-    if jarvis_id:
-        log.warning(f"[JARVIS] No data for jarvis_id={jarvis_id}")
-    return None
-
-
 def oqmd_fetch(oqmd_id: int = None, formula: str = None) -> Optional[DbEntry]:
     """OQMD — REST API"""
     if not oqmd_id:
-        log.warning("[OQMD] No oqmd_id provided")
         return None
     url = f"https://oqmd.org/oqmdapi/v1/calculations/{oqmd_id}"
     try:
@@ -228,14 +253,13 @@ def oqmd_fetch(oqmd_id: int = None, formula: str = None) -> Optional[DbEntry]:
             last_updated=time.strftime("%Y-%m-%d"),
         )
     except Exception as e:
-        log.error(f"[OQMD] Failed {oqmd_id}: {e}")
+        log.debug(f"[OQMD] Failed {oqmd_id}: {e}")
     return None
 
 
 def aflow_fetch(aflow_id: str = None, formula: str = None) -> Optional[DbEntry]:
     """AFLOW — REST API"""
     if not aflow_id:
-        log.warning("[AFLOW] No aflow_id provided")
         return None
     url = f"https://aflow.org/API/relaxed/?format=json&aflowlib_entry={aflow_id}"
     try:
@@ -259,7 +283,7 @@ def aflow_fetch(aflow_id: str = None, formula: str = None) -> Optional[DbEntry]:
             last_updated=time.strftime("%Y-%m-%d"),
         )
     except Exception as e:
-        log.error(f"[AFLOW] Failed {aflow_id}: {e}")
+        log.debug(f"[AFLOW] Failed {aflow_id}: {e}")
     return None
 
 
@@ -273,8 +297,6 @@ def nomad_fetch(nomad_id: str = None, formula: str = None) -> Optional[DbEntry]:
     )
     if data:
         return optimade_to_dbentry(data, "nomad")
-    if nomad_id:
-        log.warning(f"[NOMAD] No data for nomad_id={nomad_id}")
     return None
 
 
@@ -386,15 +408,9 @@ def sync_one(item: dict) -> dict:
     databases = existing.get("databases", {})
     updated = False
 
-    # 如果 JARVIS 没有 ID，用 formula discovery
-    jarvis_id = item.get("jarvis_id")
-    jarvis_formula = item.get("jarvis_formula", formula)  # 支持不同库的 formula 变体
-    jarvis_dbid = jarvis_id or jarvis_formula
-
-    # 并行获取各库数据
     futures = {}
     with ThreadPoolExecutor(max_workers=4) as executor:
-        # MP — 优先用 formula 查，备选用 mp_id
+        # MP — 优先 mp_id，次选 formula
         if "mp_id" in item and "materials_project" not in databases:
             f = executor.submit(mp_fetch, material_id=item["mp_id"])
             futures["materials_project"] = f
@@ -402,22 +418,22 @@ def sync_one(item: dict) -> dict:
             f = executor.submit(mp_fetch, formula=item["formula"])
             futures["materials_project"] = f
 
-        # JARVIS — 优先用 formula 查（更可靠），备用心 jarvis_id
-        if jarvis_dbid and "jarvis" not in databases:
-            f = executor.submit(jarvis_fetch, jarvis_id=jarvis_id, formula=jarvis_formula)
+        # JARVIS — 用 jarvis-tools 本地数据集，按 formula 查
+        if "jarvis" not in databases:
+            f = executor.submit(jarvis_fetch_by_formula, formula)
             futures["jarvis"] = f
 
-        # OQMD — 只支持 ID 查
+        # OQMD
         if "oqmd_id" in item and "oqmd" not in databases:
             f = executor.submit(oqmd_fetch, oqmd_id=item["oqmd_id"])
             futures["oqmd"] = f
 
-        # AFLOW — 只支持 ID 查
+        # AFLOW
         if "aflow_id" in item and "aflow" not in databases:
             f = executor.submit(aflow_fetch, aflow_id=item["aflow_id"])
             futures["aflow"] = f
 
-        # NOMAD — 优先 formula 查
+        # NOMAD
         if "nomad_id" in item and "nomad" not in databases:
             f = executor.submit(nomad_fetch, nomad_id=item["nomad_id"])
             futures["nomad"] = f
@@ -426,24 +442,23 @@ def sync_one(item: dict) -> dict:
             futures["nomad"] = f
 
     for src, fut in futures.items():
-        rate_limit(1.0)
+        rate_limit(0.5)
         result = fut.result()
         if result:
-            # 验证 formula 匹配（防止查错材料）
+            # formula 验证（防止查错材料）
             fetched_formula = result.formula
             if fetched_formula and fetched_formula != formula:
-                log.warning(f"[{src}] fetched formula '{fetched_formula}' != expected '{formula}', skipping")
+                log.warning(f"[{src}] fetched '{fetched_formula}' != expected '{formula}', skipping")
                 continue
             databases[src] = result.to_dict()
             updated = True
-            log.info(f"  [{src}] fetched {result.material_id or formula}")
+            log.info(f"  [{src}] {result.material_id or formula}")
 
     # 计算差异和覆盖率
     discrepancies = compute_discrepancies(databases)
     coverage = compute_coverage(databases)
 
     data = {
-        "material_id": formula,
         "formula": formula,
         "databases": databases,
         "cross_db_discrepancies": discrepancies,
@@ -479,6 +494,8 @@ def main():
                 log.info(f"  - {result['formula']} no update")
         except Exception as e:
             log.error(f"Failed {item.get('formula', '?')}: {e}")
+            import traceback
+            traceback.print_exc()
 
     updated_count = sum(1 for r in results if r["updated"])
     log.info(f"Done. {updated_count}/{len(results)} materials updated.")
