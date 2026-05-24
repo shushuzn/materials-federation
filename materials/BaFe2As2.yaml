@@ -1,0 +1,175 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# BaFe2As2
+# Synced at: 2026-05-24T05:50:14Z
+# License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
+#          OQMD License (OQMD), AFLOW License (AFLOW),
+#          CC BY 4.0 / Database Right (NOMAD)
+# Disclaimer: Data sourced from third-party databases. All data remains the
+#   intellectual property of respective database providers under their
+#   applicable licenses. This aggregation is for research purposes only.
+# Sources: jarvis
+# ─────────────────────────────────────────────────────────────────────────────
+
+formula: BaFe2As2
+databases:
+  jarvis:
+    material_id: JVASP-97023
+    formula: BaFe2As2
+    spacegroup: I4/mmm
+    band_gap: 0.0
+    formation_energy_per_atom: -0.58901
+    density: 6.677
+    raw:
+      jid: JVASP-97023
+      spg_number: '139'
+      spg_symbol: I4/mmm
+      formula: BaFe2As2
+      formation_energy_peratom: -0.58901
+      func: OptB88vdW
+      optb88vdw_bandgap: 0.0
+      atoms:
+        lattice_mat:
+        - - 3.961794058116579
+          - 0.0
+          - -0.0
+        - - 0.0
+          - 3.961794058116579
+          - -0.0
+        - - 0.0
+          - -0.0
+          - 12.639003513796547
+        coords:
+        - - 0.0
+          - 0.0
+          - 0.0
+        - - 1.980895
+          - 1.980895
+          - 6.3195
+        - - 1.980895
+          - 0.0
+          - 3.15975
+        - - 0.0
+          - 1.980895
+          - 9.47925
+        - - 1.980895
+          - 0.0
+          - 9.47925
+        - - 0.0
+          - 1.980895
+          - 3.15975
+        - - 0.0
+          - 0.0
+          - 4.375871443263493
+        - - 1.980895
+          - 1.980895
+          - 10.69537144326349
+        - - 0.0
+          - 0.0
+          - 8.26312855673651
+        - - 1.980895
+          - 1.980895
+          - 1.9436285567365081
+        elements:
+        - Ba
+        - Ba
+        - Fe
+        - Fe
+        - Fe
+        - Fe
+        - As
+        - As
+        - As
+        - As
+        abc:
+        - 3.96179
+        - 3.96179
+        - 12.639
+        angles:
+        - 90.0
+        - 90.0
+        - 90.0
+        cartesian: true
+        props:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      slme: na
+      magmom_oszicar: 0.0
+      spillage: na
+      elastic_tensor: na
+      effective_masses_300K:
+        p: na
+        n: na
+      kpoint_length_unit: 65
+      maxdiff_mesh: na
+      maxdiff_bz: na
+      encut: 950
+      optb88vdw_total_energy: -3.58659
+      epsx: 49.4035
+      epsy: 49.4035
+      epsz: 41.6273
+      mepsx: na
+      mepsy: na
+      mepsz: na
+      modes: na
+      magmom_outcar: 0.0
+      max_efg: na
+      avg_elec_mass: na
+      avg_hole_mass: na
+      icsd: ''
+      dfpt_piezo_max_eij: na
+      dfpt_piezo_max_dij: na
+      dfpt_piezo_max_dielectric: na
+      dfpt_piezo_max_dielectric_electronic: na
+      dfpt_piezo_max_dielectric_ionic: na
+      max_ir_mode: na
+      min_ir_mode: na
+      n-Seebeck: na
+      p-Seebeck: na
+      n-powerfact: na
+      p-powerfact: na
+      ncond: na
+      pcond: na
+      nkappa: na
+      pkappa: na
+      ehull: 0.0
+      Tc_supercon: na
+      dimensionality: intercalated ion
+      efg: []
+      xml_data_link: <a href=https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-97023.xml target='_blank' >JVASP-97023</a>
+      typ: bulk
+      exfoliation_energy: na
+      spg: '139'
+      crys: tetragonal
+      density: 6.677
+      poisson: na
+      raw_files: []
+      nat: 5
+      bulk_modulus_kv: na
+      shear_modulus_gv: na
+      mbj_bandgap: na
+      hse_gap: na
+      reference: BaFe2As2
+      search: -As-Ba-Fe
+    last_updated: '2026-05-24'
+cross_db_discrepancies: {}
+coverage:
+  common_properties:
+  - band_gap
+  - density
+  - formation_energy_per_atom
+  - formula
+  - last_updated
+  - material_id
+  - raw
+  - spacegroup
+  properties_unique_to_source:
+    jarvis: []
+last_updated: '2026-05-24'

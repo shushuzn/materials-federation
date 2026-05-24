@@ -1,0 +1,272 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# La2CuO4
+# Synced at: 2026-05-24T05:50:13Z
+# License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
+#          OQMD License (OQMD), AFLOW License (AFLOW),
+#          CC BY 4.0 / Database Right (NOMAD)
+# Disclaimer: Data sourced from third-party databases. All data remains the
+#   intellectual property of respective database providers under their
+#   applicable licenses. This aggregation is for research purposes only.
+# Sources: jarvis
+# ─────────────────────────────────────────────────────────────────────────────
+
+formula: La2CuO4
+databases:
+  jarvis:
+    material_id: JVASP-7907
+    formula: La2CuO4
+    spacegroup: I4/mmm
+    band_gap: 0.0
+    formation_energy_per_atom: -2.82405
+    bulk_modulus: 154.04
+    shear_modulus: 65.73
+    poissons_ratio: 0.32
+    density: 7.057
+    raw:
+      jid: JVASP-7907
+      spg_number: '139'
+      spg_symbol: I4/mmm
+      formula: La2CuO4
+      formation_energy_peratom: -2.82405
+      func: OptB88vdW
+      optb88vdw_bandgap: 0.0
+      atoms:
+        lattice_mat:
+        - - 3.6603287196248417
+          - 7.616996e-10
+          - -1.017636698699723
+        - - -0.2829216484220962
+          - 3.6493781250458217
+          - -1.0176366990345078
+        - - 0.011667307021099
+          - 0.0126067154076887
+          - 7.133686584147045
+        coords:
+        - - 2.1599337347969385
+          - 2.333865066936799
+          - 0.6773146443897771
+        - - 1.2291462652030614
+          - 1.3281249330631992
+          - 4.421095355610223
+        - - 0.0
+          - 0.0
+          - 0.0
+        - - 2.760451715984647
+          - 2.9827405719495177
+          - 2.837314678157824
+        - - 0.6286282840153531
+          - 0.679249428050482
+          - 2.261095321842176
+        - - -0.14146
+          - 1.82469
+          - -0.50882
+        - - 1.830165
+          - 0.0
+          - -0.50882
+        elements:
+        - La
+        - La
+        - Cu
+        - O
+        - O
+        - O
+        - O
+        abc:
+        - 3.799159
+        - 3.799159
+        - 7.133711
+        angles:
+        - 105.4432
+        - 105.4432
+        - 90.0
+        cartesian: true
+        props:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      slme: na
+      magmom_oszicar: 0.0
+      spillage: 0.02
+      elastic_tensor:
+      - - 279.7
+        - 72.2
+        - 105.5
+        - 0.0
+        - -0.0
+        - -0.0
+      - - 72.2
+        - 279.7
+        - 105.5
+        - 0.0
+        - -0.0
+        - -0.0
+      - - 105.5
+        - 105.5
+        - 260.6
+        - 0.0
+        - -0.0
+        - -0.0
+      - - 0.0
+        - 0.0
+        - 0.0
+        - 54.1
+        - 0.0
+        - 0.0
+      - - -0.0
+        - -0.0
+        - -0.0
+        - 0.0
+        - 47.8
+        - -0.0
+      - - -0.0
+        - -0.0
+        - -0.0
+        - 0.0
+        - -0.0
+        - 47.8
+      effective_masses_300K:
+        p:
+        - 0.0
+        - 0.0
+        - 0.0
+        n:
+        - 0.0
+        - 0.0
+        - 0.0
+      kpoint_length_unit: 50
+      maxdiff_mesh: na
+      maxdiff_bz: na
+      encut: 1350
+      optb88vdw_total_energy: -5.29421
+      epsx: 7.1363
+      epsy: 7.1195
+      epsz: 5.9408
+      mepsx: na
+      mepsy: na
+      mepsz: na
+      modes:
+      - -10.77
+      - -6.94
+      - -6.94
+      - 62.44
+      - 76.72
+      - 136.73
+      - 170.1
+      - 203.16
+      - 217.38
+      - 217.83
+      - 230.61
+      - 328.09
+      - 414.5
+      - 471.18
+      - 687.16
+      magmom_outcar: 0.0
+      max_efg: 138.774
+      avg_elec_mass: 0.0
+      avg_hole_mass: 0.0
+      icsd: 81152,173892,173894,41643,56528,73909,73910,73911,73912,73913,19003,67836,68381
+      dfpt_piezo_max_eij: na
+      dfpt_piezo_max_dij: na
+      dfpt_piezo_max_dielectric: na
+      dfpt_piezo_max_dielectric_electronic: na
+      dfpt_piezo_max_dielectric_ionic: na
+      max_ir_mode: na
+      min_ir_mode: na
+      n-Seebeck: 37.193333333333335
+      p-Seebeck: 35.303333333333335
+      n-powerfact: 179.10333333333332
+      p-powerfact: 198.64999999999998
+      ncond: 1225156.0200000003
+      pcond: 1212951.89
+      nkappa: 1749120486666665.8
+      pkappa: 1734284456666666.2
+      ehull: 0.0415
+      Tc_supercon: na
+      dimensionality: 3D-bulk
+      efg:
+      - - O
+        - e
+        - '10.552'
+        - '-2.826'
+        - '-9.407'
+        - '-2.826'
+        - '10.115'
+        - '-10.164'
+        - '-9.407'
+        - '-10.164'
+        - '-20.667'
+      - - O
+        - c
+        - '-58.63'
+        - '-8.499'
+        - '10.91'
+        - '-8.499'
+        - '81.053'
+        - '-30.57'
+        - '10.91'
+        - '-30.57'
+        - '-22.423'
+      - - Cu
+        - a
+        - '23.954'
+        - '-6.41'
+        - '-21.353'
+        - '-6.41'
+        - '22.966'
+        - '-23.075'
+        - '-21.353'
+        - '-23.075'
+        - '-46.921'
+      - - La
+        - e
+        - '70.856'
+        - '-18.972'
+        - '-63.161'
+        - '-18.972'
+        - '67.917'
+        - '-68.248'
+        - '-63.161'
+        - '-68.248'
+        - '-138.774'
+      xml_data_link: <a href=https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-7907.xml target='_blank' >JVASP-7907</a>
+      typ: bulk
+      exfoliation_energy: na
+      spg: '139'
+      crys: tetragonal
+      density: 7.057
+      poisson: 0.32
+      raw_files:
+      - FD-ELAST,JVASP-7907.zip,https://ndownloader.figshare.com/files/23071385
+      - FD-ELAST,JVASP-7907.zip,https://ndownloader.figshare.com/files/22982318
+      - OPT-LOPTICS,JVASP-7907.zip,https://ndownloader.figshare.com/files/24040298
+      - OPT-Bandst,JVASP-7907.zip,https://ndownloader.figshare.com/files/23718242
+      - DFT-SCF,JVASP-7907.zip,https://ndownloader.figshare.com/files/23157809
+      nat: 7
+      bulk_modulus_kv: 154.04
+      shear_modulus_gv: 65.73
+      mbj_bandgap: na
+      hse_gap: na
+      reference: mp-19735
+      search: -Cu-La-O
+    last_updated: '2026-05-24'
+cross_db_discrepancies: {}
+coverage:
+  common_properties:
+  - band_gap
+  - bulk_modulus
+  - density
+  - formation_energy_per_atom
+  - formula
+  - last_updated
+  - material_id
+  - poissons_ratio
+  - raw
+  - shear_modulus
+  - spacegroup
+  properties_unique_to_source:
+    jarvis: []
+last_updated: '2026-05-24'

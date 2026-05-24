@@ -1,0 +1,239 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Cu2O
+# Synced at: 2026-05-24T05:49:05Z
+# License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
+#          OQMD License (OQMD), AFLOW License (AFLOW),
+#          CC BY 4.0 / Database Right (NOMAD)
+# Disclaimer: Data sourced from third-party databases. All data remains the
+#   intellectual property of respective database providers under their
+#   applicable licenses. This aggregation is for research purposes only.
+# Sources: jarvis
+# ─────────────────────────────────────────────────────────────────────────────
+
+formula: Cu2O
+databases:
+  jarvis:
+    material_id: JVASP-1216
+    formula: Cu2O
+    spacegroup: Pn-3m
+    band_gap: 0.644
+    formation_energy_per_atom: -0.52398
+    bulk_modulus: 115.17
+    shear_modulus: 8.5
+    poissons_ratio: 0.46
+    density: 5.988
+    raw:
+      jid: JVASP-1216
+      spg_number: '224'
+      spg_symbol: Pn-3m
+      formula: Cu2O
+      formation_energy_peratom: -0.52398
+      func: OptB88vdW
+      optb88vdw_bandgap: 0.644
+      atoms:
+        lattice_mat:
+        - - 4.297459889122104
+          - 0.0
+          - 0.0
+        - - 0.0
+          - 4.297459889122104
+          - 0.0
+        - - 0.0
+          - 0.0
+          - 4.297459889122104
+        coords:
+        - - 1.074365
+          - 1.074365
+          - 3.223095
+        - - 3.223095
+          - 1.074365
+          - 1.074365
+        - - 1.074365
+          - 3.223095
+          - 1.074365
+        - - 3.223095
+          - 3.223095
+          - 3.223095
+        - - 2.14873
+          - 2.14873
+          - 2.14873
+        - - 0.0
+          - 0.0
+          - 0.0
+        elements:
+        - Cu
+        - Cu
+        - Cu
+        - Cu
+        - O
+        - O
+        abc:
+        - 4.29746
+        - 4.29746
+        - 4.29746
+        angles:
+        - 90.0
+        - 90.0
+        - 90.0
+        cartesian: true
+        props:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      slme: 14.64
+      magmom_oszicar: 0.0
+      spillage: na
+      elastic_tensor:
+      - - 126.9
+        - 109.3
+        - 109.3
+        - 0.0
+        - 0.0
+        - 0.0
+      - - 109.3
+        - 126.9
+        - 109.3
+        - 0.0
+        - 0.0
+        - 0.0
+      - - 109.3
+        - 109.3
+        - 126.9
+        - 0.0
+        - 0.0
+        - 0.0
+      - - 0.0
+        - 0.0
+        - 0.0
+        - 8.3
+        - 0.0
+        - 0.0
+      - - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 8.3
+        - 0.0
+      - - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 8.3
+      effective_masses_300K:
+        p:
+        - 1.76
+        - 1.76
+        - 1.76
+        n:
+        - 1.01
+        - 1.01
+        - 1.01
+      kpoint_length_unit: 35
+      maxdiff_mesh: na
+      maxdiff_bz: na
+      encut: 1000
+      optb88vdw_total_energy: -1.21797
+      epsx: 8.5202
+      epsy: 8.5202
+      epsz: 8.5202
+      mepsx: na
+      mepsy: na
+      mepsz: na
+      modes:
+      - -0.58
+      - -0.58
+      - 71.79
+      - 95.65
+      - 150.61
+      - 344.94
+      - 506.94
+      - 620.24
+      magmom_outcar: 0.0
+      max_efg: 29.855
+      avg_elec_mass: 1.01
+      avg_hole_mass: 1.76
+      icsd: 628619,63281,53322,52043,628621,172174,31057,26963,180846,167446,246903,38233,261853,173982,173983
+      dfpt_piezo_max_eij: 0.0
+      dfpt_piezo_max_dij: 0.0
+      dfpt_piezo_max_dielectric: 9.193756950000001
+      dfpt_piezo_max_dielectric_electronic: 8.38315275
+      dfpt_piezo_max_dielectric_ionic: 0.8106042
+      max_ir_mode: 0.39
+      min_ir_mode: 0.01
+      n-Seebeck: -189.92
+      p-Seebeck: 359.1000000000001
+      n-powerfact: 1081.14
+      p-powerfact: 1927.57
+      ncond: 29974.45
+      pcond: 14947.480000000001
+      nkappa: 98715239999999.98
+      pkappa: 131630280000000.0
+      ehull: 0.0
+      Tc_supercon: na
+      dimensionality: 3D-bulk
+      efg:
+      - - Cu
+        - c
+        - '-0.0'
+        - '-29.855'
+        - '29.855'
+        - '-29.855'
+        - '-0.0'
+        - '29.855'
+        - '29.855'
+        - '29.855'
+        - '0.0'
+      - - O
+        - a
+        - '-0.0'
+        - '-0.0'
+        - '-0.0'
+        - '-0.0'
+        - '-0.0'
+        - '-0.0'
+        - '-0.0'
+        - '-0.0'
+        - '-0.0'
+      xml_data_link: <a href=https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-1216.xml target='_blank' >JVASP-1216</a>
+      typ: bulk
+      exfoliation_energy: na
+      spg: '224'
+      crys: cubic
+      density: 5.988
+      poisson: 0.46
+      raw_files:
+      - FD-ELAST,JVASP-1216.zip,https://ndownloader.figshare.com/files/22975706
+      - DFPT,JVASP-1216.zip,https://ndownloader.figshare.com/files/22941974
+      - OPT-LOPTICS,JVASP-1216.zip,https://ndownloader.figshare.com/files/24036224
+      - OPT-Bandst,JVASP-1216.zip,https://ndownloader.figshare.com/files/23713712
+      - TBMBJ,JVASP-1216.zip,https://ndownloader.figshare.com/files/23572385
+      - DFT-SCF,JVASP-1216.zip,https://ndownloader.figshare.com/files/23127551
+      nat: 6
+      bulk_modulus_kv: 115.17
+      shear_modulus_gv: 8.5
+      mbj_bandgap: na
+      hse_gap: na
+      reference: mp-361
+      search: -Cu-O
+    last_updated: '2026-05-24'
+cross_db_discrepancies: {}
+coverage:
+  common_properties:
+  - band_gap
+  - bulk_modulus
+  - density
+  - formation_energy_per_atom
+  - formula
+  - last_updated
+  - material_id
+  - poissons_ratio
+  - raw
+  - shear_modulus
+  - spacegroup
+  properties_unique_to_source:
+    jarvis: []
+last_updated: '2026-05-24'

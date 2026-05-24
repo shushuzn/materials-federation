@@ -1,0 +1,164 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Mo2C
+# Synced at: 2026-05-24T05:49:47Z
+# License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
+#          OQMD License (OQMD), AFLOW License (AFLOW),
+#          CC BY 4.0 / Database Right (NOMAD)
+# Disclaimer: Data sourced from third-party databases. All data remains the
+#   intellectual property of respective database providers under their
+#   applicable licenses. This aggregation is for research purposes only.
+# Sources: jarvis
+# ─────────────────────────────────────────────────────────────────────────────
+
+formula: Mo2C
+databases:
+  jarvis:
+    material_id: JVASP-55020
+    formula: Mo2C
+    spacegroup: P-6m2
+    band_gap: 0.0
+    formation_energy_per_atom: 0.48549
+    density: 8.621
+    raw:
+      jid: JVASP-55020
+      spg_number: '187'
+      spg_symbol: P-6m2
+      formula: Mo2C
+      formation_energy_peratom: 0.48549
+      func: OptB88vdW
+      optb88vdw_bandgap: 0.0
+      atoms:
+        lattice_mat:
+        - - 1.4420253968378896
+          - -2.4976605138619083
+          - 0.0
+        - - 1.4420253968378896
+          - 2.4976605138619083
+          - -0.0
+        - - -0.0
+          - 0.0
+          - 5.4522337892492665
+        coords:
+        - - 1.44203
+          - -0.832554998439984
+          - 1.4012601655290773
+        - - 1.44203
+          - -0.832554998439984
+          - 4.050969834470925
+        - - 0.0
+          - 0.0
+          - 0.0
+        elements:
+        - Mo
+        - Mo
+        - C
+        abc:
+        - 2.884052
+        - 2.884052
+        - 5.45223
+        angles:
+        - 90.0
+        - 90.0
+        - 119.9998
+        cartesian: true
+        props:
+        - ''
+        - ''
+        - ''
+      slme: na
+      magmom_oszicar: 0.0
+      spillage: 0.612
+      elastic_tensor: na
+      effective_masses_300K:
+        p: na
+        n: na
+      kpoint_length_unit: 75
+      maxdiff_mesh: 0.8748
+      maxdiff_bz: 0.9728
+      encut: 850
+      optb88vdw_total_energy: -7.50471
+      epsx: 178.2747
+      epsy: 178.2748
+      epsz: 158.2078
+      mepsx: na
+      mepsy: na
+      mepsz: na
+      modes: na
+      magmom_outcar: 0.0
+      max_efg: 36.966
+      avg_elec_mass: na
+      avg_hole_mass: na
+      icsd: '43669'
+      dfpt_piezo_max_eij: na
+      dfpt_piezo_max_dij: na
+      dfpt_piezo_max_dielectric: na
+      dfpt_piezo_max_dielectric_electronic: na
+      dfpt_piezo_max_dielectric_ionic: na
+      max_ir_mode: na
+      min_ir_mode: na
+      n-Seebeck: na
+      p-Seebeck: na
+      n-powerfact: na
+      p-powerfact: na
+      ncond: na
+      pcond: na
+      nkappa: na
+      pkappa: na
+      ehull: 0.6348
+      Tc_supercon: na
+      dimensionality: 3D-bulk
+      efg:
+      - - Mo
+        - i
+        - '-18.48'
+        - '-0.0'
+        - '0.0'
+        - '-0.0'
+        - '-18.485'
+        - '-0.0'
+        - '0.0'
+        - '-0.0'
+        - '36.966'
+      - - C
+        - a
+        - '3.687'
+        - '0.0'
+        - '0.0'
+        - '0.0'
+        - '3.687'
+        - '-0.0'
+        - '0.0'
+        - '-0.0'
+        - '-7.373'
+      xml_data_link: <a href=https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-55020.xml target='_blank' >JVASP-55020</a>
+      typ: bulk
+      exfoliation_energy: na
+      spg: '187'
+      crys: hexagonal
+      density: 8.621
+      poisson: na
+      raw_files:
+      - OPT-LOPTICS,JVASP-55020.zip,https://ndownloader.figshare.com/files/24838043
+      - OPT-Bandst,JVASP-55020.zip,https://ndownloader.figshare.com/files/23968118
+      nat: 3
+      bulk_modulus_kv: na
+      shear_modulus_gv: na
+      mbj_bandgap: na
+      hse_gap: na
+      reference: mp-571589
+      search: -C-Mo
+    last_updated: '2026-05-24'
+cross_db_discrepancies: {}
+coverage:
+  common_properties:
+  - band_gap
+  - density
+  - formation_energy_per_atom
+  - formula
+  - last_updated
+  - material_id
+  - raw
+  - spacegroup
+  properties_unique_to_source:
+    jarvis: []
+last_updated: '2026-05-24'

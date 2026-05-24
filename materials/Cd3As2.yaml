@@ -1,0 +1,241 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Cd3As2
+# Synced at: 2026-05-24T05:50:16Z
+# License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
+#          OQMD License (OQMD), AFLOW License (AFLOW),
+#          CC BY 4.0 / Database Right (NOMAD)
+# Disclaimer: Data sourced from third-party databases. All data remains the
+#   intellectual property of respective database providers under their
+#   applicable licenses. This aggregation is for research purposes only.
+# Sources: jarvis
+# ─────────────────────────────────────────────────────────────────────────────
+
+formula: Cd3As2
+databases:
+  jarvis:
+    material_id: JVASP-10703
+    formula: Cd3As2
+    spacegroup: Pn-3m
+    band_gap: 0.0
+    formation_energy_per_atom: 0.09357
+    bulk_modulus: 46.77
+    shear_modulus: 11.5
+    poissons_ratio: 0.39
+    density: 6.016
+    raw:
+      jid: JVASP-10703
+      spg_number: '224'
+      spg_symbol: Pn-3m
+      formula: Cd3As2
+      formation_energy_peratom: 0.09357
+      func: OptB88vdW
+      optb88vdw_bandgap: 0.0
+      atoms:
+        lattice_mat:
+        - - 6.454355347066961
+          - 0.0
+          - -0.0
+        - - 0.0
+          - 6.454355347066961
+          - 0.0
+        - - 0.0
+          - -0.0
+          - 6.454355347066961
+        coords:
+        - - 3.22718
+          - 0.0
+          - 3.22718
+        - - 3.22718
+          - 3.22718
+          - 0.0
+        - - 0.0
+          - 3.22718
+          - 0.0
+        - - 0.0
+          - 0.0
+          - 3.22718
+        - - 3.22718
+          - 0.0
+          - 0.0
+        - - 0.0
+          - 3.22718
+          - 3.22718
+        - - 1.61359
+          - 4.84077
+          - 4.84077
+        - - 4.84077
+          - 4.84077
+          - 1.61359
+        - - 4.84077
+          - 1.61359
+          - 4.84077
+        - - 1.61359
+          - 1.61359
+          - 1.61359
+        elements:
+        - Cd
+        - Cd
+        - Cd
+        - Cd
+        - Cd
+        - Cd
+        - As
+        - As
+        - As
+        - As
+        abc:
+        - 6.45436
+        - 6.45436
+        - 6.45436
+        angles:
+        - 90.0
+        - 90.0
+        - 90.0
+        cartesian: true
+        props:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      slme: na
+      magmom_oszicar: 0.0
+      spillage: 0.854
+      elastic_tensor:
+      - - 59.7
+        - 40.3
+        - 40.3
+        - -0.0
+        - -0.0
+        - 0.0
+      - - 40.3
+        - 59.7
+        - 40.3
+        - 0.0
+        - -0.0
+        - -0.0
+      - - 40.3
+        - 40.3
+        - 59.7
+        - -0.0
+        - -0.0
+        - -0.0
+      - - -0.0
+        - 0.0
+        - -0.0
+        - 12.7
+        - 0.0
+        - -0.0
+      - - -0.0
+        - -0.0
+        - -0.0
+        - 0.0
+        - 12.7
+        - 0.0
+      - - 0.0
+        - -0.0
+        - -0.0
+        - -0.0
+        - -0.0
+        - 12.7
+      effective_masses_300K:
+        p:
+        - 0.0
+        - 0.0
+        - 0.0
+        n:
+        - 0.0
+        - 0.0
+        - 0.0
+      kpoint_length_unit: 65
+      maxdiff_mesh: 0.0001
+      maxdiff_bz: 0.0306
+      encut: 700
+      optb88vdw_total_energy: 0.3765
+      epsx: 71.3309
+      epsy: 71.3309
+      epsz: 71.3309
+      mepsx: na
+      mepsy: na
+      mepsz: na
+      modes:
+      - -49.95
+      - 0.03
+      - 0.03
+      - 0.03
+      - 6.34
+      - 73.73
+      - 74.27
+      - 81.6
+      - 86.38
+      - 132.6
+      - 134.66
+      - 145.63
+      - 162.53
+      magmom_outcar: 0.0
+      max_efg: na
+      avg_elec_mass: 0.0
+      avg_hole_mass: 0.0
+      icsd: '56167'
+      dfpt_piezo_max_eij: na
+      dfpt_piezo_max_dij: na
+      dfpt_piezo_max_dielectric: na
+      dfpt_piezo_max_dielectric_electronic: na
+      dfpt_piezo_max_dielectric_ionic: na
+      max_ir_mode: na
+      min_ir_mode: na
+      n-Seebeck: -6.59
+      p-Seebeck: 15.83
+      n-powerfact: 26.76
+      p-powerfact: 155.24
+      ncond: 615655.06
+      pcond: 619815.18
+      nkappa: 1596553300000000.0
+      pkappa: 1606921900000000.0
+      ehull: 0.1512
+      Tc_supercon: na
+      dimensionality: 3D-bulk
+      efg: []
+      xml_data_link: <a href=https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-10703.xml target='_blank' >JVASP-10703</a>
+      typ: bulk
+      exfoliation_energy: na
+      spg: '224'
+      crys: cubic
+      density: 6.016
+      poisson: 0.39
+      raw_files:
+      - FD-ELAST,JVASP-10703.zip,https://ndownloader.figshare.com/files/22992005
+      - OPT-LOPTICS,JVASP-10703.zip,https://ndownloader.figshare.com/files/24237086
+      - OPT-Bandst,JVASP-10703.zip,https://ndownloader.figshare.com/files/23782190
+      - DFT-SCF,JVASP-10703.zip,https://ndownloader.figshare.com/files/23179175
+      - WANN,JVASP-10703.zip,https://ndownloader.figshare.com/files/23103623
+      nat: 10
+      bulk_modulus_kv: 46.77
+      shear_modulus_gv: 11.5
+      mbj_bandgap: na
+      hse_gap: na
+      reference: mp-10762
+      search: -As-Cd
+    last_updated: '2026-05-24'
+cross_db_discrepancies: {}
+coverage:
+  common_properties:
+  - band_gap
+  - bulk_modulus
+  - density
+  - formation_energy_per_atom
+  - formula
+  - last_updated
+  - material_id
+  - poissons_ratio
+  - raw
+  - shear_modulus
+  - spacegroup
+  properties_unique_to_source:
+    jarvis: []
+last_updated: '2026-05-24'

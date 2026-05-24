@@ -1,0 +1,252 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# KNbO3
+# Synced at: 2026-05-24T05:48:52Z
+# License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
+#          OQMD License (OQMD), AFLOW License (AFLOW),
+#          CC BY 4.0 / Database Right (NOMAD)
+# Disclaimer: Data sourced from third-party databases. All data remains the
+#   intellectual property of respective database providers under their
+#   applicable licenses. This aggregation is for research purposes only.
+# Sources: jarvis
+# ─────────────────────────────────────────────────────────────────────────────
+
+formula: KNbO3
+databases:
+  jarvis:
+    material_id: JVASP-2544
+    formula: KNbO3
+    spacegroup: R3m
+    band_gap: 2.089
+    formation_energy_per_atom: -2.67937
+    bulk_modulus: 128.57
+    shear_modulus: 57.16
+    poissons_ratio: 0.34
+    density: 4.443
+    raw:
+      jid: JVASP-2544
+      spg_number: '160'
+      spg_symbol: R3m
+      formula: KNbO3
+      formation_energy_peratom: -2.67937
+      func: OptB88vdW
+      optb88vdw_bandgap: 2.089
+      atoms:
+        lattice_mat:
+        - - 4.067082692966133
+          - -0.0024125133044409
+          - 0.0105702571221158
+        - - 0.0105365021391861
+          - 4.067069772446873
+          - 0.0105702554971936
+        - - -0.0024204916494823
+          - -0.0024125148215691
+          - 4.06709653387252
+        coords:
+        - - 0.05895008253240033
+          - 0.05876275342733599
+          - 0.05913871353831873
+        - - 2.0543410650649907
+          - 2.0478128660108763
+          - 2.060914633853976
+        - - 0.12616373482998933
+          - 2.1500573259780764
+          - 2.1573283144502637
+        - - 2.156912625286989
+          - 2.1500573259766074
+          - 0.1330516719492162
+        - - 2.150445367485665
+          - 0.119318415857138
+          - 2.157328314448258
+        elements:
+        - K
+        - Nb
+        - O
+        - O
+        - O
+        abc:
+        - 4.067094
+        - 4.067097
+        - 4.067101
+        angles:
+        - 89.8851
+        - 89.8852
+        - 89.8851
+        cartesian: true
+        props:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      slme: 10.79
+      magmom_oszicar: 0.0
+      spillage: na
+      elastic_tensor:
+      - - 229.9
+        - 92.6
+        - 71.3
+        - 0.0
+        - 28.9
+        - 0.0
+      - - 92.6
+        - 229.9
+        - 71.3
+        - 0.0
+        - -28.9
+        - 0.0
+      - - 71.3
+        - 71.3
+        - 226.9
+        - 0.0
+        - 0.0
+        - 0.0
+      - - 0.0
+        - 0.0
+        - 0.0
+        - 68.7
+        - 0.0
+        - 28.9
+      - - 28.9
+        - -28.9
+        - 0.0
+        - 0.0
+        - 33.3
+        - 0.0
+      - - 0.0
+        - 0.0
+        - 0.0
+        - 28.9
+        - 0.0
+        - 33.3
+      effective_masses_300K:
+        p:
+        - 2.29
+        - 2.29
+        - 2.29
+        n:
+        - 1.07
+        - 1.08
+        - 1.07
+      kpoint_length_unit: 25
+      maxdiff_mesh: na
+      maxdiff_bz: na
+      encut: 900
+      optb88vdw_total_energy: -5.82028
+      epsx: 5.9157
+      epsy: 5.9167
+      epsz: 5.9146
+      mepsx: 5.3658
+      mepsy: 5.3663
+      mepsz: 5.3647
+      modes:
+      - -0.13
+      - -0.09
+      - -0.07
+      - 177.08
+      - 177.08
+      - 179.12
+      - 196.62
+      - 196.62
+      - 233.23
+      - 240.26
+      - 267.06
+      - 267.06
+      - 508.83
+      - 508.83
+      - 561.04
+      magmom_outcar: 0.0
+      max_efg: 18.704
+      avg_elec_mass: 1.0733333333333335
+      avg_hole_mass: 2.29
+      icsd: '9534'
+      dfpt_piezo_max_eij: 0.279
+      dfpt_piezo_max_dij: 8.146037626608127
+      dfpt_piezo_max_dielectric: 57.66539139
+      dfpt_piezo_max_dielectric_electronic: 5.83922547
+      dfpt_piezo_max_dielectric_ionic: 51.82616611
+      max_ir_mode: 7.26
+      min_ir_mode: 0.0
+      n-Seebeck: -313.5566666666667
+      p-Seebeck: 435.14000000000004
+      n-powerfact: 2996.51
+      p-powerfact: 2396.1133333333332
+      ncond: 30584.72333333333
+      pcond: 12654.816666666666
+      nkappa: 217479956666666.75
+      pkappa: 155184773333333.34
+      ehull: 0.0
+      Tc_supercon: na
+      dimensionality: intercalated ion
+      efg:
+      - - O
+        - b
+        - '18.704'
+        - '2.683'
+        - '2.783'
+        - '2.683'
+        - '-9.362'
+        - '0.512'
+        - '2.783'
+        - '0.512'
+        - '-9.342'
+      - - K
+        - a
+        - '0.0'
+        - '0.056'
+        - '0.056'
+        - '0.056'
+        - '0.0'
+        - '0.057'
+        - '0.056'
+        - '0.057'
+        - '-0.001'
+      - - Nb
+        - a
+        - '0.002'
+        - '8.77'
+        - '8.826'
+        - '8.77'
+        - '-0.054'
+        - '8.801'
+        - '8.826'
+        - '8.801'
+        - '0.052'
+      xml_data_link: <a href=https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-2544.xml target='_blank' >JVASP-2544</a>
+      typ: bulk
+      exfoliation_energy: na
+      spg: '160'
+      crys: trigonal
+      density: 4.443
+      poisson: 0.34
+      raw_files:
+      - FD-ELAST,JVASP-2544.zip,https://ndownloader.figshare.com/files/22976852
+      - DFPT,JVASP-2544.zip,https://ndownloader.figshare.com/files/22942880
+      - OPT-LOPTICS,JVASP-2544.zip,https://ndownloader.figshare.com/files/24038567
+      - OPT-Bandst,JVASP-2544.zip,https://ndownloader.figshare.com/files/23712899
+      - TBMBJ,JVASP-2544.zip,https://ndownloader.figshare.com/files/23570414
+      - DFT-SCF,JVASP-2544.zip,https://ndownloader.figshare.com/files/23153246
+      nat: 5
+      bulk_modulus_kv: 128.57
+      shear_modulus_gv: 57.16
+      mbj_bandgap: 2.596
+      hse_gap: na
+      reference: mp-7375
+      search: -K-Nb-O
+    last_updated: '2026-05-24'
+cross_db_discrepancies: {}
+coverage:
+  common_properties:
+  - band_gap
+  - bulk_modulus
+  - density
+  - formation_energy_per_atom
+  - formula
+  - last_updated
+  - material_id
+  - poissons_ratio
+  - raw
+  - shear_modulus
+  - spacegroup
+  properties_unique_to_source:
+    jarvis: []
+last_updated: '2026-05-24'

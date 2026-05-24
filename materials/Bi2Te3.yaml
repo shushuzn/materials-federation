@@ -1,0 +1,153 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Bi2Te3
+# Synced at: 2026-05-24T05:49:34Z
+# License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
+#          OQMD License (OQMD), AFLOW License (AFLOW),
+#          CC BY 4.0 / Database Right (NOMAD)
+# Disclaimer: Data sourced from third-party databases. All data remains the
+#   intellectual property of respective database providers under their
+#   applicable licenses. This aggregation is for research purposes only.
+# Sources: jarvis
+# ─────────────────────────────────────────────────────────────────────────────
+
+formula: Bi2Te3
+databases:
+  jarvis:
+    material_id: JVASP-86105
+    formula: Bi2Te3
+    spacegroup: R-3m
+    band_gap: 0.0
+    formation_energy_per_atom: 0.00814
+    density: 7.813
+    raw:
+      jid: JVASP-86105
+      spg_number: '166'
+      spg_symbol: R-3m
+      formula: Bi2Te3
+      formation_energy_peratom: 0.00814
+      func: OptB88vdW
+      optb88vdw_bandgap: 0.0
+      atoms:
+        lattice_mat:
+        - - 4.274650382426439
+          - -0.1128941782683512
+          - 8.783286635037765
+        - - 1.9343606322531857
+          - 3.813610882616394
+          - 8.783286639914659
+        - - -0.1894120108730302
+          - -0.1128941866606651
+          - 9.766417291914262
+        coords:
+        - - 1.1671671115404598
+          - 0.6956603724272836
+          - 5.299717365932628
+        - - 3.5882798409894785
+          - 2.1387032463641753
+          - 16.293184414014192
+        - - 5.990441528669067
+          - 3.5704508322565585
+          - 27.200601086517402
+        - - 2.3777849530743187
+          - 1.4172184510925787
+          - 10.796730035534347
+        - - 4.7846365657266405
+          - 2.851761347859386
+          - 21.725442098001274
+        elements:
+        - Bi
+        - Bi
+        - Te
+        - Te
+        - Te
+        abc:
+        - 9.768908
+        - 9.768907
+        - 9.768909
+        angles:
+        - 27.0604
+        - 27.0605
+        - 27.0605
+        cartesian: true
+        props:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      slme: na
+      magmom_oszicar: 0.0
+      spillage: na
+      elastic_tensor: na
+      effective_masses_300K:
+        p: na
+        n: na
+      kpoint_length_unit: 100
+      maxdiff_mesh: na
+      maxdiff_bz: na
+      encut: 500
+      optb88vdw_total_energy: -1.20013
+      epsx: na
+      epsy: na
+      epsz: na
+      mepsx: na
+      mepsy: na
+      mepsz: na
+      modes: na
+      magmom_outcar: 0.0
+      max_efg: na
+      avg_elec_mass: na
+      avg_hole_mass: na
+      icsd: '20289'
+      dfpt_piezo_max_eij: na
+      dfpt_piezo_max_dij: na
+      dfpt_piezo_max_dielectric: na
+      dfpt_piezo_max_dielectric_electronic: na
+      dfpt_piezo_max_dielectric_ionic: na
+      max_ir_mode: na
+      min_ir_mode: na
+      n-Seebeck: na
+      p-Seebeck: na
+      n-powerfact: na
+      p-powerfact: na
+      ncond: na
+      pcond: na
+      nkappa: na
+      pkappa: na
+      ehull: 0.2469
+      Tc_supercon: na
+      dimensionality: 3D-bulk
+      efg: []
+      xml_data_link: <a href=https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-86105.xml target='_blank' >JVASP-86105</a>
+      typ: bulk
+      exfoliation_energy: na
+      spg: '166'
+      crys: trigonal
+      density: 7.813
+      poisson: na
+      raw_files:
+      - OPT-LOPTICS,JVASP-86105.zip,https://ndownloader.figshare.com/files/25258154
+      - OPT-Bandst,JVASP-86105.zip,https://ndownloader.figshare.com/files/24011114
+      - DFT-SCF,JVASP-86105.zip,https://ndownloader.figshare.com/files/23566697
+      nat: 5
+      bulk_modulus_kv: na
+      shear_modulus_gv: na
+      mbj_bandgap: na
+      hse_gap: na
+      reference: mp-568390
+      search: -Bi-Te
+    last_updated: '2026-05-24'
+cross_db_discrepancies: {}
+coverage:
+  common_properties:
+  - band_gap
+  - density
+  - formation_energy_per_atom
+  - formula
+  - last_updated
+  - material_id
+  - raw
+  - spacegroup
+  properties_unique_to_source:
+    jarvis: []
+last_updated: '2026-05-24'

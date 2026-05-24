@@ -1,0 +1,371 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# HfO2
+# Synced at: 2026-05-24T05:49:22Z
+# License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
+#          OQMD License (OQMD), AFLOW License (AFLOW),
+#          CC BY 4.0 / Database Right (NOMAD)
+# Disclaimer: Data sourced from third-party databases. All data remains the
+#   intellectual property of respective database providers under their
+#   applicable licenses. This aggregation is for research purposes only.
+# Sources: jarvis
+# ─────────────────────────────────────────────────────────────────────────────
+
+formula: HfO2
+databases:
+  jarvis:
+    material_id: JVASP-18984
+    formula: HfO2
+    spacegroup: Pbca
+    band_gap: 4.315
+    formation_energy_per_atom: -3.79814
+    bulk_modulus: 235.37
+    shear_modulus: 121.4
+    poissons_ratio: 0.28
+    density: 10.505
+    raw:
+      jid: JVASP-18984
+      spg_number: '61'
+      spg_symbol: Pbca
+      formula: HfO2
+      formation_energy_peratom: -3.79814
+      func: OptB88vdW
+      optb88vdw_bandgap: 4.315
+      atoms:
+        lattice_mat:
+        - - 5.0688262593827815
+          - 0.0
+          - 0.0
+        - - -0.0
+          - 5.238797819491683
+          - 0.0
+        - - 0.0
+          - 0.0
+          - 10.023785807528128
+        coords:
+        - - 3.826967914737301
+          - 2.434880592368746
+          - 1.1570768874037074
+        - - 1.2925529147372985
+          - 2.8039194076312524
+          - 3.8548181125962913
+        - - 3.7762770852626995
+          - 5.054280592368748
+          - 8.86671311259629
+        - - 1.2418620852627011
+          - 0.1845194076312537
+          - 6.168971887403709
+        - - 1.2418620852627011
+          - 2.8039194076312524
+          - 8.86671311259629
+        - - 3.7762770852626995
+          - 2.434880592368746
+          - 6.168971887403709
+        - - 1.2925529147372985
+          - 0.1845194076312537
+          - 1.1570768874037074
+        - - 3.826967914737301
+          - 5.054280592368748
+          - 3.8548181125962913
+        - - 4.417937634065601
+          - 3.276472325240773
+          - 7.919877146238553
+        - - 1.8835226340656006
+          - 1.9623276747592273
+          - 7.115807853761447
+        - - 1.8835226340656006
+          - 4.581727674759228
+          - 7.919877146238553
+        - - 4.417937634065601
+          - 0.657072325240773
+          - 7.115807853761447
+        - - 0.6508923659343989
+          - 1.9623276747592273
+          - 2.1039128537614413
+        - - 3.1853073659343996
+          - 3.276472325240773
+          - 2.9079821462385596
+        - - 5.055350915645693
+          - 3.9901247552060597
+          - 0.23305498249101753
+        - - 0.013479084354306118
+          - 1.2486752447939407
+          - 9.790735017508911
+        - - 2.5478940843543074
+          - 1.3707247552060595
+          - 9.790735017508911
+        - - 0.013479084354306118
+          - 3.868075244793941
+          - 5.2449499824910895
+        - - 0.6508923659343989
+          - 4.581727674759228
+          - 2.9079821462385596
+        - - 2.5478940843543074
+          - 3.9901247552060597
+          - 5.2449499824910895
+        - - 2.5209359156456936
+          - 3.868075244793941
+          - 0.23305498249101753
+        - - 5.055350915645693
+          - 1.3707247552060595
+          - 4.778840017508911
+        - - 2.5209359156456936
+          - 1.2486752447939407
+          - 4.778840017508911
+        - - 3.1853073659343996
+          - 0.657072325240773
+          - 2.1039128537614413
+        elements:
+        - Hf
+        - Hf
+        - Hf
+        - Hf
+        - Hf
+        - Hf
+        - Hf
+        - Hf
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        abc:
+        - 5.06883
+        - 5.2388
+        - 10.02379
+        angles:
+        - 90.0
+        - 90.0
+        - 90.0
+        cartesian: true
+        props:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      slme: 0.0
+      magmom_oszicar: 0.0
+      spillage: na
+      elastic_tensor:
+      - - 394.6
+        - 138.1
+        - 134.6
+        - 0.0
+        - -0.0
+        - -0.0
+      - - 138.1
+        - 454.9
+        - 170.9
+        - 0.0
+        - 0.0
+        - -0.0
+      - - 134.6
+        - 170.9
+        - 381.6
+        - 0.0
+        - 0.0
+        - -0.0
+      - - 0.0
+        - 0.0
+        - 0.0
+        - 105.4
+        - 0.0
+        - -0.0
+      - - -0.0
+        - 0.0
+        - -0.0
+        - 0.0
+        - 135.9
+        - -0.0
+      - - -0.0
+        - -0.0
+        - -0.0
+        - 0.0
+        - -0.0
+        - 103.2
+      effective_masses_300K:
+        p:
+        - 2.8
+        - 3.33
+        - 12.43
+        n:
+        - 2.65
+        - 3.74
+        - 0.53
+      kpoint_length_unit: 25
+      maxdiff_mesh: na
+      maxdiff_bz: na
+      encut: 1350
+      optb88vdw_total_energy: -8.36947
+      epsx: 4.9247
+      epsy: 5.032
+      epsz: 5.1824
+      mepsx: 3.9138
+      mepsy: 4.0149
+      mepsz: 4.084
+      modes:
+      - -0.16
+      - 0.02
+      - 0.03
+      - 81.55
+      - 90.42
+      - 110.4
+      - 110.96
+      - 126.12
+      - 126.15
+      - 131.67
+      - 135.02
+      - 135.04
+      - 140.3
+      - 147.27
+      - 156.96
+      - 169.05
+      - 181.53
+      - 185.04
+      - 191.5
+      - 198.82
+      - 199.48
+      - 212.39
+      - 217.45
+      - 237.77
+      - 242.99
+      - 253.34
+      - 253.39
+      - 257.4
+      - 271.91
+      - 307.9
+      - 309.04
+      - 310.2
+      - 311.14
+      - 317.69
+      - 323.93
+      - 328.24
+      - 329.58
+      - 343.05
+      - 360.89
+      - 361.74
+      - 363.46
+      - 367.65
+      - 385.82
+      - 397.02
+      - 403.93
+      - 414.67
+      - 417.22
+      - 428.51
+      - 446.85
+      - 456.33
+      - 471.06
+      - 490.56
+      - 498.81
+      - 508.69
+      - 525.07
+      - 559.68
+      - 560.44
+      - 561.9
+      - 569.93
+      - 573.57
+      - 575.66
+      - 605.73
+      - 610.22
+      - 611.71
+      - 637.68
+      - 649.65
+      - 683.46
+      - 684.55
+      - 693.58
+      - 721.28
+      - 724.23
+      - 774.62
+      magmom_outcar: 0.0
+      max_efg: na
+      avg_elec_mass: na
+      avg_hole_mass: na
+      icsd: 79913,71354,173965
+      dfpt_piezo_max_eij: na
+      dfpt_piezo_max_dij: na
+      dfpt_piezo_max_dielectric: na
+      dfpt_piezo_max_dielectric_electronic: na
+      dfpt_piezo_max_dielectric_ionic: na
+      max_ir_mode: na
+      min_ir_mode: na
+      n-Seebeck: -285.6266666666667
+      p-Seebeck: 435.28666666666663
+      n-powerfact: 1624.0
+      p-powerfact: 1016.6533333333333
+      ncond: 20188.500000000004
+      pcond: 5442.2699999999995
+      nkappa: 115573256000000.0
+      pkappa: 66473739000000.0
+      ehull: 0.0118
+      Tc_supercon: na
+      dimensionality: 3D-bulk
+      efg: []
+      xml_data_link: <a href=https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-18984.xml target='_blank' >JVASP-18984</a>
+      typ: bulk
+      exfoliation_energy: na
+      spg: '61'
+      crys: orthorhombic
+      density: 10.505
+      poisson: 0.28
+      raw_files:
+      - FD-ELAST,JVASP-18984.zip,https://ndownloader.figshare.com/files/23071709
+      - FD-ELAST,JVASP-18984.zip,https://ndownloader.figshare.com/files/23039438
+      - OPT-LOPTICS,JVASP-18984.zip,https://ndownloader.figshare.com/files/24258206
+      - OPT-Bandst,JVASP-18984.zip,https://ndownloader.figshare.com/files/23833409
+      - TBMBJ,JVASP-18984.zip,https://ndownloader.figshare.com/files/23620016
+      - DFT-SCF,JVASP-18984.zip,https://ndownloader.figshare.com/files/23266319
+      nat: 24
+      bulk_modulus_kv: 235.37
+      shear_modulus_gv: 121.4
+      mbj_bandgap: 5.904
+      hse_gap: na
+      reference: mp-1858
+      search: -Hf-O
+    last_updated: '2026-05-24'
+cross_db_discrepancies: {}
+coverage:
+  common_properties:
+  - band_gap
+  - bulk_modulus
+  - density
+  - formation_energy_per_atom
+  - formula
+  - last_updated
+  - material_id
+  - poissons_ratio
+  - raw
+  - shear_modulus
+  - spacegroup
+  properties_unique_to_source:
+    jarvis: []
+last_updated: '2026-05-24'

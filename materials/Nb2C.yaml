@@ -1,0 +1,188 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Nb2C
+# Synced at: 2026-05-24T05:49:45Z
+# License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
+#          OQMD License (OQMD), AFLOW License (AFLOW),
+#          CC BY 4.0 / Database Right (NOMAD)
+# Disclaimer: Data sourced from third-party databases. All data remains the
+#   intellectual property of respective database providers under their
+#   applicable licenses. This aggregation is for research purposes only.
+# Sources: jarvis
+# ─────────────────────────────────────────────────────────────────────────────
+
+formula: Nb2C
+databases:
+  jarvis:
+    material_id: JVASP-86874
+    formula: Nb2C
+    spacegroup: Pnma
+    band_gap: 0.0
+    formation_energy_per_atom: -0.48502
+    density: 7.645
+    raw:
+      jid: JVASP-86874
+      spg_number: '62'
+      spg_symbol: Pnma
+      formula: Nb2C
+      formation_energy_peratom: -0.48502
+      func: OptB88vdW
+      optb88vdw_bandgap: 0.0
+      atoms:
+        lattice_mat:
+        - - 3.119526231955926
+          - -0.0
+          - 0.0
+        - - 0.0
+          - 4.992758824189475
+          - -0.0
+        - - -0.0
+          - -0.0
+          - 11.034529453258493
+        coords:
+        - - 0.0
+          - 3.6664901246775212
+          - 3.2726213778841573
+        - - 1.559765
+          - 1.326269875322476
+          - 7.76190862211584
+        - - 1.559765
+          - 3.754361977003556
+          - 6.018762756393226
+        - - 0.0
+          - 3.8226498753224782
+          - 8.78988637788416
+        - - 1.559765
+          - 3.7347780229964433
+          - 0.5014977563932274
+        - - 0.0
+          - 1.2383980229964429
+          - 5.015767243606773
+        - - 0.0
+          - 1.2579819770035572
+          - 10.533032243606774
+        - - 1.559765
+          - 1.1701101246775227
+          - 2.2446436221158437
+        - - 1.559765
+          - 4.947281550683424
+          - 4.141928626498552
+        - - 0.0
+          - 0.04547844931657696
+          - 6.8926013735014475
+        - - 1.559765
+          - 2.5418584493165763
+          - 9.659193626498553
+        - - 0.0
+          - 2.4509015506834224
+          - 1.3753363735014463
+        elements:
+        - Nb
+        - Nb
+        - Nb
+        - Nb
+        - Nb
+        - Nb
+        - Nb
+        - Nb
+        - C
+        - C
+        - C
+        - C
+        abc:
+        - 3.11953
+        - 4.99276
+        - 11.03453
+        angles:
+        - 90.0
+        - 90.0
+        - 90.0
+        cartesian: true
+        props:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      slme: na
+      magmom_oszicar: 0.0
+      spillage: na
+      elastic_tensor: na
+      effective_masses_300K:
+        p: na
+        n: na
+      kpoint_length_unit: 70
+      maxdiff_mesh: na
+      maxdiff_bz: na
+      encut: 950
+      optb88vdw_total_energy: -8.03689
+      epsx: 109.4743
+      epsy: 110.3841
+      epsz: 126.9271
+      mepsx: na
+      mepsy: na
+      mepsz: na
+      modes: na
+      magmom_outcar: 0.0
+      max_efg: na
+      avg_elec_mass: na
+      avg_hole_mass: na
+      icsd: 653912,31973
+      dfpt_piezo_max_eij: na
+      dfpt_piezo_max_dij: na
+      dfpt_piezo_max_dielectric: na
+      dfpt_piezo_max_dielectric_electronic: na
+      dfpt_piezo_max_dielectric_ionic: na
+      max_ir_mode: na
+      min_ir_mode: na
+      n-Seebeck: na
+      p-Seebeck: na
+      n-powerfact: na
+      p-powerfact: na
+      ncond: na
+      pcond: na
+      nkappa: na
+      pkappa: na
+      ehull: 0.0
+      Tc_supercon: na
+      dimensionality: 3D-bulk
+      efg: []
+      xml_data_link: <a href=https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-86874.xml target='_blank' >JVASP-86874</a>
+      typ: bulk
+      exfoliation_energy: na
+      spg: '62'
+      crys: orthorhombic
+      density: 7.645
+      poisson: na
+      raw_files:
+      - OPT-LOPTICS,JVASP-86874.zip,https://ndownloader.figshare.com/files/25256483
+      - OPT-Bandst,JVASP-86874.zip,https://ndownloader.figshare.com/files/24010838
+      - DFT-SCF,JVASP-86874.zip,https://ndownloader.figshare.com/files/23568539
+      nat: 12
+      bulk_modulus_kv: na
+      shear_modulus_gv: na
+      mbj_bandgap: na
+      hse_gap: na
+      reference: mp-569989
+      search: -C-Nb
+    last_updated: '2026-05-24'
+cross_db_discrepancies: {}
+coverage:
+  common_properties:
+  - band_gap
+  - density
+  - formation_energy_per_atom
+  - formula
+  - last_updated
+  - material_id
+  - raw
+  - spacegroup
+  properties_unique_to_source:
+    jarvis: []
+last_updated: '2026-05-24'

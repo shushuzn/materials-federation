@@ -1,0 +1,192 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Sb2Te3
+# Synced at: 2026-05-24T05:49:36Z
+# License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
+#          OQMD License (OQMD), AFLOW License (AFLOW),
+#          CC BY 4.0 / Database Right (NOMAD)
+# Disclaimer: Data sourced from third-party databases. All data remains the
+#   intellectual property of respective database providers under their
+#   applicable licenses. This aggregation is for research purposes only.
+# Sources: jarvis
+# ─────────────────────────────────────────────────────────────────────────────
+
+formula: Sb2Te3
+databases:
+  jarvis:
+    material_id: JVASP-1070
+    formula: Sb2Te3
+    spacegroup: R-3m
+    band_gap: 0.045
+    formation_energy_per_atom: -0.1309
+    density: 6.202
+    raw:
+      jid: JVASP-1070
+      spg_number: '166'
+      spg_symbol: R-3m
+      formula: Sb2Te3
+      formation_energy_peratom: -0.1309
+      func: OptB88vdW
+      optb88vdw_bandgap: 0.045
+      atoms:
+        lattice_mat:
+        - - 4.25946887659434
+          - 0.0032564661738336
+          - 9.647916244758843
+        - - 2.0376013001946194
+          - 3.7404904184440873
+          - 9.64791624295191
+        - - 0.0054770062854805
+          - 0.0032564647718978
+          - 10.546342250535375
+        coords:
+        - - 3.7919393226111335
+          - 2.254394580165268
+          - 17.95459549141958
+        - - 2.5106106773888666
+          - 1.492615419834732
+          - 11.887584508580423
+        - - 4.962994628672662
+          - 2.9506137204098972
+          - 23.499469111368576
+        - - 1.3395553713273385
+          - 0.7963962795901013
+          - 6.342710888631421
+        - - 0.0
+          - 0.0
+          - 0.0
+        elements:
+        - Sb
+        - Sb
+        - Te
+        - Te
+        - Te
+        abc:
+        - 10.546348
+        - 10.546347
+        - 10.546342
+        angles:
+        - 23.7912
+        - 23.7913
+        - 23.7912
+        cartesian: true
+        props:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      slme: na
+      magmom_oszicar: 0.0
+      spillage: 2.017
+      elastic_tensor: na
+      effective_masses_300K:
+        p:
+        - 0.0
+        - 0.0
+        - 0.0
+        n:
+        - 0.0
+        - 0.0
+        - 0.0
+      kpoint_length_unit: 40
+      maxdiff_mesh: 0.0742
+      maxdiff_bz: 0.0705
+      encut: 500
+      optb88vdw_total_energy: -1.71694
+      epsx: 56.4147
+      epsy: 56.5337
+      epsz: 52.4722
+      mepsx: na
+      mepsy: na
+      mepsz: na
+      modes: na
+      magmom_outcar: 0.0
+      max_efg: 93.495
+      avg_elec_mass: 0.0
+      avg_hole_mass: 0.0
+      icsd: 2084,262171,20236
+      dfpt_piezo_max_eij: na
+      dfpt_piezo_max_dij: na
+      dfpt_piezo_max_dielectric: na
+      dfpt_piezo_max_dielectric_electronic: na
+      dfpt_piezo_max_dielectric_ionic: na
+      max_ir_mode: na
+      min_ir_mode: na
+      n-Seebeck: -189.33666666666667
+      p-Seebeck: 173.28666666666666
+      n-powerfact: 5591.006666666667
+      p-powerfact: 4223.843333333333
+      ncond: 157433.7666666667
+      pcond: 142503.6366666667
+      nkappa: 604249239999999.9
+      pkappa: 441184966666666.44
+      ehull: 0.0
+      Tc_supercon: na
+      dimensionality: 2D-bulk
+      efg:
+      - - Sb
+        - c
+        - '-4.567'
+        - '0.392'
+        - '3.123'
+        - '0.392'
+        - '-4.993'
+        - '1.857'
+        - '3.123'
+        - '1.857'
+        - '9.56'
+      - - Te
+        - c
+        - '7.537'
+        - '-0.647'
+        - '-5.154'
+        - '-0.647'
+        - '8.241'
+        - '-3.064'
+        - '-5.154'
+        - '-3.064'
+        - '-15.778'
+      - - Te
+        - a
+        - '-44.662'
+        - '3.835'
+        - '30.54'
+        - '3.835'
+        - '-48.832'
+        - '18.157'
+        - '30.54'
+        - '18.157'
+        - '93.495'
+      xml_data_link: <a href=https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-1070.xml target='_blank' >JVASP-1070</a>
+      typ: bulk
+      exfoliation_energy: 78.13
+      spg: '166'
+      crys: trigonal
+      density: 6.202
+      poisson: na
+      raw_files:
+      - OPT-LOPTICS,JVASP-1070.zip,https://ndownloader.figshare.com/files/24036002
+      - OPT-Bandst,JVASP-1070.zip,https://ndownloader.figshare.com/files/23713421
+      - DFT-SCF,JVASP-1070.zip,https://ndownloader.figshare.com/files/23127386
+      nat: 5
+      bulk_modulus_kv: na
+      shear_modulus_gv: na
+      mbj_bandgap: na
+      hse_gap: na
+      reference: mp-1201
+      search: -Sb-Te
+    last_updated: '2026-05-24'
+cross_db_discrepancies: {}
+coverage:
+  common_properties:
+  - band_gap
+  - density
+  - formation_energy_per_atom
+  - formula
+  - last_updated
+  - material_id
+  - raw
+  - spacegroup
+  properties_unique_to_source:
+    jarvis: []
+last_updated: '2026-05-24'

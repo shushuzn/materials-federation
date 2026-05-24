@@ -1,0 +1,207 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# FeCo
+# Synced at: 2026-05-24T05:50:35Z
+# License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
+#          OQMD License (OQMD), AFLOW License (AFLOW),
+#          CC BY 4.0 / Database Right (NOMAD)
+# Disclaimer: Data sourced from third-party databases. All data remains the
+#   intellectual property of respective database providers under their
+#   applicable licenses. This aggregation is for research purposes only.
+# Sources: jarvis
+# ─────────────────────────────────────────────────────────────────────────────
+
+formula: FeCo
+databases:
+  jarvis:
+    material_id: JVASP-78768
+    formula: FeCo
+    spacegroup: Pm-3m
+    band_gap: 0.0
+    formation_energy_per_atom: 0.4139
+    bulk_modulus: 261.13
+    shear_modulus: 116.66
+    poissons_ratio: 0.33
+    density: 9.028
+    raw:
+      jid: JVASP-78768
+      spg_number: '221'
+      spg_symbol: Pm-3m
+      formula: FeCo
+      formation_energy_peratom: 0.4139
+      func: OptB88vdW
+      optb88vdw_bandgap: 0.0
+      atoms:
+        lattice_mat:
+        - - 2.763797760806451
+          - -0.0
+          - -0.0
+        - - 0.0
+          - 2.763797760806451
+          - 0.0
+        - - -0.0
+          - -0.0
+          - 2.763797760806451
+        coords:
+        - - 0.0
+          - 0.0
+          - 0.0
+        - - 1.3819
+          - 1.3819
+          - 1.3819
+        elements:
+        - Fe
+        - Co
+        abc:
+        - 2.7638
+        - 2.7638
+        - 2.7638
+        angles:
+        - 90.0
+        - 90.0
+        - 90.0
+        cartesian: true
+        props:
+        - ''
+        - ''
+      slme: na
+      magmom_oszicar: 0.075
+      spillage: na
+      elastic_tensor:
+      - - 333.0
+        - 225.2
+        - 225.2
+        - 0.0
+        - 0.0
+        - -0.0
+      - - 225.2
+        - 333.0
+        - 225.2
+        - -0.0
+        - -0.0
+        - -0.0
+      - - 225.2
+        - 225.2
+        - 333.0
+        - 0.0
+        - 0.0
+        - 0.0
+      - - 0.0
+        - -0.0
+        - 0.0
+        - 158.5
+        - 0.0
+        - 0.0
+      - - 0.0
+        - -0.0
+        - 0.0
+        - 0.0
+        - 158.5
+        - 0.0
+      - - -0.0
+        - -0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 158.5
+      effective_masses_300K:
+        p: na
+        n: na
+      kpoint_length_unit: 50
+      maxdiff_mesh: na
+      maxdiff_bz: na
+      encut: 500
+      optb88vdw_total_energy: -4.05785
+      epsx: 300.6941
+      epsy: 300.6941
+      epsz: 300.6941
+      mepsx: na
+      mepsy: na
+      mepsz: na
+      modes:
+      - -0.15
+      - -0.15
+      - 262.26
+      magmom_outcar: -0.07200000000000001
+      max_efg: 0.0
+      avg_elec_mass: na
+      avg_hole_mass: na
+      icsd: ''
+      dfpt_piezo_max_eij: na
+      dfpt_piezo_max_dij: na
+      dfpt_piezo_max_dielectric: na
+      dfpt_piezo_max_dielectric_electronic: na
+      dfpt_piezo_max_dielectric_ionic: na
+      max_ir_mode: na
+      min_ir_mode: na
+      n-Seebeck: na
+      p-Seebeck: na
+      n-powerfact: na
+      p-powerfact: na
+      ncond: na
+      pcond: na
+      nkappa: na
+      pkappa: na
+      ehull: 0.4473
+      Tc_supercon: 6.753613745598571
+      dimensionality: 3D-bulk
+      efg:
+      - - Fe
+        - a
+        - '0.0'
+        - '0.0'
+        - '0.0'
+        - '0.0'
+        - '-0.0'
+        - '-0.0'
+        - '0.0'
+        - '-0.0'
+        - '0.0'
+      - - Co
+        - b
+        - '0.0'
+        - '0.0'
+        - '0.0'
+        - '0.0'
+        - '-0.0'
+        - '0.0'
+        - '0.0'
+        - '0.0'
+        - '0.0'
+      xml_data_link: <a href=https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-78768.xml target='_blank' >JVASP-78768</a>
+      typ: bulk
+      exfoliation_energy: na
+      spg: '221'
+      crys: cubic
+      density: 9.028
+      poisson: 0.33
+      raw_files:
+      - FD-ELAST,JVASP-78768.zip,https://ndownloader.figshare.com/files/22995419
+      - OPT-LOPTICS,JVASP-78768.zip,https://ndownloader.figshare.com/files/25251932
+      - OPT-Bandst,JVASP-78768.zip,https://ndownloader.figshare.com/files/24004667
+      - TBMBJ,JVASP-78768.zip,https://ndownloader.figshare.com/files/23698955
+      - DFT-SCF,JVASP-78768.zip,https://ndownloader.figshare.com/files/23504009
+      nat: 2
+      bulk_modulus_kv: 261.13
+      shear_modulus_gv: 116.66
+      mbj_bandgap: 0.0
+      hse_gap: na
+      reference: mp-990527
+      search: -Co-Fe
+    last_updated: '2026-05-24'
+cross_db_discrepancies: {}
+coverage:
+  common_properties:
+  - band_gap
+  - bulk_modulus
+  - density
+  - formation_energy_per_atom
+  - formula
+  - last_updated
+  - material_id
+  - poissons_ratio
+  - raw
+  - shear_modulus
+  - spacegroup
+  properties_unique_to_source:
+    jarvis: []
+last_updated: '2026-05-24'

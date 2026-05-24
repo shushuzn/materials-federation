@@ -1,0 +1,236 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# ZnS
+# Synced at: 2026-05-24T05:48:34Z
+# License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
+#          OQMD License (OQMD), AFLOW License (AFLOW),
+#          CC BY 4.0 / Database Right (NOMAD)
+# Disclaimer: Data sourced from third-party databases. All data remains the
+#   intellectual property of respective database providers under their
+#   applicable licenses. This aggregation is for research purposes only.
+# Sources: jarvis
+# ─────────────────────────────────────────────────────────────────────────────
+
+formula: ZnS
+databases:
+  jarvis:
+    material_id: JVASP-22623
+    formula: ZnS
+    spacegroup: P6_3mc
+    band_gap: 2.095
+    formation_energy_per_atom: -0.88633
+    density: 4.035
+    raw:
+      jid: JVASP-22623
+      spg_number: '186'
+      spg_symbol: P6_3mc
+      formula: ZnS
+      formation_energy_peratom: -0.88633
+      func: OptB88vdW
+      optb88vdw_bandgap: 2.095
+      atoms:
+        lattice_mat:
+        - - 3.8408896570818105
+          - 1.9711711e-09
+          - -0.0
+        - - -1.9204453251260933
+          - 3.3263082076564428
+          - 0.0
+        - - -0.0
+          - -0.0
+          - 31.401286370423083
+        coords:
+        - - 1.9204452537799817
+          - 1.1087688912300107
+          - 6.27977971156084
+        - - 0.0
+          - 0.0
+          - 9.41756174754906
+        - - -5.253779981439522e-06
+          - 2.2175411087699892
+          - 12.560611435466065
+        - - 0.0
+          - 0.0
+          - 0.005055539566779141
+        - - 1.9204452537799817
+          - 1.1087688912300107
+          - 18.842703823105328
+        - - 0.0
+          - 0.0
+          - 15.705703288776514
+        - - -5.253779981439522e-06
+          - 2.2175411087699892
+          - 21.980429223789514
+        - - 1.9204452537799817
+          - 1.1087688912300107
+          - 28.261256021393592
+        - - 0.0
+          - 0.0
+          - 25.118209475954313
+        - - -5.253779981439522e-06
+          - 2.2175411087699892
+          - 3.1420535053695633
+        - - 1.9204452537799817
+          - 1.1087688912300107
+          - 30.61891269949616
+        - - 1.9204452537799817
+          - 1.1087688912300107
+          - 8.632674758121444
+        - - 0.0
+          - 0.0
+          - 2.3570219281707048
+        - - 1.9204452537799817
+          - 1.1087688912300107
+          - 21.195528444355066
+        - - 0.0
+          - 0.0
+          - 27.470743365853924
+        - - -5.253779981439522e-06
+          - 2.2175411087699892
+          - 24.333321813035813
+        - - 0.0
+          - 0.0
+          - 18.057668882968844
+        - - -5.253779981439522e-06
+          - 2.2175411087699892
+          - 5.494881684458125
+        - - -5.253779981439522e-06
+          - 2.2175411087699892
+          - 14.918269673606549
+        - - 0.0
+          - 0.0
+          - 11.770096273532044
+        elements:
+        - Zn
+        - Zn
+        - Zn
+        - Zn
+        - Zn
+        - Zn
+        - Zn
+        - Zn
+        - Zn
+        - Zn
+        - S
+        - S
+        - S
+        - S
+        - S
+        - S
+        - S
+        - S
+        - S
+        - S
+        abc:
+        - 3.84089
+        - 3.840894
+        - 31.40129
+        angles:
+        - 90.0
+        - 90.0
+        - 120.0001
+        cartesian: true
+        props:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      slme: 13.54
+      magmom_oszicar: na
+      spillage: na
+      elastic_tensor: na
+      effective_masses_300K:
+        p:
+        - 1.35
+        - 1.35
+        - 4319.93
+        n:
+        - 0.19
+        - 0.19
+        - 184.01
+      kpoint_length_unit: 35
+      maxdiff_mesh: na
+      maxdiff_bz: na
+      encut: 750
+      optb88vdw_total_energy: -1.08743
+      epsx: 6.2019
+      epsy: 6.2019
+      epsz: 6.2392
+      mepsx: na
+      mepsy: na
+      mepsz: na
+      modes: na
+      magmom_outcar: na
+      max_efg: na
+      avg_elec_mass: na
+      avg_hole_mass: na
+      icsd: 42800,15477
+      dfpt_piezo_max_eij: 0.78707
+      dfpt_piezo_max_dij: na
+      dfpt_piezo_max_dielectric: 9.44585795
+      dfpt_piezo_max_dielectric_electronic: 6.00054357
+      dfpt_piezo_max_dielectric_ionic: 3.44531438
+      max_ir_mode: 329.03
+      min_ir_mode: 264.08
+      n-Seebeck: -11.746666666666664
+      p-Seebeck: 285.56
+      n-powerfact: 112.62
+      p-powerfact: 1306.0833333333333
+      ncond: 72136.07333333333
+      pcond: 14773.863333333333
+      nkappa: 106778961284233.33
+      pkappa: 94053798372000.0
+      ehull: 0.0005
+      Tc_supercon: na
+      dimensionality: 3D-bulk
+      efg: []
+      xml_data_link: <a href=https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-22623.xml target='_blank' >JVASP-22623</a>
+      typ: bulk
+      exfoliation_energy: na
+      spg: '186'
+      crys: hexagonal
+      density: 4.035
+      poisson: na
+      raw_files:
+      - DFPT,JVASP-22623.zip,https://ndownloader.figshare.com/files/22948715
+      - OPT-LOPTICS,JVASP-22623.zip,https://ndownloader.figshare.com/files/24279641
+      - OPT-Bandst,JVASP-22623.zip,https://ndownloader.figshare.com/files/23837735
+      - TBMBJ,JVASP-22623.zip,https://ndownloader.figshare.com/files/23620826
+      - DFT-SCF,JVASP-22623.zip,https://ndownloader.figshare.com/files/23286461
+      nat: 20
+      bulk_modulus_kv: na
+      shear_modulus_gv: na
+      mbj_bandgap: na
+      hse_gap: na
+      reference: mp-561258
+      search: -S-Zn
+    last_updated: '2026-05-24'
+cross_db_discrepancies: {}
+coverage:
+  common_properties:
+  - band_gap
+  - density
+  - formation_energy_per_atom
+  - formula
+  - last_updated
+  - material_id
+  - raw
+  - spacegroup
+  properties_unique_to_source:
+    jarvis: []
+last_updated: '2026-05-24'

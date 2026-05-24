@@ -1,0 +1,203 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Co3O4
+# Synced at: 2026-05-24T05:49:09Z
+# License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
+#          OQMD License (OQMD), AFLOW License (AFLOW),
+#          CC BY 4.0 / Database Right (NOMAD)
+# Disclaimer: Data sourced from third-party databases. All data remains the
+#   intellectual property of respective database providers under their
+#   applicable licenses. This aggregation is for research purposes only.
+# Sources: jarvis
+# ─────────────────────────────────────────────────────────────────────────────
+
+formula: Co3O4
+databases:
+  jarvis:
+    material_id: JVASP-23170
+    formula: Co3O4
+    spacegroup: Fd-3m
+    band_gap: 0.0
+    formation_energy_per_atom: -1.09605
+    density: 6.174
+    raw:
+      jid: JVASP-23170
+      spg_number: '227'
+      spg_symbol: Fd-3m
+      formula: Co3O4
+      formation_energy_peratom: -1.09605
+      func: OptB88vdW
+      optb88vdw_bandgap: 0.0
+      atoms:
+        lattice_mat:
+        - - 4.918301555056747
+          - -0.0
+          - 2.839582513511476
+        - - 1.6394338516855824
+          - 4.637018744301326
+          - 2.839582513511476
+        - - -0.0
+          - 0.0
+          - 5.679165027022952
+        coords:
+        - - 2.45915
+          - 0.0
+          - 4.259375
+        - - 0.819715
+          - 2.31851
+          - 4.259375
+        - - 3.278865
+          - 2.31851
+          - 2.83958
+        - - 3.278865
+          - 2.31851
+          - 5.679165
+        - - 0.81971625
+          - 0.5796275
+          - 1.41979125
+        - - 5.73801375
+          - 4.0573925
+          - 9.93853875
+        - - 4.854069472819035
+          - 3.4323488809151694
+          - 8.407501210813775
+        - - 1.7036605271809653
+          - 1.2046711190848303
+          - 5.567915335758892
+        - - 2.4591459585124857
+          - 3.3415120057255536
+          - 4.259369758362498
+        - - 3.9701214293956486
+          - 1.2046711190848303
+          - 4.259369758362498
+        - - 4.0985840414875145
+          - 1.2955079942744454
+          - 7.098960241637503
+        - - 2.5876085706043526
+          - 3.4323488809151694
+          - 7.098960241637503
+        - - 1.7036605271809653
+          - 1.2046711190848303
+          - 2.9508287891862253
+        - - 4.854069472819035
+          - 3.4323488809151694
+          - 5.790414664241109
+        elements:
+        - Co
+        - Co
+        - Co
+        - Co
+        - Co
+        - Co
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        abc:
+        - 5.679163
+        - 5.679164
+        - 5.67917
+        angles:
+        - 60.0
+        - 60.0
+        - 60.0001
+        cartesian: true
+        props:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      slme: na
+      magmom_oszicar: na
+      spillage: na
+      elastic_tensor: na
+      effective_masses_300K:
+        p:
+        - 0.0
+        - 0.0
+        - 0.0
+        n:
+        - 0.0
+        - 0.0
+        - 0.0
+      kpoint_length_unit: 30
+      maxdiff_mesh: na
+      maxdiff_bz: na
+      encut: 1350
+      optb88vdw_total_energy: -4.80324
+      epsx: na
+      epsy: na
+      epsz: na
+      mepsx: na
+      mepsy: na
+      mepsz: na
+      modes: na
+      magmom_outcar: na
+      max_efg: na
+      avg_elec_mass: 0.0
+      avg_hole_mass: 0.0
+      icsd: 69376,69377,69378,9362,150805,36256,28158,56123,63164,63165,624571,27497,27498,24210,69365,69366,69367,69368,69369,69370,69371,69372,69373,69374,69375
+      dfpt_piezo_max_eij: na
+      dfpt_piezo_max_dij: na
+      dfpt_piezo_max_dielectric: na
+      dfpt_piezo_max_dielectric_electronic: na
+      dfpt_piezo_max_dielectric_ionic: na
+      max_ir_mode: na
+      min_ir_mode: na
+      n-Seebeck: 23.36
+      p-Seebeck: 24.959999999999997
+      n-powerfact: 388.5
+      p-powerfact: 444.7
+      ncond: 711660.4199999999
+      pcond: 713925.9733333333
+      nkappa: 1622797633333332.8
+      pkappa: 1626061566666667.0
+      ehull: 0.0126
+      Tc_supercon: na
+      dimensionality: 3D-bulk
+      efg: []
+      xml_data_link: <a href=https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-23170.xml target='_blank' >JVASP-23170</a>
+      typ: bulk
+      exfoliation_energy: na
+      spg: '227'
+      crys: cubic
+      density: 6.174
+      poisson: na
+      raw_files:
+      - OPT-Bandst,JVASP-23170.zip,https://ndownloader.figshare.com/files/23840555
+      - DFT-SCF,JVASP-23170.zip,https://ndownloader.figshare.com/files/23285012
+      nat: 14
+      bulk_modulus_kv: na
+      shear_modulus_gv: na
+      mbj_bandgap: na
+      hse_gap: na
+      reference: mp-18748
+      search: -Co-O
+    last_updated: '2026-05-24'
+cross_db_discrepancies: {}
+coverage:
+  common_properties:
+  - band_gap
+  - density
+  - formation_energy_per_atom
+  - formula
+  - last_updated
+  - material_id
+  - raw
+  - spacegroup
+  properties_unique_to_source:
+    jarvis: []
+last_updated: '2026-05-24'

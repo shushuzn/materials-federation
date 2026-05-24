@@ -1,0 +1,194 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Ti3SiC2
+# Synced at: 2026-05-24T05:49:38Z
+# License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
+#          OQMD License (OQMD), AFLOW License (AFLOW),
+#          CC BY 4.0 / Database Right (NOMAD)
+# Disclaimer: Data sourced from third-party databases. All data remains the
+#   intellectual property of respective database providers under their
+#   applicable licenses. This aggregation is for research purposes only.
+# Sources: jarvis
+# ─────────────────────────────────────────────────────────────────────────────
+
+formula: Ti3SiC2
+databases:
+  jarvis:
+    material_id: JVASP-21075
+    formula: Ti3SiC2
+    spacegroup: P6_3/mmc
+    band_gap: 0.0
+    formation_energy_per_atom: -0.87409
+    density: 4.453
+    raw:
+      jid: JVASP-21075
+      spg_number: '194'
+      spg_symbol: P6_3/mmc
+      formula: Ti3SiC2
+      formation_energy_peratom: -0.87409
+      func: OptB88vdW
+      optb88vdw_bandgap: 0.0
+      atoms:
+        lattice_mat:
+        - - 1.541004027567953
+          - -2.6690970554041993
+          - 0.0
+        - - 1.541004027567953
+          - 2.6690970554041993
+          - -0.0
+        - - -0.0
+          - -0.0
+          - 17.744057013383696
+        coords:
+        - - 1.541
+          - -0.8897017793999829
+          - 11.264893485745322
+        - - 1.541
+          - 0.8897017793999829
+          - 2.3928634857453197
+        - - 1.541
+          - 0.8897017793999829
+          - 6.479166514254679
+        - - 1.541
+          - -0.8897017793999829
+          - 15.35119651425468
+        - - 0.0
+          - 0.0
+          - 8.87203
+        - - 0.0
+          - 0.0
+          - 0.0
+        - - 0.0
+          - 0.0
+          - 4.436015
+        - - 0.0
+          - 0.0
+          - 13.308045
+        - - 1.541
+          - 0.8897017793999829
+          - 10.156322993769782
+        - - 1.541
+          - -0.8897017793999829
+          - 1.2842929937697796
+        - - 1.541
+          - 0.8897017793999829
+          - 16.45976700623022
+        - - 1.541
+          - -0.8897017793999829
+          - 7.5877370062302205
+        elements:
+        - Ti
+        - Ti
+        - Ti
+        - Ti
+        - Ti
+        - Ti
+        - Si
+        - Si
+        - C
+        - C
+        - C
+        - C
+        abc:
+        - 3.082008
+        - 3.082008
+        - 17.74406
+        angles:
+        - 90.0
+        - 90.0
+        - 120.0002
+        cartesian: true
+        props:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      slme: na
+      magmom_oszicar: 0.0
+      spillage: na
+      elastic_tensor: na
+      effective_masses_300K:
+        p:
+        - 0.0
+        - 0.0
+        - 0.0
+        n:
+        - 0.0
+        - 0.0
+        - 0.0
+      kpoint_length_unit: 75
+      maxdiff_mesh: na
+      maxdiff_bz: na
+      encut: 950
+      optb88vdw_total_energy: -6.79318
+      epsx: 71.3108
+      epsy: 71.3108
+      epsz: 61.2077
+      mepsx: na
+      mepsy: na
+      mepsz: na
+      modes: na
+      magmom_outcar: 0.0
+      max_efg: na
+      avg_elec_mass: 0.0
+      avg_hole_mass: 0.0
+      icsd: 88576,88577,88578,88579,88580,86213,180422,180423,618786,25762,153264,180419,91833,180421,180420
+      dfpt_piezo_max_eij: na
+      dfpt_piezo_max_dij: na
+      dfpt_piezo_max_dielectric: na
+      dfpt_piezo_max_dielectric_electronic: na
+      dfpt_piezo_max_dielectric_ionic: na
+      max_ir_mode: na
+      min_ir_mode: na
+      n-Seebeck: -7.986666666666667
+      p-Seebeck: -7.753333333333333
+      n-powerfact: 301.71666666666664
+      p-powerfact: 294.01666666666665
+      ncond: 3311119.6333333333
+      pcond: 3299483.266666666
+      nkappa: 4972038466666667.0
+      pkappa: 4961030066666667.0
+      ehull: 0.0
+      Tc_supercon: na
+      dimensionality: 3D-bulk
+      efg: []
+      xml_data_link: <a href=https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-21075.xml target='_blank' >JVASP-21075</a>
+      typ: bulk
+      exfoliation_energy: na
+      spg: '194'
+      crys: hexagonal
+      density: 4.453
+      poisson: na
+      raw_files:
+      - OPT-LOPTICS,JVASP-21075.zip,https://ndownloader.figshare.com/files/24277250
+      - OPT-Bandst,JVASP-21075.zip,https://ndownloader.figshare.com/files/23835077
+      - DFT-SCF,JVASP-21075.zip,https://ndownloader.figshare.com/files/23282114
+      nat: 12
+      bulk_modulus_kv: na
+      shear_modulus_gv: na
+      mbj_bandgap: na
+      hse_gap: na
+      reference: mp-5659
+      search: -C-Si-Ti
+    last_updated: '2026-05-24'
+cross_db_discrepancies: {}
+coverage:
+  common_properties:
+  - band_gap
+  - density
+  - formation_energy_per_atom
+  - formula
+  - last_updated
+  - material_id
+  - raw
+  - spacegroup
+  properties_unique_to_source:
+    jarvis: []
+last_updated: '2026-05-24'

@@ -1,0 +1,189 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# AlNi
+# Synced at: 2026-05-24T05:50:38Z
+# License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
+#          OQMD License (OQMD), AFLOW License (AFLOW),
+#          CC BY 4.0 / Database Right (NOMAD)
+# Disclaimer: Data sourced from third-party databases. All data remains the
+#   intellectual property of respective database providers under their
+#   applicable licenses. This aggregation is for research purposes only.
+# Sources: jarvis
+# ─────────────────────────────────────────────────────────────────────────────
+
+formula: AlNi
+databases:
+  jarvis:
+    material_id: JVASP-11956
+    formula: AlNi
+    spacegroup: Pm-3m
+    band_gap: 0.0
+    formation_energy_per_atom: -0.66282
+    bulk_modulus: 157.33
+    shear_modulus: 80.12
+    poissons_ratio: 0.31
+    density: 5.864
+    raw:
+      jid: JVASP-11956
+      spg_number: '221'
+      spg_symbol: Pm-3m
+      formula: AlNi
+      formation_energy_peratom: -0.66282
+      func: OptB88vdW
+      optb88vdw_bandgap: 0.0
+      atoms:
+        lattice_mat:
+        - - 2.8949350862509906
+          - -0.0
+          - -0.0
+        - - -0.0
+          - 2.8949350862509906
+          - 0.0
+        - - -0.0
+          - -0.0
+          - 2.8949350862509906
+        coords:
+        - - 1.44747
+          - 1.44747
+          - 1.44747
+        - - 0.0
+          - 0.0
+          - 0.0
+        elements:
+        - Al
+        - Ni
+        abc:
+        - 2.89494
+        - 2.89494
+        - 2.89494
+        angles:
+        - 90.0
+        - 90.0
+        - 90.0
+        cartesian: true
+        props:
+        - ''
+        - ''
+      slme: na
+      magmom_oszicar: 0.0
+      spillage: na
+      elastic_tensor:
+      - - 204.8
+        - 133.6
+        - 133.6
+        - -0.0
+        - -0.0
+        - -0.0
+      - - 133.6
+        - 204.8
+        - 133.6
+        - 0.0
+        - -0.0
+        - -0.0
+      - - 133.6
+        - 133.6
+        - 204.8
+        - -0.0
+        - 0.0
+        - 0.0
+      - - -0.0
+        - 0.0
+        - -0.0
+        - 109.8
+        - 0.0
+        - 0.0
+      - - -0.0
+        - -0.0
+        - 0.0
+        - 0.0
+        - 109.8
+        - 0.0
+      - - -0.0
+        - -0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 109.8
+      effective_masses_300K:
+        p:
+        - 0.0
+        - 0.0
+        - 0.0
+        n:
+        - 0.0
+        - 0.0
+        - 0.0
+      kpoint_length_unit: 70
+      maxdiff_mesh: na
+      maxdiff_bz: na
+      encut: 700
+      optb88vdw_total_energy: -2.47675
+      epsx: 80.3161
+      epsy: 80.3161
+      epsz: 80.3161
+      mepsx: na
+      mepsy: na
+      mepsz: na
+      modes:
+      - -0.53
+      - 279.14
+      magmom_outcar: 0.0
+      max_efg: na
+      avg_elec_mass: 0.0
+      avg_hole_mass: 0.0
+      icsd: 608802,604356,608805,602150,150607,608785,58037,151396,151386
+      dfpt_piezo_max_eij: na
+      dfpt_piezo_max_dij: na
+      dfpt_piezo_max_dielectric: na
+      dfpt_piezo_max_dielectric_electronic: na
+      dfpt_piezo_max_dielectric_ionic: na
+      max_ir_mode: na
+      min_ir_mode: na
+      n-Seebeck: -3.99
+      p-Seebeck: -4.09
+      n-powerfact: 173.87
+      p-powerfact: 182.77
+      ncond: 10942605.0
+      pcond: 10924320.0
+      nkappa: 1.5793562e+16
+      pkappa: 1.5765846e+16
+      ehull: 0.0004
+      Tc_supercon: 1.157274644585665e-05
+      dimensionality: 3D-bulk
+      efg: []
+      xml_data_link: <a href=https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-11956.xml target='_blank' >JVASP-11956</a>
+      typ: bulk
+      exfoliation_energy: na
+      spg: '221'
+      crys: cubic
+      density: 5.864
+      poisson: 0.31
+      raw_files:
+      - FD-ELAST,JVASP-11956.zip,https://ndownloader.figshare.com/files/22991120
+      - OPT-LOPTICS,JVASP-11956.zip,https://ndownloader.figshare.com/files/24241187
+      - OPT-Bandst,JVASP-11956.zip,https://ndownloader.figshare.com/files/23779379
+      - DFT-SCF,JVASP-11956.zip,https://ndownloader.figshare.com/files/23196080
+      nat: 2
+      bulk_modulus_kv: 157.33
+      shear_modulus_gv: 80.12
+      mbj_bandgap: na
+      hse_gap: na
+      reference: mp-1487
+      search: -Al-Ni
+    last_updated: '2026-05-24'
+cross_db_discrepancies: {}
+coverage:
+  common_properties:
+  - band_gap
+  - bulk_modulus
+  - density
+  - formation_energy_per_atom
+  - formula
+  - last_updated
+  - material_id
+  - poissons_ratio
+  - raw
+  - shear_modulus
+  - spacegroup
+  properties_unique_to_source:
+    jarvis: []
+last_updated: '2026-05-24'

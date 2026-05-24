@@ -1,0 +1,289 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# LiMn2O4
+# Synced at: 2026-05-24T05:50:02Z
+# License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
+#          OQMD License (OQMD), AFLOW License (AFLOW),
+#          CC BY 4.0 / Database Right (NOMAD)
+# Disclaimer: Data sourced from third-party databases. All data remains the
+#   intellectual property of respective database providers under their
+#   applicable licenses. This aggregation is for research purposes only.
+# Sources: jarvis
+# ─────────────────────────────────────────────────────────────────────────────
+
+formula: LiMn2O4
+databases:
+  jarvis:
+    material_id: JVASP-8377
+    formula: LiMn2O4
+    spacegroup: P2/m
+    band_gap: 0.0
+    formation_energy_per_atom: -1.93732
+    bulk_modulus: 98.67
+    shear_modulus: 30.42
+    poissons_ratio: 0.36
+    density: 4.444
+    raw:
+      jid: JVASP-8377
+      spg_number: '10'
+      spg_symbol: P2/m
+      formula: LiMn2O4
+      formation_energy_peratom: -1.93732
+      func: OptB88vdW
+      optb88vdw_bandgap: 0.0
+      atoms:
+        lattice_mat:
+        - - 0.0
+          - 4.888368192896335
+          - 0.0418509758694085
+        - - 2.8479636552119136
+          - 0.0
+          - 0.0
+        - - 0.0
+          - -1.6038225339526033
+          - -4.866983604116934
+        coords:
+        - - 0.0
+          - 1.6422750000000002
+          - -2.412565
+        - - 0.0
+          - 0.0
+          - 0.0
+        - - 1.42398
+          - 2.444185
+          - 0.020925
+        - - 0.0
+          - 0.04053820279344616
+          - -3.836995659653963
+        - - 1.42398
+          - 2.441650474709741
+          - -3.7792648225813674
+        - - 0.0
+          - 3.2440117972065545
+          - -0.9881343403460348
+        - - 1.42398
+          - 0.8428995252902571
+          - -1.0458651774186318
+        elements:
+        - Li
+        - Mn
+        - Mn
+        - O
+        - O
+        - O
+        - O
+        abc:
+        - 4.888549
+        - 2.84796
+        - 5.124425
+        angles:
+        - 90.0
+        - 108.7292
+        - 90.0
+        cartesian: true
+        props:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      slme: na
+      magmom_oszicar: 5.0
+      spillage: na
+      elastic_tensor:
+      - - 193.0
+        - 136.7
+        - 32.7
+        - -0.0
+        - 1.9
+        - 0.0
+      - - 136.7
+        - 175.5
+        - 37.1
+        - -0.0
+        - -1.0
+        - 0.0
+      - - 32.7
+        - 37.1
+        - 106.5
+        - -0.0
+        - -4.3
+        - 0.0
+      - - -0.0
+        - -0.0
+        - -0.0
+        - 13.9
+        - 0.0
+        - -0.3
+      - - 1.9
+        - -1.0
+        - -4.3
+        - 0.0
+        - 26.5
+        - 0.0
+      - - 0.0
+        - 0.0
+        - 0.0
+        - -0.3
+        - 0.0
+        - 22.2
+      effective_masses_300K:
+        p:
+        - 0.0
+        - 0.0
+        - 0.0
+        n:
+        - 0.0
+        - 0.0
+        - 0.0
+      kpoint_length_unit: 25
+      maxdiff_mesh: na
+      maxdiff_bz: na
+      encut: 1200
+      optb88vdw_total_energy: -5.5139
+      epsx: 93.667
+      epsy: 99.9768
+      epsz: 9.5577
+      mepsx: 170.6245
+      mepsy: 149.8405
+      mepsz: 11.63
+      modes:
+      - -373.24
+      - -236.56
+      - -0.08
+      - -0.07
+      - -0.05
+      - 115.48
+      - 202.42
+      - 215.5
+      - 360.62
+      - 363.67
+      - 367.52
+      - 389.44
+      - 419.95
+      - 425.17
+      - 425.83
+      - 447.13
+      - 447.73
+      - 515.26
+      - 515.8
+      - 545.89
+      - 559.87
+      magmom_outcar: 4.889999999999999
+      max_efg: 21.504
+      avg_elec_mass: 0.0
+      avg_hole_mass: 0.0
+      icsd: ''
+      dfpt_piezo_max_eij: na
+      dfpt_piezo_max_dij: na
+      dfpt_piezo_max_dielectric: na
+      dfpt_piezo_max_dielectric_electronic: na
+      dfpt_piezo_max_dielectric_ionic: na
+      max_ir_mode: na
+      min_ir_mode: na
+      n-Seebeck: 3.7533333333333325
+      p-Seebeck: 2.9633333333333347
+      n-powerfact: 259.06666666666666
+      p-powerfact: 285.81666666666666
+      ncond: 857390.38
+      pcond: 854624.9866666667
+      nkappa: 996633572666666.6
+      pkappa: 994236056000000.1
+      ehull: 0.1056
+      Tc_supercon: na
+      dimensionality: intercalated ion
+      efg:
+      - - Li
+        - g
+        - '0.041'
+        - '0.0'
+        - '0.0'
+        - '0.0'
+        - '-0.856'
+        - '-0.021'
+        - '0.0'
+        - '-0.021'
+        - '0.814'
+      - - Mn
+        - a
+        - '-2.236'
+        - '-0.0'
+        - '0.0'
+        - '-0.0'
+        - '-17.685'
+        - '-21.504'
+        - '0.0'
+        - '-21.504'
+        - '19.921'
+      - - Mn
+        - e
+        - '3.598'
+        - '-0.0'
+        - '-0.0'
+        - '-0.0'
+        - '4.755'
+        - '-0.841'
+        - '-0.0'
+        - '-0.841'
+        - '-8.354'
+      - - O
+        - m
+        - '9.452'
+        - '-0.0'
+        - '-0.0'
+        - '-0.0'
+        - '7.964'
+        - '-4.02'
+        - '-0.0'
+        - '-4.02'
+        - '-17.416'
+      - - O
+        - n
+        - '8.496'
+        - '0.0'
+        - '-0.0'
+        - '0.0'
+        - '8.747'
+        - '-0.258'
+        - '-0.0'
+        - '-0.258'
+        - '-17.243'
+      xml_data_link: <a href=https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-8377.xml target='_blank' >JVASP-8377</a>
+      typ: bulk
+      exfoliation_energy: na
+      spg: '10'
+      crys: monoclinic
+      density: 4.444
+      poisson: 0.36
+      raw_files:
+      - FD-ELAST,JVASP-8377.zip,https://ndownloader.figshare.com/files/22979942
+      - OPT-LOPTICS,JVASP-8377.zip,https://ndownloader.figshare.com/files/24222353
+      - OPT-Bandst,JVASP-8377.zip,https://ndownloader.figshare.com/files/23722700
+      - TBMBJ,JVASP-8377.zip,https://ndownloader.figshare.com/files/23605133
+      - DFT-SCF,JVASP-8377.zip,https://ndownloader.figshare.com/files/23175203
+      nat: 7
+      bulk_modulus_kv: 98.67
+      shear_modulus_gv: 30.42
+      mbj_bandgap: 0.0
+      hse_gap: na
+      reference: mvc-16811
+      search: -Li-Mn-O
+    last_updated: '2026-05-24'
+cross_db_discrepancies: {}
+coverage:
+  common_properties:
+  - band_gap
+  - bulk_modulus
+  - density
+  - formation_energy_per_atom
+  - formula
+  - last_updated
+  - material_id
+  - poissons_ratio
+  - raw
+  - shear_modulus
+  - spacegroup
+  properties_unique_to_source:
+    jarvis: []
+last_updated: '2026-05-24'

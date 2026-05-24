@@ -1,0 +1,194 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Ti3AlC2
+# Synced at: 2026-05-24T05:49:40Z
+# License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
+#          OQMD License (OQMD), AFLOW License (AFLOW),
+#          CC BY 4.0 / Database Right (NOMAD)
+# Disclaimer: Data sourced from third-party databases. All data remains the
+#   intellectual property of respective database providers under their
+#   applicable licenses. This aggregation is for research purposes only.
+# Sources: jarvis
+# ─────────────────────────────────────────────────────────────────────────────
+
+formula: Ti3AlC2
+databases:
+  jarvis:
+    material_id: JVASP-20914
+    formula: Ti3AlC2
+    spacegroup: P6_3/mmc
+    band_gap: 0.0
+    formation_energy_per_atom: -0.83048
+    density: 4.203
+    raw:
+      jid: JVASP-20914
+      spg_number: '194'
+      spg_symbol: P6_3/mmc
+      formula: Ti3AlC2
+      formation_energy_peratom: -0.83048
+      func: OptB88vdW
+      optb88vdw_bandgap: 0.0
+      atoms:
+        lattice_mat:
+        - - 1.5427293501750337
+          - -2.6720864575963112
+          - -0.0
+        - - 1.5427293501750337
+          - 2.6720864575963112
+          - 0.0
+        - - 0.0
+          - 0.0
+          - 18.651373383216207
+        coords:
+        - - 1.54273
+          - -0.8906984480599829
+          - 6.953489822337233
+        - - 1.54273
+          - 0.8906984480599829
+          - 16.27917482233724
+        - - 1.54273
+          - 0.8906984480599829
+          - 11.69788017766276
+        - - 1.54273
+          - -0.8906984480599829
+          - 2.372195177662765
+        - - 0.0
+          - 0.0
+          - 9.325685
+        - - 0.0
+          - 0.0
+          - 0.0
+        - - 0.0
+          - 0.0
+          - 13.9885275
+        - - 0.0
+          - 0.0
+          - 4.6628425
+        - - 1.54273
+          - 0.8906984480599829
+          - 8.029809682040996
+        - - 1.54273
+          - -0.8906984480599829
+          - 17.355494682040995
+        - - 1.54273
+          - 0.8906984480599829
+          - 1.295875317959003
+        - - 1.54273
+          - -0.8906984480599829
+          - 10.621560317959007
+        elements:
+        - Ti
+        - Ti
+        - Ti
+        - Ti
+        - Ti
+        - Ti
+        - Al
+        - Al
+        - C
+        - C
+        - C
+        - C
+        abc:
+        - 3.085463
+        - 3.085463
+        - 18.65137
+        angles:
+        - 90.0
+        - 90.0
+        - 120.0001
+        cartesian: true
+        props:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      slme: na
+      magmom_oszicar: 0.0
+      spillage: na
+      elastic_tensor: na
+      effective_masses_300K:
+        p:
+        - 0.0
+        - 0.0
+        - 0.0
+        n:
+        - 0.0
+        - 0.0
+        - 0.0
+      kpoint_length_unit: 60
+      maxdiff_mesh: na
+      maxdiff_bz: na
+      encut: 950
+      optb88vdw_total_energy: -6.42935
+      epsx: 75.3829
+      epsy: 75.383
+      epsz: 70.3913
+      mepsx: na
+      mepsy: na
+      mepsz: na
+      modes: na
+      magmom_outcar: 0.0
+      max_efg: na
+      avg_elec_mass: 0.0
+      avg_hole_mass: 0.0
+      icsd: 153266,182475,93503
+      dfpt_piezo_max_eij: na
+      dfpt_piezo_max_dij: na
+      dfpt_piezo_max_dielectric: na
+      dfpt_piezo_max_dielectric_electronic: na
+      dfpt_piezo_max_dielectric_ionic: na
+      max_ir_mode: na
+      min_ir_mode: na
+      n-Seebeck: 6.93
+      p-Seebeck: 8.95
+      n-powerfact: 1584.8366666666668
+      p-powerfact: 1579.1499999999999
+      ncond: 1836680.8066666666
+      pcond: 1865769.5099999998
+      nkappa: 2941580916666667.5
+      pkappa: 2959777459999999.5
+      ehull: 0.0
+      Tc_supercon: na
+      dimensionality: 3D-bulk
+      efg: []
+      xml_data_link: <a href=https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-20914.xml target='_blank' >JVASP-20914</a>
+      typ: bulk
+      exfoliation_energy: na
+      spg: '194'
+      crys: hexagonal
+      density: 4.203
+      poisson: na
+      raw_files:
+      - OPT-LOPTICS,JVASP-20914.zip,https://ndownloader.figshare.com/files/24275378
+      - OPT-Bandst,JVASP-20914.zip,https://ndownloader.figshare.com/files/23833541
+      - DFT-SCF,JVASP-20914.zip,https://ndownloader.figshare.com/files/23284409
+      nat: 12
+      bulk_modulus_kv: na
+      shear_modulus_gv: na
+      mbj_bandgap: na
+      hse_gap: na
+      reference: mp-3747
+      search: -Al-C-Ti
+    last_updated: '2026-05-24'
+cross_db_discrepancies: {}
+coverage:
+  common_properties:
+  - band_gap
+  - density
+  - formation_energy_per_atom
+  - formula
+  - last_updated
+  - material_id
+  - raw
+  - spacegroup
+  properties_unique_to_source:
+    jarvis: []
+last_updated: '2026-05-24'

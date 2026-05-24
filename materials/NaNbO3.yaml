@@ -1,0 +1,225 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# NaNbO3
+# Synced at: 2026-05-24T05:48:54Z
+# License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
+#          OQMD License (OQMD), AFLOW License (AFLOW),
+#          CC BY 4.0 / Database Right (NOMAD)
+# Disclaimer: Data sourced from third-party databases. All data remains the
+#   intellectual property of respective database providers under their
+#   applicable licenses. This aggregation is for research purposes only.
+# Sources: jarvis
+# ─────────────────────────────────────────────────────────────────────────────
+
+formula: NaNbO3
+databases:
+  jarvis:
+    material_id: JVASP-99058
+    formula: NaNbO3
+    spacegroup: Pmc2_1
+    band_gap: 2.336
+    formation_energy_per_atom: -2.61975
+    density: 4.443
+    raw:
+      jid: JVASP-99058
+      spg_number: '26'
+      spg_symbol: Pmc2_1
+      formula: NaNbO3
+      formation_energy_peratom: -2.61975
+      func: OptB88vdW
+      optb88vdw_bandgap: 2.336
+      atoms:
+        lattice_mat:
+        - - 5.635017822320517
+          - 0.0
+          - 0.0
+        - - 0.0
+          - 5.549814738738944
+          - 0.0
+        - - 0.0
+          - 0.0
+          - 7.834247466817196
+        coords:
+        - - 1.127616477399286
+          - 4.1944637228761525
+          - 0.0
+        - - 3.945126477399286
+          - 1.3553462771238443
+          - 0.0
+        - - 1.4112521853820967
+          - 4.215648975822319
+          - 3.917125
+        - - 4.228762185382096
+          - 1.3341610241776776
+          - 3.917125
+        - - 1.2828738557124941
+          - 1.4195971295531253
+          - 1.9641830096534465
+        - - 4.100383855712493
+          - 4.130212870446873
+          - 1.9641830096534465
+        - - 1.2828738557124941
+          - 1.4195971295531253
+          - 5.870066990346553
+        - - 4.100383855712493
+          - 4.130212870446873
+          - 5.870066990346553
+        - - 1.005140843459905
+          - 1.807339429527163
+          - 3.917125
+        - - 3.8226508434599067
+          - 3.7424705704728343
+          - 3.917125
+        - - 2.7709338725719816
+          - 0.24346926969782007
+          - 2.2652135744414217
+        - - 5.116291810549184
+          - 2.5279849098813774
+          - 6.165443874787808
+        - - 2.2987818105491846
+          - 3.021825090118624
+          - 1.6688061252121904
+        - - 2.2987818105491846
+          - 3.021825090118624
+          - 6.165443874787808
+        - - 5.116291810549184
+          - 2.5279849098813774
+          - 1.6688061252121904
+        - - 2.7709338725719816
+          - 0.24346926969782007
+          - 5.569036425558575
+        - - 5.588443872571985
+          - 5.30634073030218
+          - 2.2652135744414217
+        - - 5.588443872571985
+          - 5.30634073030218
+          - 5.569036425558575
+        - - 4.003078931111383
+          - 4.563792264431767
+          - 0.0
+        - - 1.18556893111138
+          - 0.9860177355682342
+          - 0.0
+        elements:
+        - Na
+        - Na
+        - Na
+        - Na
+        - Nb
+        - Nb
+        - Nb
+        - Nb
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        abc:
+        - 5.63502
+        - 5.54981
+        - 7.83425
+        angles:
+        - 90.0
+        - 90.0
+        - 90.0
+        cartesian: true
+        props:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      slme: na
+      magmom_oszicar: 0.0
+      spillage: na
+      elastic_tensor: na
+      effective_masses_300K:
+        p: na
+        n: na
+      kpoint_length_unit: 30
+      maxdiff_mesh: na
+      maxdiff_bz: na
+      encut: 1100
+      optb88vdw_total_energy: -5.819
+      epsx: 5.7735
+      epsy: 6.066
+      epsz: 6.2341
+      mepsx: na
+      mepsy: na
+      mepsz: na
+      modes: na
+      magmom_outcar: 0.0
+      max_efg: na
+      avg_elec_mass: na
+      avg_hole_mass: na
+      icsd: 39624,74642,173756,247318,247311
+      dfpt_piezo_max_eij: na
+      dfpt_piezo_max_dij: na
+      dfpt_piezo_max_dielectric: na
+      dfpt_piezo_max_dielectric_electronic: na
+      dfpt_piezo_max_dielectric_ionic: na
+      max_ir_mode: na
+      min_ir_mode: na
+      n-Seebeck: na
+      p-Seebeck: na
+      n-powerfact: na
+      p-powerfact: na
+      ncond: na
+      pcond: na
+      nkappa: na
+      pkappa: na
+      ehull: 0.0077
+      Tc_supercon: na
+      dimensionality: intercalated ion
+      efg: []
+      xml_data_link: <a href=https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-99058.xml target='_blank' >JVASP-99058</a>
+      typ: bulk
+      exfoliation_energy: na
+      spg: '26'
+      crys: orthorhombic
+      density: 4.443
+      poisson: na
+      raw_files: []
+      nat: 20
+      bulk_modulus_kv: na
+      shear_modulus_gv: na
+      mbj_bandgap: na
+      hse_gap: na
+      reference: mp-4681
+      search: -Na-Nb-O
+    last_updated: '2026-05-24'
+cross_db_discrepancies: {}
+coverage:
+  common_properties:
+  - band_gap
+  - density
+  - formation_energy_per_atom
+  - formula
+  - last_updated
+  - material_id
+  - raw
+  - spacegroup
+  properties_unique_to_source:
+    jarvis: []
+last_updated: '2026-05-24'

@@ -1,0 +1,214 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# AlP
+# Synced at: 2026-05-24T05:48:23Z
+# License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
+#          OQMD License (OQMD), AFLOW License (AFLOW),
+#          CC BY 4.0 / Database Right (NOMAD)
+# Disclaimer: Data sourced from third-party databases. All data remains the
+#   intellectual property of respective database providers under their
+#   applicable licenses. This aggregation is for research purposes only.
+# Sources: jarvis
+# ─────────────────────────────────────────────────────────────────────────────
+
+formula: AlP
+databases:
+  jarvis:
+    material_id: JVASP-1327
+    formula: AlP
+    spacegroup: F-43m
+    band_gap: 1.794
+    formation_energy_per_atom: -0.75173
+    bulk_modulus: 83.37
+    shear_modulus: 50.02
+    poissons_ratio: 0.26
+    density: 2.296
+    raw:
+      jid: JVASP-1327
+      spg_number: '216'
+      spg_symbol: F-43m
+      formula: AlP
+      formation_energy_peratom: -0.75173
+      func: OptB88vdW
+      optb88vdw_bandgap: 1.794
+      atoms:
+        lattice_mat:
+        - - 3.3768067453542683
+          - 1.950831e-10
+          - 1.9495999256867476
+        - - 1.1256025824038562
+          - 3.1836839484367916
+          - 1.9495999256867473
+        - - -7.537433e-10
+          - -5.329769e-10
+          - 3.8992008539845386
+        coords:
+        - - 0.0
+          - 0.0
+          - 0.0
+        - - 1.1256024999999998
+          - 0.79592
+          - 1.9496
+        elements:
+        - Al
+        - P
+        abc:
+        - 3.899203
+        - 3.899197
+        - 3.8992
+        angles:
+        - 60.0
+        - 60.0
+        - 60.0
+        cartesian: true
+        props:
+        - ''
+        - ''
+      slme: 11.42
+      magmom_oszicar: 0.0
+      spillage: na
+      elastic_tensor:
+      - - 126.3
+        - 61.9
+        - 61.9
+        - 0.0
+        - 0.0
+        - 0.0
+      - - 61.9
+        - 126.3
+        - 61.9
+        - 0.0
+        - 0.0
+        - 0.0
+      - - 61.9
+        - 61.9
+        - 126.3
+        - 0.0
+        - 0.0
+        - 0.0
+      - - 0.0
+        - 0.0
+        - 0.0
+        - 61.9
+        - 0.0
+        - 0.0
+      - - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 61.9
+        - 0.0
+      - - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 61.9
+      effective_masses_300K:
+        p:
+        - 0.84
+        - 0.84
+        - 0.84
+        n:
+        - 0.34
+        - 0.34
+        - 0.34
+      kpoint_length_unit: 30
+      maxdiff_mesh: na
+      maxdiff_bz: na
+      encut: 500
+      optb88vdw_total_energy: -3.85618
+      epsx: 8.6129
+      epsy: 8.6129
+      epsz: 8.6129
+      mepsx: 6.8742
+      mepsy: 6.8581
+      mepsz: 6.9389
+      modes:
+      - -0.07
+      - -0.07
+      - 428.04
+      magmom_outcar: 0.0
+      max_efg: 0.0
+      avg_elec_mass: 0.34
+      avg_hole_mass: 0.84
+      icsd: 600517,67783,52649,24490,609019,609021
+      dfpt_piezo_max_eij: 0.66479
+      dfpt_piezo_max_dij: 10.739741518578352
+      dfpt_piezo_max_dielectric: 10.33332931
+      dfpt_piezo_max_dielectric_electronic: 8.05849913
+      dfpt_piezo_max_dielectric_ionic: 2.27483018
+      max_ir_mode: 1.4
+      min_ir_mode: 1.4
+      n-Seebeck: -166.32
+      p-Seebeck: 314.76
+      n-powerfact: 2140.82
+      p-powerfact: 3827.25
+      ncond: 77395.15
+      pcond: 38629.73333333334
+      nkappa: 219656313333333.38
+      pkappa: 276886016666666.66
+      ehull: 0.0
+      Tc_supercon: na
+      dimensionality: 3D-bulk
+      efg:
+      - - Al
+        - a
+        - '0.0'
+        - '-0.0'
+        - '0.0'
+        - '-0.0'
+        - '0.0'
+        - '0.0'
+        - '0.0'
+        - '0.0'
+        - '-0.0'
+      - - P
+        - d
+        - '-0.0'
+        - '0.0'
+        - '0.0'
+        - '0.0'
+        - '-0.0'
+        - '0.0'
+        - '0.0'
+        - '0.0'
+        - '0.0'
+      xml_data_link: <a href=https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-1327.xml target='_blank' >JVASP-1327</a>
+      typ: bulk
+      exfoliation_energy: na
+      spg: '216'
+      crys: cubic
+      density: 2.296
+      poisson: 0.26
+      raw_files:
+      - FD-ELAST,JVASP-1327.zip,https://ndownloader.figshare.com/files/22975826
+      - DFPT,JVASP-1327.zip,https://ndownloader.figshare.com/files/22942061
+      - OPT-LOPTICS,JVASP-1327.zip,https://ndownloader.figshare.com/files/24036710
+      - OPT-Bandst,JVASP-1327.zip,https://ndownloader.figshare.com/files/23713937
+      - TBMBJ,JVASP-1327.zip,https://ndownloader.figshare.com/files/23572631
+      - DFT-SCF,JVASP-1327.zip,https://ndownloader.figshare.com/files/23127692
+      nat: 2
+      bulk_modulus_kv: 83.37
+      shear_modulus_gv: 50.02
+      mbj_bandgap: 2.563
+      hse_gap: na
+      reference: mp-1550
+      search: -Al-P
+    last_updated: '2026-05-24'
+cross_db_discrepancies: {}
+coverage:
+  common_properties:
+  - band_gap
+  - bulk_modulus
+  - density
+  - formation_energy_per_atom
+  - formula
+  - last_updated
+  - material_id
+  - poissons_ratio
+  - raw
+  - shear_modulus
+  - spacegroup
+  properties_unique_to_source:
+    jarvis: []
+last_updated: '2026-05-24'

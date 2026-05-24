@@ -1,0 +1,155 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# SmCo5
+# Synced at: 2026-05-24T05:50:33Z
+# License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
+#          OQMD License (OQMD), AFLOW License (AFLOW),
+#          CC BY 4.0 / Database Right (NOMAD)
+# Disclaimer: Data sourced from third-party databases. All data remains the
+#   intellectual property of respective database providers under their
+#   applicable licenses. This aggregation is for research purposes only.
+# Sources: jarvis
+# ─────────────────────────────────────────────────────────────────────────────
+
+formula: SmCo5
+databases:
+  jarvis:
+    material_id: JVASP-93962
+    formula: SmCo5
+    spacegroup: P6/mmm
+    band_gap: 0.0
+    formation_energy_per_atom: -0.08989
+    density: 8.843
+    raw:
+      jid: JVASP-93962
+      spg_number: '191'
+      spg_symbol: P6/mmm
+      formula: SmCo5
+      formation_energy_peratom: -0.08989
+      func: OptB88vdW
+      optb88vdw_bandgap: 0.0
+      atoms:
+        lattice_mat:
+        - - 0.0
+          - 0.0
+          - -3.9347487972710264
+        - - -2.476380077275012
+          - -4.289215599706947
+          - 0.0
+        - - -2.475578628390212
+          - 4.288753632322788
+          - 0.0
+        coords:
+        - - -2.4763418146830225
+          - -4.2891538610288675
+          - 0.0
+        - - -2.4759121128772676
+          - 1.4297055036247255
+          - 0.0
+        - - -2.4758391302436547
+          - -1.429813925764756
+          - 0.0
+        - - -1.2382283328874049
+          - -2.144676394570852
+          - -1.967375
+        - - -2.4760180499932343
+          - -0.00017082491554412104
+          - -1.967375
+        - - -3.7140953976954174
+          - -2.144845864564713
+          - -1.967375
+        elements:
+        - Sm
+        - Co
+        - Co
+        - Co
+        - Co
+        - Co
+        abc:
+        - 3.93475
+        - 4.952763
+        - 4.951956
+        angles:
+        - 120.0054
+        - 90.0
+        - 90.0
+        cartesian: true
+        props:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      slme: na
+      magmom_oszicar: 6.817
+      spillage: na
+      elastic_tensor: na
+      effective_masses_300K:
+        p: na
+        n: na
+      kpoint_length_unit: 40
+      maxdiff_mesh: na
+      maxdiff_bz: na
+      encut: 500
+      optb88vdw_total_energy: -4.07324
+      epsx: na
+      epsy: na
+      epsz: na
+      mepsx: na
+      mepsy: na
+      mepsz: na
+      modes: na
+      magmom_outcar: 7.055999999999999
+      max_efg: na
+      avg_elec_mass: na
+      avg_hole_mass: na
+      icsd: ''
+      dfpt_piezo_max_eij: na
+      dfpt_piezo_max_dij: na
+      dfpt_piezo_max_dielectric: na
+      dfpt_piezo_max_dielectric_electronic: na
+      dfpt_piezo_max_dielectric_ionic: na
+      max_ir_mode: na
+      min_ir_mode: na
+      n-Seebeck: na
+      p-Seebeck: na
+      n-powerfact: na
+      p-powerfact: na
+      ncond: na
+      pcond: na
+      nkappa: na
+      pkappa: na
+      ehull: 0.0
+      Tc_supercon: na
+      dimensionality: 3D-bulk
+      efg: []
+      xml_data_link: <a href=https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-93962.xml target='_blank' >JVASP-93962</a>
+      typ: bulk
+      exfoliation_energy: na
+      spg: '191'
+      crys: hexagonal
+      density: 8.843
+      poisson: na
+      raw_files: []
+      nat: 6
+      bulk_modulus_kv: na
+      shear_modulus_gv: na
+      mbj_bandgap: na
+      hse_gap: na
+      reference: mp-905838
+      search: -Co-Sm
+    last_updated: '2026-05-24'
+cross_db_discrepancies: {}
+coverage:
+  common_properties:
+  - band_gap
+  - density
+  - formation_energy_per_atom
+  - formula
+  - last_updated
+  - material_id
+  - raw
+  - spacegroup
+  properties_unique_to_source:
+    jarvis: []
+last_updated: '2026-05-24'

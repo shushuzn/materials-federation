@@ -1,0 +1,244 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# CaTiO3
+# Synced at: 2026-05-24T05:48:50Z
+# License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
+#          OQMD License (OQMD), AFLOW License (AFLOW),
+#          CC BY 4.0 / Database Right (NOMAD)
+# Disclaimer: Data sourced from third-party databases. All data remains the
+#   intellectual property of respective database providers under their
+#   applicable licenses. This aggregation is for research purposes only.
+# Sources: jarvis
+# ─────────────────────────────────────────────────────────────────────────────
+
+formula: CaTiO3
+databases:
+  jarvis:
+    material_id: JVASP-8101
+    formula: CaTiO3
+    spacegroup: Pm-3m
+    band_gap: 1.869
+    formation_energy_per_atom: -3.34472
+    bulk_modulus: 186.37
+    shear_modulus: 109.9
+    poissons_ratio: 0.26
+    density: 3.874
+    raw:
+      jid: JVASP-8101
+      spg_number: '221'
+      spg_symbol: Pm-3m
+      formula: CaTiO3
+      formation_energy_peratom: -3.34472
+      func: OptB88vdW
+      optb88vdw_bandgap: 1.869
+      atoms:
+        lattice_mat:
+        - - 3.8767592339855854
+          - -0.0
+          - -0.0
+        - - -0.0
+          - 3.8767592339855854
+          - 0.0
+        - - -0.0
+          - -0.0
+          - 3.8767592339855854
+        coords:
+        - - 1.93838
+          - 1.93838
+          - 1.93838
+        - - 0.0
+          - 0.0
+          - 0.0
+        - - 0.0
+          - 1.93838
+          - 0.0
+        - - 0.0
+          - 0.0
+          - 1.93838
+        - - 1.93838
+          - 0.0
+          - 0.0
+        elements:
+        - Ca
+        - Ti
+        - O
+        - O
+        - O
+        abc:
+        - 3.87676
+        - 3.87676
+        - 3.87676
+        angles:
+        - 90.0
+        - 90.0
+        - 90.0
+        cartesian: true
+        props:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      slme: 14.49
+      magmom_oszicar: 0.0
+      spillage: na
+      elastic_tensor:
+      - - 357.5
+        - 100.8
+        - 100.8
+        - -0.0
+        - -0.0
+        - 0.0
+      - - 100.8
+        - 357.5
+        - 100.8
+        - -0.0
+        - -0.0
+        - -0.0
+      - - 100.8
+        - 100.8
+        - 357.5
+        - 0.0
+        - -0.0
+        - 0.0
+      - - -0.0
+        - -0.0
+        - 0.0
+        - 97.6
+        - 0.0
+        - 0.0
+      - - -0.0
+        - -0.0
+        - -0.0
+        - 0.0
+        - 97.6
+        - 0.0
+      - - 0.0
+        - -0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 97.6
+      effective_masses_300K:
+        p:
+        - 2.01
+        - 2.01
+        - 2.01
+        n:
+        - 0.79
+        - 0.79
+        - 0.79
+      kpoint_length_unit: 30
+      maxdiff_mesh: na
+      maxdiff_bz: na
+      encut: 900
+      optb88vdw_total_energy: -6.17279
+      epsx: 6.3543
+      epsy: 6.3543
+      epsz: 6.3543
+      mepsx: 5.3092
+      mepsy: 5.3092
+      mepsz: 5.3092
+      modes:
+      - -132.1
+      - 0.08
+      - 0.08
+      - 0.08
+      - 158.2
+      - 178.38
+      - 583.9
+      magmom_outcar: 0.0
+      max_efg: 0.864
+      avg_elec_mass: 0.79
+      avg_hole_mass: 2.01
+      icsd: 77060,162924,162925,162926,165076,153174,31864,31865
+      dfpt_piezo_max_eij: 0.0
+      dfpt_piezo_max_dij: 0.0
+      dfpt_piezo_max_dielectric: 24.74689779
+      dfpt_piezo_max_dielectric_electronic: 6.29862901
+      dfpt_piezo_max_dielectric_ionic: 18.44826878
+      max_ir_mode: 1.13
+      min_ir_mode: 0.0
+      n-Seebeck: -299.91
+      p-Seebeck: 408.25
+      n-powerfact: 3458.85
+      p-powerfact: 2323.35
+      ncond: 38455.16
+      pcond: 13939.94
+      nkappa: 252256000000000.0
+      pkappa: 153993860000000.03
+      ehull: 0.0741
+      Tc_supercon: na
+      dimensionality: intercalated ion
+      efg:
+      - - Ca
+        - b
+        - '0.0'
+        - '0.0'
+        - '-0.0'
+        - '0.0'
+        - '0.0'
+        - '-0.0'
+        - '-0.0'
+        - '-0.0'
+        - '-0.0'
+      - - Ti
+        - a
+        - '0.0'
+        - '-0.0'
+        - '-0.0'
+        - '-0.0'
+        - '0.0'
+        - '0.0'
+        - '-0.0'
+        - '0.0'
+        - '0.0'
+      - - O
+        - d
+        - '-0.432'
+        - '0.0'
+        - '-0.0'
+        - '0.0'
+        - '0.864'
+        - '0.0'
+        - '-0.0'
+        - '0.0'
+        - '-0.432'
+      xml_data_link: <a href=https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-8101.xml target='_blank' >JVASP-8101</a>
+      typ: bulk
+      exfoliation_energy: na
+      spg: '221'
+      crys: cubic
+      density: 3.874
+      poisson: 0.26
+      raw_files:
+      - FD-ELAST,JVASP-8101.zip,https://ndownloader.figshare.com/files/22978577
+      - DFPT,JVASP-8101.zip,https://ndownloader.figshare.com/files/22945631
+      - OPT-LOPTICS,JVASP-8101.zip,https://ndownloader.figshare.com/files/24041591
+      - OPT-Bandst,JVASP-8101.zip,https://ndownloader.figshare.com/files/23719349
+      - TBMBJ,JVASP-8101.zip,https://ndownloader.figshare.com/files/23602859
+      - DFT-SCF,JVASP-8101.zip,https://ndownloader.figshare.com/files/23158709
+      nat: 5
+      bulk_modulus_kv: 186.37
+      shear_modulus_gv: 109.9
+      mbj_bandgap: 2.406
+      hse_gap: na
+      reference: mp-5827
+      search: -Ca-O-Ti
+    last_updated: '2026-05-24'
+cross_db_discrepancies: {}
+coverage:
+  common_properties:
+  - band_gap
+  - bulk_modulus
+  - density
+  - formation_energy_per_atom
+  - formula
+  - last_updated
+  - material_id
+  - poissons_ratio
+  - raw
+  - shear_modulus
+  - spacegroup
+  properties_unique_to_source:
+    jarvis: []
+last_updated: '2026-05-24'

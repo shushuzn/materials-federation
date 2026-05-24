@@ -1,0 +1,202 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# FeNi
+# Synced at: 2026-05-24T05:50:37Z
+# License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
+#          OQMD License (OQMD), AFLOW License (AFLOW),
+#          CC BY 4.0 / Database Right (NOMAD)
+# Disclaimer: Data sourced from third-party databases. All data remains the
+#   intellectual property of respective database providers under their
+#   applicable licenses. This aggregation is for research purposes only.
+# Sources: jarvis
+# ─────────────────────────────────────────────────────────────────────────────
+
+formula: FeNi
+databases:
+  jarvis:
+    material_id: JVASP-20436
+    formula: FeNi
+    spacegroup: P4/mmm
+    band_gap: 0.0
+    formation_energy_per_atom: -0.05368
+    bulk_modulus: 188.58
+    shear_modulus: 104.99
+    poissons_ratio: 0.28
+    density: 8.481
+    raw:
+      jid: JVASP-20436
+      spg_number: '123'
+      spg_symbol: P4/mmm
+      formula: FeNi
+      formation_energy_peratom: -0.05368
+      func: OptB88vdW
+      optb88vdw_bandgap: 0.0
+      atoms:
+        lattice_mat:
+        - - 3.5416353156350513
+          - 0.0
+          - 0.0
+        - - 0.0
+          - 3.5416353156350513
+          - -0.0
+        - - 0.0
+          - -0.0
+          - 3.575854571718256
+        coords:
+        - - 0.0
+          - 0.0
+          - 0.0
+        - - 1.77082
+          - 1.77082
+          - 0.0
+        - - 0.0
+          - 1.77082
+          - 1.787925
+        - - 1.77082
+          - 0.0
+          - 1.787925
+        elements:
+        - Fe
+        - Fe
+        - Ni
+        - Ni
+        abc:
+        - 3.54164
+        - 3.54164
+        - 3.57585
+        angles:
+        - 90.0
+        - 90.0
+        - 90.0
+        cartesian: true
+        props:
+        - ''
+        - ''
+        - ''
+        - ''
+      slme: na
+      magmom_oszicar: 6.388
+      spillage: na
+      elastic_tensor:
+      - - 305.8
+        - 108.2
+        - 149.4
+        - 0.0
+        - 0.0
+        - 0.0
+      - - 108.2
+        - 305.8
+        - 149.4
+        - 0.0
+        - 0.0
+        - 0.0
+      - - 149.4
+        - 149.4
+        - 271.6
+        - 0.0
+        - 0.0
+        - 0.0
+      - - 0.0
+        - 0.0
+        - 0.0
+        - 81.0
+        - 0.0
+        - 0.0
+      - - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 142.6
+        - 0.0
+      - - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - 142.6
+      effective_masses_300K:
+        p:
+        - 0.0
+        - 0.0
+        - 0.0
+        n:
+        - 0.0
+        - 0.0
+        - 0.0
+      kpoint_length_unit: 40
+      maxdiff_mesh: na
+      maxdiff_bz: na
+      encut: 650
+      optb88vdw_total_energy: -3.02898
+      epsx: 322.9401
+      epsy: 322.9401
+      epsz: 303.8416
+      mepsx: na
+      mepsy: na
+      mepsz: na
+      modes:
+      - -0.17
+      - -0.02
+      - -0.02
+      - 185.09
+      - 230.61
+      magmom_outcar: 6.534
+      max_efg: na
+      avg_elec_mass: 0.0
+      avg_hole_mass: 0.0
+      icsd: 632913,103555
+      dfpt_piezo_max_eij: na
+      dfpt_piezo_max_dij: na
+      dfpt_piezo_max_dielectric: na
+      dfpt_piezo_max_dielectric_electronic: na
+      dfpt_piezo_max_dielectric_ionic: na
+      max_ir_mode: na
+      min_ir_mode: na
+      n-Seebeck: -1.45
+      p-Seebeck: -1.58
+      n-powerfact: 10.603333333333333
+      p-powerfact: 12.57
+      ncond: 4739398.133333333
+      pcond: 4738175.4
+      nkappa: 6691317633333333.0
+      pkappa: 6684550133333333.0
+      ehull: 0.0068
+      Tc_supercon: na
+      dimensionality: 3D-bulk
+      efg: []
+      xml_data_link: <a href=https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-20436.xml target='_blank' >JVASP-20436</a>
+      typ: bulk
+      exfoliation_energy: na
+      spg: '123'
+      crys: tetragonal
+      density: 8.481
+      poisson: 0.28
+      raw_files:
+      - FD-ELAST,JVASP-20436.zip,https://ndownloader.figshare.com/files/23041229
+      - OPT-LOPTICS,JVASP-20436.zip,https://ndownloader.figshare.com/files/24261383
+      - OPT-Bandst,JVASP-20436.zip,https://ndownloader.figshare.com/files/23831003
+      - DFT-SCF,JVASP-20436.zip,https://ndownloader.figshare.com/files/23282138
+      nat: 2
+      bulk_modulus_kv: 188.58
+      shear_modulus_gv: 104.99
+      mbj_bandgap: na
+      hse_gap: na
+      reference: mp-2213
+      search: -Fe-Ni
+    last_updated: '2026-05-24'
+cross_db_discrepancies: {}
+coverage:
+  common_properties:
+  - band_gap
+  - bulk_modulus
+  - density
+  - formation_energy_per_atom
+  - formula
+  - last_updated
+  - material_id
+  - poissons_ratio
+  - raw
+  - shear_modulus
+  - spacegroup
+  properties_unique_to_source:
+    jarvis: []
+last_updated: '2026-05-24'

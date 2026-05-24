@@ -1,0 +1,190 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# NiO
+# Synced at: 2026-05-24T05:49:07Z
+# License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
+#          OQMD License (OQMD), AFLOW License (AFLOW),
+#          CC BY 4.0 / Database Right (NOMAD)
+# Disclaimer: Data sourced from third-party databases. All data remains the
+#   intellectual property of respective database providers under their
+#   applicable licenses. This aggregation is for research purposes only.
+# Sources: jarvis
+# ─────────────────────────────────────────────────────────────────────────────
+
+formula: NiO
+databases:
+  jarvis:
+    material_id: JVASP-87131
+    formula: NiO
+    spacegroup: Fm-3m
+    band_gap: 0.0
+    formation_energy_per_atom: -0.63387
+    bulk_modulus: 161.83
+    shear_modulus: 52.46
+    poissons_ratio: 0.35
+    density: 6.864
+    raw:
+      jid: JVASP-87131
+      spg_number: '225'
+      spg_symbol: Fm-3m
+      formula: NiO
+      formation_energy_peratom: -0.63387
+      func: OptB88vdW
+      optb88vdw_bandgap: 0.0
+      atoms:
+        lattice_mat:
+        - - 2.820075098960687
+          - 8.7304091188e-06
+          - 4.251449442441919
+        - - 1.281860729615984
+          - 2.5119039855352407
+          - 4.251449442445334
+        - - 1.42583003218e-05
+          - 8.7313910847e-06
+          - 5.101730072783703
+        coords:
+        - - 0.0
+          - 0.0
+          - 0.0
+        - - 2.0509749999999998
+          - 1.25596
+          - 6.802315
+        - - 3.0764625
+          - 1.8839399999999997
+          - 10.2034725
+        - - 1.0254874999999999
+          - 0.62798
+          - 3.4011575
+        elements:
+        - Ni
+        - Ni
+        - O
+        - O
+        abc:
+        - 5.101733
+        - 5.101729
+        - 5.10173
+        angles:
+        - 33.557
+        - 33.5571
+        - 33.557
+        cartesian: true
+        props:
+        - ''
+        - ''
+        - ''
+        - ''
+      slme: na
+      magmom_oszicar: 2.06
+      spillage: na
+      elastic_tensor:
+      - - 232.5
+        - 126.5
+        - 126.5
+        - 0.0
+        - -0.0
+        - 0.0
+      - - 126.5
+        - 232.5
+        - 126.5
+        - 0.0
+        - 0.0
+        - -0.0
+      - - 126.5
+        - 126.5
+        - 232.5
+        - -0.0
+        - -0.0
+        - 0.0
+      - - 0.0
+        - 0.0
+        - -0.0
+        - 52.1
+        - -0.0
+        - -0.0
+      - - -0.0
+        - 0.0
+        - -0.0
+        - -0.0
+        - 52.1
+        - -0.0
+      - - 0.0
+        - -0.0
+        - 0.0
+        - -0.0
+        - -0.0
+        - 52.1
+      effective_masses_300K:
+        p: na
+        n: na
+      kpoint_length_unit: 45
+      maxdiff_mesh: na
+      maxdiff_bz: na
+      encut: 850
+      optb88vdw_total_energy: -2.92784
+      epsx: 60.6553
+      epsy: 60.9722
+      epsz: 55.5844
+      mepsx: na
+      mepsy: na
+      mepsz: na
+      modes: na
+      magmom_outcar: 2.002
+      max_efg: na
+      avg_elec_mass: na
+      avg_hole_mass: na
+      icsd: ''
+      dfpt_piezo_max_eij: na
+      dfpt_piezo_max_dij: na
+      dfpt_piezo_max_dielectric: na
+      dfpt_piezo_max_dielectric_electronic: na
+      dfpt_piezo_max_dielectric_ionic: na
+      max_ir_mode: na
+      min_ir_mode: na
+      n-Seebeck: na
+      p-Seebeck: na
+      n-powerfact: na
+      p-powerfact: na
+      ncond: na
+      pcond: na
+      nkappa: na
+      pkappa: na
+      ehull: 0.1285
+      Tc_supercon: na
+      dimensionality: 3D-bulk
+      efg: []
+      xml_data_link: <a href=https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-87131.xml target='_blank' >JVASP-87131</a>
+      typ: bulk
+      exfoliation_energy: na
+      spg: '225'
+      crys: cubic
+      density: 6.864
+      poisson: 0.35
+      raw_files:
+      - OPT-LOPTICS,JVASP-87131.zip,https://ndownloader.figshare.com/files/25258076
+      - OPT-Bandst,JVASP-87131.zip,https://ndownloader.figshare.com/files/24011918
+      - DFT-SCF,JVASP-87131.zip,https://ndownloader.figshare.com/files/23569049
+      nat: 2
+      bulk_modulus_kv: 161.83
+      shear_modulus_gv: 52.46
+      mbj_bandgap: na
+      hse_gap: na
+      reference: mp-NiO
+      search: -Ni-O
+    last_updated: '2026-05-24'
+cross_db_discrepancies: {}
+coverage:
+  common_properties:
+  - band_gap
+  - bulk_modulus
+  - density
+  - formation_energy_per_atom
+  - formula
+  - last_updated
+  - material_id
+  - poissons_ratio
+  - raw
+  - shear_modulus
+  - spacegroup
+  properties_unique_to_source:
+    jarvis: []
+last_updated: '2026-05-24'
