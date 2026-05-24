@@ -207,7 +207,9 @@ def mp_fetch(material_id: str = None, formula: str = None, api_key: str = None) 
         return None
 
     # Try REST API (supports formula lookup via /MaterialsSnapshot)
-    url = f"https://materialsproject.org/rest/v2/materials/{material_id or formula}/vasp"
+    query = material_id or formula
+    url = f"https://materialsproject.org/rest/v2/materials/{query}/vasp"
+    log.warning(f"[MP] REST query: {url}")
     try:
         headers = {"X-API-Key": api_key, **HEADERS}
         if material_id:
@@ -412,6 +414,29 @@ def sync_one(item: dict) -> dict:
 
     databases = existing.get("databases", {})
     updated = False
+
+    # 先串行跑 JARVIS（快，本地数据集），再并行查其他库
+    # JARVIS 必须先跑，因为它不依赖网络
+    _ensure_jarvis_cache()
+    if formula in _JARVIS_CACHE:
+        entry = _JARVIS_CACHE[formula]
+        result = DbEntry(
+            source="jarvis",
+            material_id=entry.get("jid", ""),
+            formula=entry.get("formula", ""),
+            spacegroup=str(entry.get("spg_symbol", "")),
+            band_gap=_float(entry.get("optb88vdw_bandgap")),
+            formation_energy_per_atom=_float(entry.get("formation_energy_peratom")),
+            density=_float(entry.get("density")),
+            poissons_ratio=_float(entry.get("poisson")),
+            bulk_modulus=_float(entry.get("bulk_modulus_kv")),
+            shear_modulus=_float(entry.get("shear_modulus_gv")),
+            raw=entry,
+            last_updated=time.strftime("%Y-%m-%d"),
+        )
+        databases["jarvis"] = result.to_dict()
+        updated = True
+        log.info(f"  [jarvis] {result.material_id} ← {result.formula}")
 
     futures = {}
     with ThreadPoolExecutor(max_workers=4) as executor:
