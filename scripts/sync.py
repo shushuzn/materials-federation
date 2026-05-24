@@ -201,22 +201,25 @@ def mp_fetch(material_id: str = None, formula: str = None, api_key: str = None) 
 
     api_key = api_key or os.environ.get("MP_API_KEY", "")
     if not api_key:
-        log.debug("[MP] No API key, skipping REST fallback")
-        return None
-    if not material_id:
+        log.debug("[MP] No API key, skipping")
         return None
 
-    url = f"https://materialsproject.org/rest/v2/materials/{material_id}/vasp"
+    # Try REST API (supports formula lookup via /MaterialsSnapshot)
+    url = f"https://materialsproject.org/rest/v2/materials/{material_id or formula}/vasp"
     try:
-        r = requests.get(url, headers={"X-API-Key": api_key, **HEADERS}, timeout=30)
+        headers = {"X-API-Key": api_key, **HEADERS}
+        if material_id:
+            headers["User-Agent"] = HEADERS["User-Agent"]
+        r = requests.get(url, headers=headers, timeout=30)
         if r.status_code == 404:
+            log.debug(f"[MP] REST 404 for {material_id or formula}")
             return None
         r.raise_for_status()
         d = r.json()
         resp = d.get("response", [{}])[0]
         return DbEntry(
             source="materials_project",
-            material_id=resp.get("material_id", material_id),
+            material_id=resp.get("material_id", material_id or formula),
             formula=resp.get("pretty_formula", ""),
             spacegroup=resp.get("spacegroup", {}).get("symbol", ""),
             band_gap=resp.get("band_gap"),
@@ -227,7 +230,7 @@ def mp_fetch(material_id: str = None, formula: str = None, api_key: str = None) 
             last_updated=time.strftime("%Y-%m-%d"),
         )
     except Exception as e:
-        log.error(f"[MP] HTTP error: {e}")
+        log.debug(f"[MP] REST error: {e}")
     return None
 
 
@@ -410,12 +413,9 @@ def sync_one(item: dict) -> dict:
 
     futures = {}
     with ThreadPoolExecutor(max_workers=4) as executor:
-        # MP — 优先 mp_id，次选 formula
-        if "mp_id" in item and "materials_project" not in databases:
-            f = executor.submit(mp_fetch, material_id=item["mp_id"])
-            futures["materials_project"] = f
-        elif "formula" in item and "materials_project" not in databases:
-            f = executor.submit(mp_fetch, formula=item["formula"])
+        # MP — OPTIMADE优先（formula查询），备选REST（material_id或formula）
+        if "materials_project" not in databases:
+            f = executor.submit(mp_fetch, material_id=item.get("mp_id"), formula=item["formula"])
             futures["materials_project"] = f
 
         # JARVIS — 用 jarvis-tools 本地数据集，按 formula 查
