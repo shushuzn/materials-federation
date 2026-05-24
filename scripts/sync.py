@@ -593,6 +593,8 @@ def sync_one(item: dict) -> dict:
             databases[result.source] = result.to_dict()
             updated = True
             log.info(f"  [{result.source}] {result.material_id or formula} ← {result.formula}")
+        else:
+            log.debug(f"[{src}] returned None (no data)")
 
     # 计算差异和覆盖率
     discrepancies = compute_discrepancies(databases)
