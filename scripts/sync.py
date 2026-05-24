@@ -203,27 +203,23 @@ def _mp_hf_save_index(cache_dir: Path, index: dict):
 def mp_hf_fetch(formula: str) -> Optional[DbEntry]:
     """
     从 HuggingFace colabfit/Materials_Project parquet 分片查找 MP 数据。
-    使用分片索引加速：已知某 formula 在某个分片后，下次直接查该分片。
+    最多扫描 2 个分片/材料。分片索引缓存避免重复下载。
     """
     global _MP_HF_CACHE, _MP_HF_SHARD_INDEX
 
     if formula in _MP_HF_CACHE:
         return _MP_HF_CACHE[formula]
 
-    # 确定要扫描的分片列表（优先索引命中的）
     cache_dir = Path("/tmp/mp_parquet_cache")
     shard_index = _mp_hf_load_full_index(cache_dir)
 
-    # 优先检查已知分片
-    priority_shards = []
+    # 确定扫描顺序：优先命中的分片，然后从后往前
     if formula in shard_index:
-        priority_shards = [shard_index[formula]]
+        shards_to_scan = [shard_index[formula]]
     else:
-        # 从后往前扫（后部分片数据量小，先扫）
-        priority_shards = list(range(_MP_HF_SHARD_COUNT - 1, -1, -1))
+        shards_to_scan = list(range(_MP_HF_SHARD_COUNT - 1, _MP_HF_SHARD_COUNT - 3, -1))  # 最后2个分片
 
-    scanned = 0
-    for idx in priority_shards:
+    for idx in shards_to_scan:
         shard_path = _mp_hf_download_shard(idx, cache_dir)
         if not shard_path:
             continue
@@ -233,14 +229,8 @@ def mp_hf_fetch(formula: str) -> Optional[DbEntry]:
             _MP_HF_CACHE[formula] = result
             shard_index[formula] = idx
             _mp_hf_save_index(cache_dir, shard_index)
-            log.info(f"  [mp-hf] found {formula} in shard {idx}")
+            log.info(f"  [mp-hf] {formula} in shard {idx}")
             return result
-
-        scanned += 1
-        # 最多扫描 8 个分片（控制下载量）
-        if scanned >= 8:
-            log.debug(f"[MP-HF] Scanned {scanned} shards for {formula}, stopping")
-            break
 
     return None
 
