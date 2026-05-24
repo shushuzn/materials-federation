@@ -104,8 +104,10 @@ def _ensure_jarvis_cache():
 def jarvis_fetch_by_formula(formula: str) -> Optional[DbEntry]:
     """用 formula 在本地 JARVIS 数据集中查找第一条记录"""
     _ensure_jarvis_cache()
+    cache_size = len(_JARVIS_CACHE)
     entry = _JARVIS_CACHE.get(formula)
     if not entry:
+        log.warning(f"[JARVIS] No entry for formula={formula!r} in cache of {cache_size} formulas. Sample keys: {list(_JARVIS_CACHE.keys())[:3]}")
         return None
 
     # 字段映射: JARVIS -> DbEntry
@@ -452,7 +454,7 @@ def sync_one(item: dict) -> dict:
                 continue
             databases[src] = result.to_dict()
             updated = True
-            log.info(f"  [{src}] {result.material_id or formula}")
+            log.info(f"  [{src}] {result.material_id or formula} ← {result.formula}")
 
     # 计算差异和覆盖率
     discrepancies = compute_discrepancies(databases)
