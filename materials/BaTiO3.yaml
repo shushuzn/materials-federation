@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # BaTiO3
-# Synced at: 2026-05-24T07:17:04Z
+# Synced at: 2026-05-24T07:26:11Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -275,16 +275,16 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     materials_project:
-    - formation_energy
-    - formation_energy_per_atom
     - structure_type
-    jarvis:
-    - raw
-    - bulk_modulus
-    - density
     - formation_energy_per_atom
-    - poissons_ratio
+    - formation_energy
+    jarvis:
+    - density
     - shear_modulus
+    - bulk_modulus
+    - formation_energy_per_atom
+    - raw
+    - poissons_ratio
     oqmd:
     - formation_energy
 last_updated: '2026-05-24'
