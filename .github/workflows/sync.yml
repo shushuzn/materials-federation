@@ -25,6 +25,8 @@ jobs:
         run: pip install requests pyyaml tqdm jarvis-tools
 
       - name: Run sync
+        env:
+          MP_API_KEY: ${{ secrets.MP_API_KEY }}
         run: python scripts/sync.py
 
       - name: Commit & push
