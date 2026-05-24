@@ -1,0 +1,57 @@
+# Materials Federation — License File
+
+This repository aggregates data from third-party materials science databases.
+All original data remains under the intellectual property and license terms
+of its respective source database.
+
+## Data Sources & Their Licenses
+
+### Materials Project
+- **License**: [Creative Commons Attribution 4.0 (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)
+- **URL**: https://materialsproject.org
+- **Key restriction**: Do not use Materials Project data for training commercial AI/ML models.
+- **Attribution**: "Materials Project, https://materialsproject.org"
+
+### JARVIS (NIST)
+- **License**: [NIST Terms of Service](https://www.nist.gov/public affairs/nist-websites-terms-and-conditions)
+- **URL**: https://jarvis.nist.gov
+- **Key restriction**: NIST data is a federal government product; commercial use is limited.
+- **Attribution**: "JARVIS, National Institute of Standards and Technology"
+
+### OQMD (Open Quantum Materials Database)
+- **License**: [OQMD License Agreement](https://oqmd.org/static/attachment//oqmd_license.pdf)
+- **URL**: https://oqmd.org
+- **Key restriction**: Commercial use requires a separate license agreement with OQMD.
+- **Attribution**: "Open Quantum Materials Database, http://oqmd.org"
+
+### AFLOW
+- **License**: [AFLOW License Agreement](http://aflow.org/license/)
+- **URL**: http://aflow.org
+- **Key restriction**: Direct mirroring prohibited; commercial use requires a license agreement.
+- **Attribution**: "AFLOW, http://aflow.org"
+
+### NOMAD (NOMAD Laboratory)
+- **License**: [Creative Commons Attribution 4.0 (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) and Database Right
+- **URL**: https://nomad-lab.eu
+- **Attribution**: "NOMAD, https://nomad-lab.eu"
+
+## This Repository
+
+The aggregation code (scripts/sync.py) and YAML data files in this repository
+are provided under the [MIT License](./LICENSE.txt).
+
+However, the aggregated **data content** within each YAML file in `materials/`
+is sourced from the third-party databases listed above and is subject to their
+respective licenses. The license header at the top of each data file identifies
+which database(s) contributed that record.
+
+## Disclaimer
+
+All data in this repository originates from third-party public databases.
+The repository maintainers do not claim ownership of any original data.
+All data remains the intellectual property of the respective database providers.
+This aggregation is for research and educational purposes only.
+
+Before using any data from this repository for commercial applications, research,
+or publications, you must verify compliance with the license terms of the
+relevant source database(s).

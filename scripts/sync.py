@@ -35,6 +35,20 @@ NUMERIC_PROPS = [
     "density", "total_magnetization", "energy_per_atom",
 ]
 
+# ── License header 模板 ────────────────────────────────
+LICENSE_HEADER = """# ─────────────────────────────────────────────────────────────────────────────
+# {formula}
+# Synced at: {synced_at}
+# License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
+#          OQMD License (OQMD), AFLOW License (AFLOW),
+#          CC BY 4.0 / Database Right (NOMAD)
+# Disclaimer: Data sourced from third-party databases. All data remains the
+#   intellectual property of respective database providers under their
+#   applicable licenses. This aggregation is for research purposes only.
+# Sources: {sources}
+# ─────────────────────────────────────────────────────────────────────────────
+""".strip()
+
 # ── Dataclass ──────────────────────────────────────────
 @dataclass
 class DbEntry:
@@ -231,11 +245,25 @@ def load_yaml(formula: str) -> dict:
     return {}
 
 
-def save_yaml(formula: str, data: dict):
+def save_yaml(formula: str, data: dict, sources: list = None):
+    """保存 YAML，带 license header"""
     MATERIALS_DIR.mkdir(parents=True, exist_ok=True)
     path = MATERIALS_DIR / f"{formula}.yaml"
+
+    synced_at = time.strftime("%Y-%m-%dT%H:%M:%SZ")
+    sources_str = ", ".join(sources) if sources else ", ".join(data.get("databases", {}).keys())
+
+    header = LICENSE_HEADER.format(
+        formula=data.get("formula", formula),
+        synced_at=synced_at,
+        sources=sources_str,
+    )
+
     with open(path, "w") as f:
-        yaml.dump(data, f, allow_unicode=True, sort_keys=False, width=200)
+        f.write(header + "\n\n")
+        # 去掉 material_id 层级，展平保存
+        save_data = {k: v for k, v in data.items() if k != "material_id"}
+        yaml.dump(save_data, f, allow_unicode=True, sort_keys=False, width=200)
 
 
 def rate_limit(seconds: float = 1.0):
@@ -359,7 +387,7 @@ def sync_one(item: dict) -> dict:
         "last_updated": time.strftime("%Y-%m-%d"),
     }
 
-    save_yaml(formula, data)
+    save_yaml(formula, data, sources=list(databases.keys()))
 
     return {
         "formula": formula,
