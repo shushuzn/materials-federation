@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # AlNi
-# Synced at: 2026-05-24T07:28:17Z
+# Synced at: 2026-05-25T06:49:22Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -169,7 +169,7 @@ databases:
       hse_gap: na
       reference: mp-1487
       search: -Al-Ni
-    last_updated: '2026-05-24'
+    last_updated: '2026-05-25'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -186,4 +186,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-05-24'
+last_updated: '2026-05-25'

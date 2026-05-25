@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # NaNbO3
-# Synced at: 2026-05-24T07:26:19Z
+# Synced at: 2026-05-25T06:47:18Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -208,7 +208,7 @@ databases:
       hse_gap: na
       reference: mp-4681
       search: -Na-Nb-O
-    last_updated: '2026-05-24'
+    last_updated: '2026-05-25'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -222,4 +222,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-05-24'
+last_updated: '2026-05-25'
