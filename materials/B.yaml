@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # B
-# Synced at: 2026-06-03T07:00:22Z
+# Synced at: 2026-06-04T06:49:46Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -382,7 +382,7 @@ databases:
       hse_gap: na
       reference: auid-0259d68674b800c3
       search: -B
-    last_updated: '2026-06-03'
+    last_updated: '2026-06-04'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -399,4 +399,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-06-03'
+last_updated: '2026-06-04'
