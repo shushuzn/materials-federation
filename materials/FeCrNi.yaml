@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # FeCrNi
-# Synced at: 2026-06-08T06:56:42Z
+# Synced at: 2026-06-09T07:03:51Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -16,4 +16,4 @@ cross_db_discrepancies: {}
 coverage:
   common_properties: []
   properties_unique_to_source: {}
-last_updated: '2026-06-08'
+last_updated: '2026-06-09'

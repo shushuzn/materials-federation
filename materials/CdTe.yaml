@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # CdTe
-# Synced at: 2026-06-08T06:53:18Z
+# Synced at: 2026-06-09T06:28:36Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -220,7 +220,7 @@ databases:
       hse_gap: na
       reference: mp-685146
       search: -Cd-Te
-    last_updated: '2026-06-08'
+    last_updated: '2026-06-09'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -237,4 +237,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-06-08'
+last_updated: '2026-06-09'
