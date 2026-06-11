@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # GaAs
-# Synced at: 2026-06-10T06:38:36Z
+# Synced at: 2026-06-11T06:57:16Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -193,7 +193,7 @@ databases:
       hse_gap: na
       reference: mp-2534
       search: -As-Ga
-    last_updated: '2026-06-10'
+    last_updated: '2026-06-11'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -210,4 +210,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-06-10'
+last_updated: '2026-06-11'
