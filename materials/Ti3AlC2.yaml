@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # Ti3AlC2
-# Synced at: 2026-06-18T07:03:45Z
+# Synced at: 2026-06-19T07:21:40Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -155,7 +155,7 @@ databases:
       pcond: 1865769.5099999998
       nkappa: 2941580916666667.5
       pkappa: 2959777459999999.5
-      ehull: 0.0
+      ehull: 4.5275
       Tc_supercon: na
       dimensionality: 3D-bulk
       efg: []
@@ -177,7 +177,7 @@ databases:
       hse_gap: na
       reference: mp-3747
       search: -Al-C-Ti
-    last_updated: '2026-06-18'
+    last_updated: '2026-06-19'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -191,4 +191,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-06-18'
+last_updated: '2026-06-19'

@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # Na3Bi
-# Synced at: 2026-06-18T07:05:23Z
+# Synced at: 2026-06-19T07:22:33Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -196,7 +196,7 @@ databases:
       pcond: 28185.0
       nkappa: 217823323333333.34
       pkappa: 168284340333333.28
-      ehull: 0.0
+      ehull: 0
       Tc_supercon: na
       dimensionality: intercalated ion
       efg:
@@ -254,7 +254,7 @@ databases:
       hse_gap: na
       reference: mp-27838
       search: -Bi-Na
-    last_updated: '2026-06-18'
+    last_updated: '2026-06-19'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -271,4 +271,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-06-18'
+last_updated: '2026-06-19'

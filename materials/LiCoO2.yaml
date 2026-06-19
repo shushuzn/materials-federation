@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # LiCoO2
-# Synced at: 2026-06-18T07:04:34Z
+# Synced at: 2026-06-19T07:22:09Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -166,7 +166,7 @@ databases:
       pcond: 4689.006666666667
       nkappa: 149722653333333.28
       pkappa: 62375503666666.664
-      ehull: 0.0227
+      ehull: 1.7778
       Tc_supercon: na
       dimensionality: intercalated ion
       efg:
@@ -223,7 +223,7 @@ databases:
       hse_gap: na
       reference: mp-24850
       search: -Co-Li-O
-    last_updated: '2026-06-18'
+    last_updated: '2026-06-19'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -240,4 +240,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-06-18'
+last_updated: '2026-06-19'

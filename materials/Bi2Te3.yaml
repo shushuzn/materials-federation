@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # Bi2Te3
-# Synced at: 2026-06-18T07:03:31Z
+# Synced at: 2026-06-19T07:21:33Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -114,7 +114,7 @@ databases:
       pcond: na
       nkappa: na
       pkappa: na
-      ehull: 0.2469
+      ehull: 0.9682
       Tc_supercon: na
       dimensionality: 3D-bulk
       efg: []
@@ -136,7 +136,7 @@ databases:
       hse_gap: na
       reference: mp-568390
       search: -Bi-Te
-    last_updated: '2026-06-18'
+    last_updated: '2026-06-19'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -150,4 +150,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-06-18'
+last_updated: '2026-06-19'

@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # Fe3O4
-# Synced at: 2026-06-18T07:02:08Z
+# Synced at: 2026-06-19T07:20:46Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -369,7 +369,7 @@ databases:
       pcond: na
       nkappa: na
       pkappa: na
-      ehull: 0.0374
+      ehull: 3.0582
       Tc_supercon: na
       dimensionality: 3D-bulk
       efg: []
@@ -389,7 +389,7 @@ databases:
       hse_gap: na
       reference: mp-maghemite-9006316
       search: -Fe-O
-    last_updated: '2026-06-18'
+    last_updated: '2026-06-19'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -403,4 +403,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-06-18'
+last_updated: '2026-06-19'

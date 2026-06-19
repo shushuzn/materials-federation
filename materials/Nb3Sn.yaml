@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # Nb3Sn
-# Synced at: 2026-06-18T07:04:58Z
+# Synced at: 2026-06-19T07:22:19Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -184,7 +184,7 @@ databases:
       pcond: 2270260.2
       nkappa: 3116890100000000.0
       pkappa: 3124669200000000.0
-      ehull: 0.0
+      ehull: 4.1821
       Tc_supercon: 6.325494739105512
       dimensionality: 3D-bulk
       efg:
@@ -231,7 +231,7 @@ databases:
       hse_gap: na
       reference: mp-1326
       search: -Nb-Sn
-    last_updated: '2026-06-18'
+    last_updated: '2026-06-19'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -248,4 +248,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-06-18'
+last_updated: '2026-06-19'

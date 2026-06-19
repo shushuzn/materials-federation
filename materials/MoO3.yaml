@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # MoO3
-# Synced at: 2026-06-18T07:02:39Z
+# Synced at: 2026-06-19T07:21:06Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -135,7 +135,7 @@ databases:
       pcond: 2505032.8333333335
       nkappa: 3509041366666667.5
       pkappa: 3492612300000000.0
-      ehull: 0.9841
+      ehull: 3.0181
       Tc_supercon: na
       dimensionality: 2D-bulk
       efg:
@@ -190,7 +190,7 @@ databases:
       hse_gap: na
       reference: mvc-11096
       search: -Mo-O
-    last_updated: '2026-06-18'
+    last_updated: '2026-06-19'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -204,4 +204,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-06-18'
+last_updated: '2026-06-19'

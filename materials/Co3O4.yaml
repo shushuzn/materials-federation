@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # Co3O4
-# Synced at: 2026-06-18T07:02:34Z
+# Synced at: 2026-06-19T07:20:58Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -165,7 +165,7 @@ databases:
       pcond: 713925.9733333333
       nkappa: 1622797633333332.8
       pkappa: 1626061566666667.0
-      ehull: 0.0126
+      ehull: 3.021
       Tc_supercon: na
       dimensionality: 3D-bulk
       efg: []
@@ -186,7 +186,7 @@ databases:
       hse_gap: na
       reference: mp-18748
       search: -Co-O
-    last_updated: '2026-06-18'
+    last_updated: '2026-06-19'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -200,4 +200,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-06-18'
+last_updated: '2026-06-19'

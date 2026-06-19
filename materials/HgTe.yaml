@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # HgTe
-# Synced at: 2026-06-18T07:01:28Z
+# Synced at: 2026-06-19T07:20:23Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -151,7 +151,7 @@ databases:
       pcond: 50990.67333333333
       nkappa: 188701043333333.34
       pkappa: 252490466666666.66
-      ehull: 0.0583
+      ehull: 0.0069
       Tc_supercon: na
       dimensionality: 3D-bulk
       efg:
@@ -197,7 +197,7 @@ databases:
       hse_gap: na
       reference: mp-2730
       search: -Hg-Te
-    last_updated: '2026-06-18'
+    last_updated: '2026-06-19'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -214,4 +214,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-06-18'
+last_updated: '2026-06-19'

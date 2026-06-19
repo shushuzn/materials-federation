@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # BP
-# Synced at: 2026-06-18T07:00:49Z
+# Synced at: 2026-06-19T07:19:53Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -147,7 +147,7 @@ databases:
       pcond: 70531.92
       nkappa: 346174583333333.3
       pkappa: 274522470000000.0
-      ehull: 0.0
+      ehull: 2.2534
       Tc_supercon: na
       dimensionality: 3D-bulk
       efg:
@@ -194,7 +194,7 @@ databases:
       hse_gap: na
       reference: mp-1479
       search: -B-P
-    last_updated: '2026-06-18'
+    last_updated: '2026-06-19'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -211,4 +211,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-06-18'
+last_updated: '2026-06-19'

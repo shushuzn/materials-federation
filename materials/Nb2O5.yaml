@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # Nb2O5
-# Synced at: 2026-06-18T07:03:06Z
+# Synced at: 2026-06-19T07:21:18Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -190,7 +190,7 @@ databases:
       pcond: 12676.263333333334
       nkappa: 122758843333333.33
       pkappa: 99244738333333.33
-      ehull: 0.3218
+      ehull: 3.4128
       Tc_supercon: na
       dimensionality: 3D-bulk
       efg:
@@ -249,7 +249,7 @@ databases:
       hse_gap: na
       reference: mp-10426
       search: -Nb-O
-    last_updated: '2026-06-18'
+    last_updated: '2026-06-19'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -266,4 +266,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-06-18'
+last_updated: '2026-06-19'

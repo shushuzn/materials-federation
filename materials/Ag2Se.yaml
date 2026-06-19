@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # Ag2Se
-# Synced at: 2026-06-18T07:07:01Z
+# Synced at: 2026-06-19T07:23:32Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -155,7 +155,7 @@ databases:
       pcond: 30738.303333333333
       nkappa: 151379763333333.34
       pkappa: 162597195333333.34
-      ehull: 0.0219
+      ehull: 0.2369
       Tc_supercon: na
       dimensionality: 3D-bulk
       efg: []
@@ -178,7 +178,7 @@ databases:
       hse_gap: na
       reference: mp-568971
       search: -Ag-Se
-    last_updated: '2026-06-18'
+    last_updated: '2026-06-19'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -192,4 +192,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-06-18'
+last_updated: '2026-06-19'

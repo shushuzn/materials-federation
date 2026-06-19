@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # FeCo
-# Synced at: 2026-06-18T07:06:07Z
+# Synced at: 2026-06-19T07:22:57Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -141,7 +141,7 @@ databases:
       pcond: na
       nkappa: na
       pkappa: na
-      ehull: 0.4473
+      ehull: 2.4428
       Tc_supercon: 6.753613745598571
       dimensionality: 3D-bulk
       efg:
@@ -187,7 +187,7 @@ databases:
       hse_gap: na
       reference: mp-990527
       search: -Co-Fe
-    last_updated: '2026-06-18'
+    last_updated: '2026-06-19'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -204,4 +204,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-06-18'
+last_updated: '2026-06-19'

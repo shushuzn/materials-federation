@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # Cd3As2
-# Synced at: 2026-06-18T07:05:19Z
+# Synced at: 2026-06-19T07:22:31Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -197,7 +197,7 @@ databases:
       pcond: 619815.18
       nkappa: 1596553300000000.0
       pkappa: 1606921900000000.0
-      ehull: 0.1512
+      ehull: 0
       Tc_supercon: na
       dimensionality: 3D-bulk
       efg: []
@@ -221,7 +221,7 @@ databases:
       hse_gap: na
       reference: mp-10762
       search: -As-Cd
-    last_updated: '2026-06-18'
+    last_updated: '2026-06-19'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -238,4 +238,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-06-18'
+last_updated: '2026-06-19'

@@ -1,19 +1,285 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # Lu2SiO5
-# Synced at: 2026-06-18T07:06:43Z
+# Synced at: 2026-06-19T07:23:18Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
 # Disclaimer: Data sourced from third-party databases. All data remains the
 #   intellectual property of respective database providers under their
 #   applicable licenses. This aggregation is for research purposes only.
-# Sources: 
+# Sources: jarvis
 # ─────────────────────────────────────────────────────────────────────────────
 
 formula: Lu2SiO5
-databases: {}
+databases:
+  jarvis:
+    material_id: JVASP-182194
+    formula: Lu2SiO5
+    spacegroup: C2/c
+    band_gap: 4.748
+    formation_energy_per_atom: -3.64727
+    density: 7.473
+    raw:
+      jid: JVASP-182194
+      spg_number: '15'
+      spg_symbol: C2/c
+      formula: Lu2SiO5
+      formation_energy_peratom: -3.64727
+      func: OptB88vdW
+      optb88vdw_bandgap: 4.748
+      atoms:
+        lattice_mat:
+        - - 3.3104931338610495
+          - 7.134021228076469
+          - -0.0138830076010976
+        - - -3.3104931338610495
+          - 7.134021228076469
+          - -0.0138830076010976
+        - - 0.0
+          - 5.427418833924496
+          - 8.607872005947465
+        coords:
+        - - 0.5155406856235425
+          - 0.7643698779211298
+          - 0.6634135432389784
+        - - 0.2356301220788702
+          - 0.4844593143764575
+          - 0.8365864567610216
+        - - 0.4844593143764575
+          - 0.2356301220788702
+          - 0.3365864567610217
+        - - 0.7643698779211298
+          - 0.5155406856235425
+          - 0.1634135432389783
+        - - 0.2931514976685745
+          - 0.7803113189718089
+          - 0.0334236124384472
+        - - 0.2196886810281909
+          - 0.7068485023314264
+          - 0.4665763875615527
+        - - 0.7068485023314264
+          - 0.219688681028191
+          - 0.9665763875615528
+        - - 0.7803113189718089
+          - 0.2931514976685745
+          - 0.5334236124384472
+        - - 0.9099479260014722
+          - 0.7246754305350505
+          - 0.3073729676228609
+        - - 0.2753245694649489
+          - 0.0900520739985279
+          - 0.1926270323771391
+        - - 0.0900520739985279
+          - 0.2753245694649489
+          - 0.6926270323771392
+        - - 0.7246754305350505
+          - 0.9099479260014722
+          - 0.8073729676228608
+        - - 0.4199635777872299
+          - 0.6163834420214402
+          - 0.6016394486882768
+        - - 0.3836165579785595
+          - 0.58003642221277
+          - 0.8983605513117232
+        - - 0.58003642221277
+          - 0.3836165579785595
+          - 0.3983605513117236
+        - - 0.6163834420214402
+          - 0.4199635777872299
+          - 0.1016394486882764
+        - - 0.7267290894641999
+          - 0.8694772964589691
+          - 0.4398912107741134
+        - - 0.1305227035410317
+          - 0.2732709105357997
+          - 0.0601087892258863
+        - - 0.2732709105357997
+          - 0.1305227035410317
+          - 0.5601087892258858
+        - - 0.8694772964589691
+          - 0.7267290894641999
+          - 0.9398912107741142
+        - - 0.8504792001013918
+          - 0.5508162704514806
+          - 0.3238021114445253
+        - - 0.449183729548519
+          - 0.1495207998986083
+          - 0.1761978885554751
+        - - 0.1495207998986083
+          - 0.449183729548519
+          - 0.6761978885554754
+        - - 0.5508162704514806
+          - 0.8504792001013917
+          - 0.8238021114445246
+        - - 0.905991138997045
+          - 0.9180298296493672
+          - 0.6364049072161765
+        - - 0.0819701703506327
+          - 0.0940088610029552
+          - 0.8635950927838235
+        - - 0.0940088610029552
+          - 0.0819701703506327
+          - 0.3635950927838236
+        - - 0.9180298296493672
+          - 0.905991138997045
+          - 0.1364049072161764
+        - - 0.5888179642210035
+          - 0.1727339646240632
+          - 0.823518641098136
+        - - 0.827266035375937
+          - 0.4111820357789967
+          - 0.676481358901864
+        - - 0.4111820357789967
+          - 0.827266035375937
+          - 0.1764813589018637
+        - - 0.1727339646240632
+          - 0.5888179642210035
+          - 0.3235186410981362
+        elements:
+        - Lu
+        - Lu
+        - Lu
+        - Lu
+        - Lu
+        - Lu
+        - Lu
+        - Lu
+        - Si
+        - Si
+        - Si
+        - Si
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        - O
+        abc:
+        - 7.864717
+        - 7.864717
+        - 10.176066
+        angles:
+        - 61.1639
+        - 61.1639
+        - 49.7865
+        cartesian: false
+        props:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      slme: na
+      magmom_oszicar: 0.0
+      spillage: na
+      elastic_tensor: na
+      effective_masses_300K:
+        p: na
+        n: na
+      kpoint_length_unit: 25
+      maxdiff_mesh: na
+      maxdiff_bz: na
+      encut: 500
+      optb88vdw_total_energy: -6.6187
+      epsx: na
+      epsy: na
+      epsz: na
+      mepsx: na
+      mepsy: na
+      mepsz: na
+      modes: na
+      magmom_outcar: 0.0
+      max_efg: na
+      avg_elec_mass: na
+      avg_hole_mass: na
+      icsd: ''
+      dfpt_piezo_max_eij: na
+      dfpt_piezo_max_dij: na
+      dfpt_piezo_max_dielectric: na
+      dfpt_piezo_max_dielectric_electronic: na
+      dfpt_piezo_max_dielectric_ionic: na
+      max_ir_mode: na
+      min_ir_mode: na
+      n-Seebeck: na
+      p-Seebeck: na
+      n-powerfact: na
+      p-powerfact: na
+      ncond: na
+      pcond: na
+      nkappa: na
+      pkappa: na
+      ehull: 2.1441
+      Tc_supercon: na
+      dimensionality: 3D-bulk
+      efg: []
+      xml_data_link: <a href=https://www.ctcms.nist.gov/~knc6/static/JARVIS-DFT/JVASP-182194.xml target='_blank' >JVASP-182194</a>
+      typ: bulk
+      exfoliation_energy: na
+      spg: '15'
+      crys: monoclinic
+      density: 7.473
+      poisson: na
+      raw_files: []
+      nat: 32
+      bulk_modulus_kv: na
+      shear_modulus_gv: na
+      mbj_bandgap: na
+      hse_gap: na
+      reference: '36171'
+      search: -Lu-O-Si
+    last_updated: '2026-06-19'
 cross_db_discrepancies: {}
 coverage:
-  common_properties: []
-  properties_unique_to_source: {}
-last_updated: '2026-06-18'
+  common_properties:
+  - band_gap
+  - density
+  - formation_energy_per_atom
+  - formula
+  - last_updated
+  - material_id
+  - raw
+  - spacegroup
+  properties_unique_to_source:
+    jarvis: []
+last_updated: '2026-06-19'

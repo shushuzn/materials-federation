@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # WO3
-# Synced at: 2026-06-18T07:02:41Z
+# Synced at: 2026-06-19T07:21:08Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -192,7 +192,7 @@ databases:
       pcond: 74588.79
       nkappa: 267592023333333.38
       pkappa: 295888966666666.5
-      ehull: 0.0993
+      ehull: 3.2377
       Tc_supercon: na
       dimensionality: 3D-bulk
       efg:
@@ -249,7 +249,7 @@ databases:
       hse_gap: na
       reference: mp-19443
       search: -O-W
-    last_updated: '2026-06-18'
+    last_updated: '2026-06-19'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -266,4 +266,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-06-18'
+last_updated: '2026-06-19'

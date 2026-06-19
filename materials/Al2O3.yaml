@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # Al2O3
-# Synced at: 2026-06-18T07:02:14Z
+# Synced at: 2026-06-19T07:20:48Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -294,7 +294,7 @@ databases:
       pcond: 4446.89
       nkappa: 137537043333333.33
       pkappa: 41806013333333.34
-      ehull: 0.1055
+      ehull: 1.6174
       Tc_supercon: na
       dimensionality: 3D-bulk
       efg: []
@@ -318,7 +318,7 @@ databases:
       hse_gap: na
       reference: mp-754531
       search: -Al-O
-    last_updated: '2026-06-18'
+    last_updated: '2026-06-19'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -335,4 +335,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-06-18'
+last_updated: '2026-06-19'

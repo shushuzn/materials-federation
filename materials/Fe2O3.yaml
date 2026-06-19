@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # Fe2O3
-# Synced at: 2026-06-18T07:02:02Z
+# Synced at: 2026-06-19T07:20:41Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -239,7 +239,7 @@ databases:
       pcond: na
       nkappa: na
       pkappa: na
-      ehull: 0.0398
+      ehull: 2.7203
       Tc_supercon: na
       dimensionality: 3D-bulk
       efg: []
@@ -262,7 +262,7 @@ databases:
       hse_gap: na
       reference: mp-haematite
       search: -Fe-O
-    last_updated: '2026-06-18'
+    last_updated: '2026-06-19'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -276,4 +276,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-06-18'
+last_updated: '2026-06-19'

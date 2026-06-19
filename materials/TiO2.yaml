@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # TiO2
-# Synced at: 2026-06-18T07:01:55Z
+# Synced at: 2026-06-19T07:20:39Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -209,7 +209,7 @@ databases:
       pcond: na
       nkappa: na
       pkappa: na
-      ehull: 0.1004
+      ehull: 1.5039
       Tc_supercon: na
       dimensionality: 3D-bulk
       efg: []
@@ -232,7 +232,7 @@ databases:
       hse_gap: na
       reference: mp-849533
       search: -O-Ti
-    last_updated: '2026-06-18'
+    last_updated: '2026-06-19'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -246,4 +246,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-06-18'
+last_updated: '2026-06-19'
