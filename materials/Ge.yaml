@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # Ge
-# Synced at: 2026-06-19T07:19:17Z
+# Synced at: 2026-06-20T06:36:55Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -174,7 +174,7 @@ databases:
       hse_gap: na
       reference: mp-32
       search: -Ge
-    last_updated: '2026-06-19'
+    last_updated: '2026-06-20'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -191,4 +191,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-06-19'
+last_updated: '2026-06-20'
