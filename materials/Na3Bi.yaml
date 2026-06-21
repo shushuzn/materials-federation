@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # Na3Bi
-# Synced at: 2026-06-20T06:40:52Z
+# Synced at: 2026-06-21T07:00:42Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -254,7 +254,7 @@ databases:
       hse_gap: na
       reference: mp-27838
       search: -Bi-Na
-    last_updated: '2026-06-20'
+    last_updated: '2026-06-21'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -271,4 +271,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-06-20'
+last_updated: '2026-06-21'
