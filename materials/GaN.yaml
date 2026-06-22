@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # GaN
-# Synced at: 2026-06-21T06:58:04Z
+# Synced at: 2026-06-22T07:32:56Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -195,7 +195,7 @@ databases:
       hse_gap: na
       reference: mp-830
       search: -Ga-N
-    last_updated: '2026-06-21'
+    last_updated: '2026-06-22'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -212,4 +212,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-06-21'
+last_updated: '2026-06-22'
