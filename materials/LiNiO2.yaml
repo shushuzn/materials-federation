@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # LiNiO2
-# Synced at: 2026-06-22T07:35:35Z
+# Synced at: 2026-06-23T06:18:17Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -235,7 +235,7 @@ databases:
       hse_gap: na
       reference: mp-25592
       search: -Li-Ni-O
-    last_updated: '2026-06-22'
+    last_updated: '2026-06-23'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -252,4 +252,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-06-22'
+last_updated: '2026-06-23'
