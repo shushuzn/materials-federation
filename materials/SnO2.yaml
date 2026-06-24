@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # SnO2
-# Synced at: 2026-06-23T06:17:00Z
+# Synced at: 2026-06-24T06:16:37Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -288,7 +288,7 @@ databases:
       hse_gap: na
       reference: mp-555487
       search: -O-Sn
-    last_updated: '2026-06-23'
+    last_updated: '2026-06-24'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -302,4 +302,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-06-23'
+last_updated: '2026-06-24'
