@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # CdWO4
-# Synced at: 2026-06-25T06:26:28Z
+# Synced at: 2026-06-26T06:25:27Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -207,7 +207,7 @@ databases:
       hse_gap: na
       reference: mp-19387
       search: -Cd-O-W
-    last_updated: '2026-06-25'
+    last_updated: '2026-06-26'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -224,4 +224,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-06-25'
+last_updated: '2026-06-26'
