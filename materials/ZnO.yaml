@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # ZnO
-# Synced at: 2026-06-26T06:18:55Z
+# Synced at: 2026-06-27T06:01:01Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -213,7 +213,7 @@ databases:
       hse_gap: na
       reference: mp-2133
       search: -O-Zn
-    last_updated: '2026-06-26'
+    last_updated: '2026-06-27'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -230,4 +230,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-06-26'
+last_updated: '2026-06-27'
