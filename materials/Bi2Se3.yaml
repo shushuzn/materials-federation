@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # Bi2Se3
-# Synced at: 2026-06-28T06:29:56Z
+# Synced at: 2026-06-29T07:01:09Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -342,7 +342,7 @@ databases:
       hse_gap: na
       reference: mp-23164
       search: -Bi-Se
-    last_updated: '2026-06-28'
+    last_updated: '2026-06-29'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -359,4 +359,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-06-28'
+last_updated: '2026-06-29'
