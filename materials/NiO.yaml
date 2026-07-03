@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # NiO
-# Synced at: 2026-07-02T06:09:46Z
+# Synced at: 2026-07-03T06:06:28Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -170,7 +170,7 @@ databases:
       hse_gap: na
       reference: mp-NiO
       search: -Ni-O
-    last_updated: '2026-07-02'
+    last_updated: '2026-07-03'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -187,4 +187,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-07-02'
+last_updated: '2026-07-03'

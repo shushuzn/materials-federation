@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # Nb3Sn
-# Synced at: 2026-07-02T06:13:01Z
+# Synced at: 2026-07-03T06:09:15Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -231,7 +231,7 @@ databases:
       hse_gap: na
       reference: mp-1326
       search: -Nb-Sn
-    last_updated: '2026-07-02'
+    last_updated: '2026-07-03'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -248,4 +248,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-07-02'
+last_updated: '2026-07-03'
