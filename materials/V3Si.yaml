@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # V3Si
-# Synced at: 2026-07-03T06:09:19Z
+# Synced at: 2026-07-04T05:59:03Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -228,7 +228,7 @@ databases:
       hse_gap: na
       reference: mp-2567
       search: -Si-V
-    last_updated: '2026-07-03'
+    last_updated: '2026-07-04'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -245,4 +245,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-07-03'
+last_updated: '2026-07-04'
