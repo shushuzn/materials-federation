@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # Lu2SiO5
-# Synced at: 2026-07-05T06:23:52Z
+# Synced at: 2026-07-06T06:49:59Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -268,7 +268,7 @@ databases:
       hse_gap: na
       reference: '36171'
       search: -Lu-O-Si
-    last_updated: '2026-07-05'
+    last_updated: '2026-07-06'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -282,4 +282,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-07-05'
+last_updated: '2026-07-06'
