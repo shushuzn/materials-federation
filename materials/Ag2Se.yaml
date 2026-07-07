@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # Ag2Se
-# Synced at: 2026-07-06T06:50:13Z
+# Synced at: 2026-07-07T06:26:40Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -178,7 +178,7 @@ databases:
       hse_gap: na
       reference: mp-568971
       search: -Ag-Se
-    last_updated: '2026-07-06'
+    last_updated: '2026-07-07'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -192,4 +192,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-07-06'
+last_updated: '2026-07-07'

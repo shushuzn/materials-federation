@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # BaFe2As2
-# Synced at: 2026-07-06T06:48:57Z
+# Synced at: 2026-07-07T06:23:26Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -158,7 +158,7 @@ databases:
       hse_gap: na
       reference: BaFe2As2
       search: -As-Ba-Fe
-    last_updated: '2026-07-06'
+    last_updated: '2026-07-07'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -172,4 +172,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-07-06'
+last_updated: '2026-07-07'
