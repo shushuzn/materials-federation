@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # CaTiO3
-# Synced at: 2026-07-07T06:18:04Z
+# Synced at: 2026-07-08T05:31:10Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -224,7 +224,7 @@ databases:
       hse_gap: na
       reference: mp-5827
       search: -Ca-O-Ti
-    last_updated: '2026-07-07'
+    last_updated: '2026-07-08'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -241,4 +241,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-07-07'
+last_updated: '2026-07-08'
