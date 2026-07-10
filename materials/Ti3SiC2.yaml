@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # Ti3SiC2
-# Synced at: 2026-07-09T06:22:30Z
+# Synced at: 2026-07-10T06:16:13Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -177,7 +177,7 @@ databases:
       hse_gap: na
       reference: mp-5659
       search: -C-Si-Ti
-    last_updated: '2026-07-09'
+    last_updated: '2026-07-10'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -191,4 +191,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-07-09'
+last_updated: '2026-07-10'
