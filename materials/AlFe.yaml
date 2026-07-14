@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # AlFe
-# Synced at: 2026-07-13T05:56:30Z
+# Synced at: 2026-07-14T05:00:03Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -191,7 +191,7 @@ databases:
       hse_gap: na
       reference: mp-2658
       search: -Al-Fe
-    last_updated: '2026-07-13'
+    last_updated: '2026-07-14'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -208,4 +208,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-07-13'
+last_updated: '2026-07-14'
