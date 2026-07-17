@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # CeO2
-# Synced at: 2026-07-16T05:17:58Z
+# Synced at: 2026-07-17T05:21:45Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -201,7 +201,7 @@ databases:
       hse_gap: na
       reference: mp-1062989
       search: -Ce-O
-    last_updated: '2026-07-16'
+    last_updated: '2026-07-17'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -218,4 +218,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-07-16'
+last_updated: '2026-07-17'
