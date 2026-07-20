@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # NaFePO4
-# Synced at: 2026-07-19T05:36:54Z
+# Synced at: 2026-07-20T05:57:05Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -188,7 +188,7 @@ databases:
       hse_gap: na
       reference: mp-763946
       search: -Fe-Na-O-P
-    last_updated: '2026-07-19'
+    last_updated: '2026-07-20'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -202,4 +202,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-07-19'
+last_updated: '2026-07-20'
