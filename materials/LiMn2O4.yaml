@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # LiMn2O4
-# Synced at: 2026-07-21T05:34:56Z
+# Synced at: 2026-07-22T05:35:42Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -269,7 +269,7 @@ databases:
       hse_gap: na
       reference: mvc-16811
       search: -Li-Mn-O
-    last_updated: '2026-07-21'
+    last_updated: '2026-07-22'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -286,4 +286,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-07-21'
+last_updated: '2026-07-22'
