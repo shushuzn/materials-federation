@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # InP
-# Synced at: 2026-07-22T05:27:03Z
+# Synced at: 2026-07-23T05:32:28Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -193,7 +193,7 @@ databases:
       hse_gap: na
       reference: mp-20351
       search: -In-P
-    last_updated: '2026-07-22'
+    last_updated: '2026-07-23'
 cross_db_discrepancies: {}
 coverage:
   common_properties:
@@ -210,4 +210,4 @@ coverage:
   - spacegroup
   properties_unique_to_source:
     jarvis: []
-last_updated: '2026-07-22'
+last_updated: '2026-07-23'
