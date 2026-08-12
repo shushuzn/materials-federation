@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # BaTiO3
-# Synced at: 2026-08-11T03:52:55Z
+# Synced at: 2026-08-12T04:26:36Z
 # License: CC BY 4.0 (Materials Project), NIST Terms (JARVIS),
 #          OQMD License (OQMD), AFLOW License (AFLOW),
 #          CC BY 4.0 / Database Right (NOMAD)
@@ -228,7 +228,7 @@ databases:
       hse_gap: na
       reference: mp-644497
       search: -Ba-O-Ti
-    last_updated: '2026-08-11'
+    last_updated: '2026-08-12'
   oqmd:
     material_id: '11024'
     formula: BaTiO3
@@ -279,12 +279,12 @@ coverage:
     - formation_energy_per_atom
     - structure_type
     jarvis:
-    - bulk_modulus
-    - density
-    - formation_energy_per_atom
     - raw
+    - bulk_modulus
     - shear_modulus
+    - density
     - poissons_ratio
+    - formation_energy_per_atom
     oqmd:
     - formation_energy
-last_updated: '2026-08-11'
+last_updated: '2026-08-12'
